@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #9436ff, #ff2626);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container ul.menu {
+  height: 50px;
+  width: 50px;
+}
+.container ul.menu li {
+  position: relative;
+  background: white;
+  margin: 10px;
+  height: 8px;
+  width: 50px;
+  transition: transform 0.3s, width 0.3s;
+}
+.container .active_menu li:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+  transition: transform 0.6s;
+}
+.container .active_menu li:nth-child(2) {
+  width: 0;
+  transition: width 0.6s;
+}
+.container .active_menu li:nth-child(3) {
+  bottom: 18px;
+  transform: rotate(-135deg);
+  transition: transform 0.6s;
+}
+
+.container .active_menu {
+  margin-right: 25px;
+}
+
+
+.container ul.links {
+  overflow: hidden;
+  width: 0;
+  margin-left: 0px;
+  transition: width 0.4s, margin-left 0.4s;
+  
+}
+.container ul.links li {
+  margin: 15px;
+ 
+}
+.container ul.links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+  text-transform: uppercase;
+  font-size: 54px;
+  font-family: "Montserrat", sans-serif;
+  transition: color 0.5s, margin-left 0.5s;
+}
+.container ul.links li a:hover {
+  color: black;
+  margin-left: 20px;
+  transition: color 0.5s, margin-left 0.5s;
+}
+.container .active_links {
+  width: 370px !important;
+  margin-left: 35px !important;
+  transition: width 0.4s, margin-left 0.4s;
+  display: contents;
+}
+
+.slide-left {
+	-webkit-animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

@@ -1,0 +1,15 @@
+ul {
+  background: #bbb;
+}
+li, [class*="grid"] > * {
+  background: #ccc;
+}
+header, footer {
+  background: #ddd;
+}
+main {
+  background: #eee;
+}
+aside {
+  background: #aaa;
+}
