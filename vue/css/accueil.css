@@ -1,0 +1,63 @@
+body {
+    display:block;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lustria');
+#main{
+    /* font-family: Lustria, serif; */
+    text-align: center;
+    font-size: 35px;
+    background-color: rgb(255, 255, 255);
+    /* text-shadow: rgb(0, 0, 0) 2px 2px 2px; */
+    width:fit-content;
+
+    margin:0 auto;
+    margin-top: 24%;
+
+    border-radius: 56px 56px 56px 56px;
+    -moz-border-radius: 56px 56px 56px 56px;
+    -webkit-border-radius: 56px 56px 56px 56px;
+    border: 0px solid #000000;
+}
+
+
+.telechargerJeu{
+    display:contents;
+    /* font-family: 'Bebas Neue', cursive; */
+    
+}
+
+#letter-object{ 
+    font-family: 'Signika Negative', sans-serif;
+    color: rgb(68, 68, 68);
+}
+
+div#letter-object{
+    display: contents;
+}
+
+
+header#header {
+    background-color: transparent;
+}
+
+/*
+footer{
+
+    background:#ccc;
+    
+    position:absolute;
+    
+    bottom:0;
+    
+    width:100%;
+    
+    padding-top:50px;
+    
+    height:50px;
+} */
+
+

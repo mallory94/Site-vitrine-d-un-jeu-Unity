@@ -1,9 +1,5 @@
 <?php
-
-
-    afficherAccueil() {
-        require ("./vue/accueil.tpl")
-    }
+    require ("./vue/accueil.tpl")
 
 
 ?>
