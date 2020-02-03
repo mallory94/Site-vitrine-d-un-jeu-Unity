@@ -101,7 +101,7 @@ ul {
 } */
 
 .container ul.links li a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   transition: color 0.5s;
   text-transform: uppercase;
@@ -110,7 +110,7 @@ ul {
   transition: color 0.5s;
 }
 .container ul.links li:hover a {
-  color: rgb(0, 0, 0);
+  color: rgb(125, 192, 255);
 
   transition: color 0.5s;
 }
