@@ -76,6 +76,22 @@ ul {
 .container ul.links li {
   margin: 15px;
   white-space: nowrap;
+  border-left:6px;
+  border-right:6px;
+  border-style:solid;
+  border-color: rgba(0, 0, 0, 0.534);
+  transition: border 0.5s;
+  background-color: rgba(0, 0, 0, 0.534);
+}
+
+.container ul.links li:hover {
+  margin: 15px;
+  white-space: nowrap;
+  border-left:26px;
+  border-right:26px;
+  border-style:solid;
+  border-color: rgba(0, 0, 0, 0.534);
+  transition: border 0.5s;
 }
 
 /* .container ul.links:not(.active_links) li {
@@ -91,13 +107,12 @@ ul {
   text-transform: uppercase;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
-  transition: color 0.5s, margin-left 0.5s, margin-right 0.5s;
+  transition: color 0.5s;
 }
-.container ul.links li a:hover {
+.container ul.links li:hover a {
   color: rgb(0, 0, 0);
-  margin-left: 20px;
-  margin-right: 20px;
-  transition: color 0.5s, margin-left 0.5s, margin-right 0.5s;
+
+  transition: color 0.5s;
 }
 .container .active_links {
   width: 370px !important;
