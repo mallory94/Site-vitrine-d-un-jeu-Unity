@@ -48,8 +48,8 @@
     </nav> -->
   </header>
 
-
-
+  <div class="espace-vide"></div>
+  <!-- est situé hors du flux -->
   <video playsinline autoplay muted loop poster="vue/exempleVideo.jpg" id="bgvid">
     <source src="vue/exempleVideo.webm" type="video/webm">
     <source src="vue/exempleVideo.mp4" type="video/mp4">
@@ -57,7 +57,7 @@
 
   <main id="main" role="main" class="pam">
     <!-- <p>TELECHARGER LE JEU</p> -->
-    <div class="anim-object active telechargerJeu" id="letter-object" style="animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 normal both running text-pop-up-top;font-size:70px;">JOUER AU JEU</div>
+    <div class="anim-object active telechargerJeu" id="letter-object">JOUER AU JEU</div>
     
   </main>
 

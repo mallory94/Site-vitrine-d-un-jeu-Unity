@@ -15,8 +15,6 @@ body {
     width:fit-content;
 
     margin:0 auto;
-    margin-top: 24%;
-
     border-radius: 56px 56px 56px 56px;
     -moz-border-radius: 56px 56px 56px 56px;
     -webkit-border-radius: 56px 56px 56px 56px;
@@ -37,12 +35,21 @@ body {
 
 div#letter-object{
     display: contents;
+    animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 normal both running text-pop-up-top;
+    font-size:70px;
 }
 
 
 header#header {
     background-color: transparent;
 }
+
+.espace-vide{
+    display:block;
+    height: 60%;
+}
+
+
 
 /*
 footer{
@@ -61,3 +68,45 @@ footer{
 } */
 
 
+@media screen and (max-width: 1520px) {
+    .espace-vide{
+        height: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 1320px) {
+    .espace-vide{
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .espace-vide{
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .espace-vide{
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .espace-vide{
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .espace-vide{
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .espace-vide{
+        height: 20%;
+    }
+}
