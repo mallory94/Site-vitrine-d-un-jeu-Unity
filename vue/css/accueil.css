@@ -103,10 +103,33 @@ footer{
     .espace-vide{
         height: 25%;
     }
+    div#letter-object{
+        font-size:50px;
+    }
 }
 
 @media screen and (max-width: 820px) {
     .espace-vide{
         height: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    .espace-vide{
+        height: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div#letter-object{
+        font-size:20px;
+    }
+    #main{
+        padding:1rem;
+    }
+
+    .telechargerJeu {
+    text-shadow: 0 0px 0 #ccc, 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 30px 10px rgba(0,0,0,.3);
     }
 }
