@@ -4,9 +4,9 @@
 
 
 	$hostname = "localhost";	
-	$base="";
-	$loginBD= "";
-	$passBD="";
+	$base="base-pjs4";
+	$loginBD= "root";
+	$passBD="root";
 	$pdo = null;
 
 
