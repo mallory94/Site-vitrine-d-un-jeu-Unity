@@ -4,7 +4,7 @@
         require ("./vue/accueil.tpl");
     }
 
-    function pageClassement(){
+    function redirectionClassement(){
         //$listeCategories contient le nom des colonnes du classement
         $listeCategories = array();
         $listeScores = getListeScores($listeCategories); 
@@ -14,6 +14,14 @@
         
         
         require ("./vue/classement.tpl");
+    }
+
+    function redirectionActualites(){
+        require ("./vue/actualites.tpl");
+    }
+
+    function redirectionEncyclopedie(){
+        require ("./vue/encyclopedie.tpl");
     }
 
 

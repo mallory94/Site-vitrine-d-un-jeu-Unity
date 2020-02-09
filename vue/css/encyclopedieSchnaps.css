@@ -1,0 +1,19 @@
+@media (min-width: 540px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  /* Bonus : Toute la hauteur ? */
+  // .website {min-height: 100vh;}
+  
+  /* Bonus : Centré ? */
+  // .website {max-width: 800px; margin: 0 auto;}

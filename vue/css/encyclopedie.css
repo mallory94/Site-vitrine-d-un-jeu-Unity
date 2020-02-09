@@ -1,0 +1,16 @@
+img{
+    /* image-orientation: 90 deg; */
+}
+
+#img1, #img2, #img3, #img5 {
+    top: 40px;
+    transform: rotate(90deg);
+    position: relative;
+    width: 200%;
+    height:35%;
+}
+
+
+footer{
+    text-align: center;
+}
