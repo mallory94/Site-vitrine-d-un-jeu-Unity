@@ -11,9 +11,9 @@
         <tr>
         <?php
             $compteur = 0;
-            foreach ($listeCategorie as $categorie){
-                echo("<th class=\"categorieClassement\"> " + $categorie[$compteur++] +  "</th>");
-            }
+            
+            echo("<th class=\"categorieClassement\"> </th>");
+            
         ?>
         </tr>
         </thead>
@@ -22,7 +22,7 @@
             foreach ($listeScores as $score) {
                 echo("<tr class=\"ligneClassement\" id=\""+ $score['IdJoueur'] + "\">"); 
                         
-                        for($i = 1; $i <= $compteur; $i++) {
+                        for($i = 1; $i <= $nbCategories; $i++) {
                             echo("<td class\"elementClassement\">" + $score[$i] + "</td>"); 
                         }
                 echo("</tr>");

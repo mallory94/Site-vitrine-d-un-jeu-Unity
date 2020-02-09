@@ -5,8 +5,12 @@
     }
 
     function pageClassement(){
-        $listeCategorie = getListeCategories();
-        $listeScores = getListeScores();
+        //$listeCategories contient le nom des colonnes du classement
+        $listeCategories;
+        $nbCategories = count($listeCategories);
+        
+        $listeScores = getListeScores($listeCategories); 
+        
         require ("./vue/classement.tpl");
     }
 
