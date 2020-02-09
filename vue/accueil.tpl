@@ -28,7 +28,7 @@
             <li></li>
           </ul>
           <ul class="links">
-            <li><a href='./index.php?controleur=utilisateur&pageClassement'>Classement</a></li>
+            <li><a href='./index.php?controleur=utilisateur&action=pageClassement'>Classement</a></li>
             <li><a href="#">Actualités</a></li>
             <li><a href="#">Encyclopédie</a></li>
             <li><a href="#">Connexion</a></li>
