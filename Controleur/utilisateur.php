@@ -5,18 +5,20 @@
     }
 
     function pageClassement(){
+        $listeCategorie = getListeCategories();
+        $listeScores = getListeScores();
         require ("./vue/classement.tpl");
     }
 
 
-    function getListeCategorie(){
-        require ("./modele/scoreBD");
-        return getListeCategorieBD();
+    function getListeCategories(){
+        require ("./modele/scoreBD.php");
+        return getListeCategoriesBD();
     }
 
-    function getListeScore(){
-        require ("./modele/scoreBD");
-        return getListeScoreBD();
+    function getListeScores(){
+        require ("./modele/scoreBD.php");
+        return getListeScoreBDs();
     }
 
 

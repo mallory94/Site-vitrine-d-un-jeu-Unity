@@ -1,7 +1,7 @@
 <?php
 
-function getListeCategorieBD(){
-	require ("../modele/connect.php"); 
+function getListeCategoriesBD(){
+	require ("./modele/connect.php"); 
 
     $sql = "SELECT column_name 
     FROM information_schema.columns 
@@ -34,7 +34,7 @@ function getListeCategorieBD(){
 
 
 
-function getListeScoreBD(){
+function getListeScoresBD(){
 	require ("../modele/connect.php"); 
 
     $sql = "SELECT *
