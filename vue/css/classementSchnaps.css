@@ -1,0 +1,21 @@
+:root {
+    --website-width: 70%;
+  }
+  
+  .website {
+    display: grid;
+    grid-template-columns: [website-start] 1fr [content-start] var(--website-width) [content-end] 1fr [website-end];
+  }
+  
+  .website > * {
+    grid-column: content-start / content-end;
+  }
+  .full-bleed {
+    display: grid;
+    grid-template-columns: var(--website-width);
+    justify-content: center;
+    grid-column: website-start / website-end;
+  }
+  
+  /* Bonus : Toute la hauteur ? */
+  /* .website {min-height: 100vh;} */

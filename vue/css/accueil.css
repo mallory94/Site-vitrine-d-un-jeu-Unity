@@ -6,7 +6,7 @@ body {
 
 
 @import url('https://fonts.googleapis.com/css?family=Lustria');
-#main{
+#btnTelechargerJeu{
     /* font-family: Lustria, serif; */
     text-align: center;
     font-size: 35px;
@@ -19,6 +19,7 @@ body {
     -moz-border-radius: 56px 56px 56px 56px;
     -webkit-border-radius: 56px 56px 56px 56px;
     border: 0px solid #000000;
+    
 }
 
 
@@ -125,7 +126,7 @@ footer{
     div#letter-object{
         font-size:20px;
     }
-    #main{
+    #btnTelechargerJeu{
         padding:1rem;
     }
 

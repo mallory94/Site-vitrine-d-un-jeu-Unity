@@ -55,11 +55,11 @@
     <source src="vue/exempleVideo.mp4" type="video/mp4">
   </video>
 
-  <main id="main" role="main" class="pam">
+  <div id="btnTelechargerJeu" role="" class="pam">
     <!-- <p>TELECHARGER LE JEU</p> -->
     <div class="anim-object active telechargerJeu" id="letter-object">JOUER AU JEU</div>
     
-  </main>
+  </div>
 
   </body>
 </html>

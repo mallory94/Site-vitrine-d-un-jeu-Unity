@@ -9,7 +9,8 @@
         $listeCategories = array();
         $listeScores = getListeScores($listeCategories); 
         $nbCategories = count($listeCategories);
-        
+        var_dump($listeCategories);
+        var_dump($listeScores);
         
         
         require ("./vue/classement.tpl");
