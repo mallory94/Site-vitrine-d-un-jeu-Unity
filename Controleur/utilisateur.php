@@ -6,10 +6,11 @@
 
     function pageClassement(){
         //$listeCategories contient le nom des colonnes du classement
-        $listeCategories;
+        $listeCategories = array();
+        $listeScores = getListeScores($listeCategories); 
         $nbCategories = count($listeCategories);
         
-        $listeScores = getListeScores($listeCategories); 
+        
         
         require ("./vue/classement.tpl");
     }
@@ -20,9 +21,9 @@
         return getListeCategoriesBD();
     }
 
-    function getListeScores(){
+    function getListeScores(&$listeCategories){
         require ("./modele/scoreBD.php");
-        return getListeScoreBDs();
+        return getListeScoresBD($listeCategories);
     }
 
 

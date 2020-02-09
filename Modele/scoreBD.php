@@ -38,7 +38,7 @@
 
 //prend en parametre un tableau que la fonction rempli avec le nom des colonnes
 function getListeScoresBD(&$listeCategories){
-	require ("../modele/connect.php"); 
+	require ("./modele/connect.php"); 
 
     $sql = "SELECT c.pseudo as Pseudo, niv.nomNiv as Niveau, s.meilleurScore as MeilleurScore, s.nbMonstresTues as ,
 			s.tpsJeu, s.dernierScore
