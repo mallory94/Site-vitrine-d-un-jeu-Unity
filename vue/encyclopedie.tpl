@@ -74,7 +74,7 @@
   <div class="wrapper">
     <div class="clash-card zombie">
       <div class="clash-card__image clash-card__image--zombie">
-        <img src="./vue/image/zombie.gif" alt="zombie" />
+        <img src="./vue/images/zombie.gif" alt="zombie" />
       </div>
       <div class="clash-card__unit-name">Zombies</div>
       <div class="clash-card__level clash-card__level--zombie">they aren't happy</div>
