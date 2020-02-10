@@ -64,7 +64,7 @@
 	 width: 340px;
 	 position: absolute;
 	 top: -30px;
-	 left: -25px;
+	 left: 0px;
 }
  .clash-card__image--goblin {
 	 background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg");
