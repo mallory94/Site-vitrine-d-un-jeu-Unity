@@ -24,6 +24,13 @@
         require ("./vue/encyclopedie.tpl");
     }
 
+    function redirectionAPropos(){
+        require ("./vue/aPropos.tpl");
+    }
+
+    function redirectionContact(){
+        require ("./vue/contact.tpl");
+    }
 
     function getListeCategories(){
         require ("./modele/scoreBD.php");

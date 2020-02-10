@@ -32,8 +32,8 @@
             <li><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
             <li><a href="#">Connexion</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
           </ul>
         </div>
       <script type="text/javascript" src="vue/js/testMenu.js"></script>
