@@ -28,7 +28,7 @@
     </div>
 
     <div class="container">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    <a href="./index.php"><button type="button" class="cancelbtn">Cancel</button></a>
       <span class="psw">Pas de compte ? <a href="./index.php?controleur=utilisateur&action=redirectionInscription">s'incrire</a>    |   <a href="#">Mot de passe oublié ?</a></span>
     </div>
   </form>
