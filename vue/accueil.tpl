@@ -31,7 +31,7 @@
             <li><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Classement</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
-            <li><a href="#">Connexion</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
           </ul>

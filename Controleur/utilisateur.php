@@ -32,6 +32,14 @@
         require ("./vue/contact.tpl");
     }
 
+    function redirectionConnexion(){
+        require ("./vue/connexion.tpl");
+    }
+
+    function redirectionInscription(){
+        require ("./vue/inscription.tpl");
+    }
+
     function getListeCategories(){
         require ("./modele/scoreBD.php");
         return getListeCategoriesBD();
