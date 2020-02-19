@@ -10,25 +10,25 @@
 <body>
 
 <div id="id01" class="modal">
-  
+<div class="majuscule" id="titre" >se connecter</div>
   <form class="modal-content animate" action="/action_page.php" method="post">
   
-
+    
     <div class="container">
       <label for="uname"><b>Pseudo</b></label>
-      <input type="text" placeholder="Entrer pseudo" name="uname" required>
+      <input type="text" placeholder="Pseudo" name="pseudo" required>
 
       <label for="psw"><b>Mot de passe</b></label>
-      <input type="password" placeholder="Enter Pas" name="psw" required>
+      <input type="password" placeholder="Mot de passe" name="mdp" required>
         
-      <button type="submit">Connexion</button>
-      <label>
+      <button type="submit" class="btnConnexion majuscule" >Connexion</button>
+      <!-- <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+      </label> -->
     </div>
 
     <div class="container">
-    <a href="./index.php"><button type="button" class="cancelbtn">Cancel</button></a>
+    <a href="./index.php"><button type="button" class="btnAnnuler majuscule">Annuler</button></a>
       <span class="psw">Pas de compte ? <a href="./index.php?controleur=utilisateur&action=redirectionInscription">s'incrire</a>    |   <a href="#">Mot de passe oublié ?</a></span>
     </div>
   </form>
