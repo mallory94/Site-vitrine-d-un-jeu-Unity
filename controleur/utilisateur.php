@@ -1,5 +1,30 @@
 <?php
 
+    
+
+
+
+    
+
+
+
+
+
+    function getListeCategories(){
+        require ("./modele/scoreBD.php");
+        return getListeCategoriesBD();
+    }
+
+    function getListeScores(&$listeCategories){
+        require ("./modele/scoreBD.php");
+        return getListeScoresBD($listeCategories);
+    }
+
+
+
+    /* FONCTIONS DE REDIRECTIONS */
+
+
     function accueil(){
         require ("./vue/accueil.tpl");
     }
@@ -40,15 +65,12 @@
         require ("./vue/inscription.tpl");
     }
 
-    function getListeCategories(){
-        require ("./modele/scoreBD.php");
-        return getListeCategoriesBD();
-    }
+    
 
-    function getListeScores(&$listeCategories){
-        require ("./modele/scoreBD.php");
-        return getListeScoresBD($listeCategories);
-    }
+
+    /* FIN FONCTIONS DE REDIRECTIONS */
+
+
 
 
 ?>
