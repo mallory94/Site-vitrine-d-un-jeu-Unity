@@ -1,5 +1,15 @@
+@font-face {
+  font-family: "police-umsi";
+  src: url("../../vue/fonts/FluoGums.ttf") format("truetype");
+}
+
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
+
+.majuscule {
+  text-transform: uppercase;
+}
+
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -33,14 +43,14 @@ button:hover {
   opacity:1;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
+/* style pour le bouton annuler */
+.btnAnnuler {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: rgb(56, 179, 184);
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.btnAnnuler, .btnInscription {
   float: left;
   width: 50%;
 }
@@ -66,9 +76,9 @@ button:hover {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 0% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 450px; /* Could be more or less, depending on screen size */
 
 
 
@@ -125,4 +135,24 @@ body{
   background: -webkit-radial-gradient(circle, rgba(1,18,59,1) 10%, rgba(74,250,255,1) 51%, rgba(5,52,124,1) 80%);
   background: radial-gradient(circle, rgba(1,18,59,1) 10%, rgba(74,250,255,1) 51%, rgba(5,52,124,1) 80%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01123b",endColorstr="#05347c",GradientType=1);
+}
+
+
+.termesConditions{
+  text-align: center;
+}
+
+#titreInscription {
+  font-family: "police-umsi" ,arial,sans-serif;
+  background: -webkit-linear-gradient(#eee, #60c9d7);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+
+.centrer{
+  text-align: center;
 }
