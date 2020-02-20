@@ -6,7 +6,7 @@
 	$hostname = "localhost";	
 	$base="base-pjs4";
 	$loginBD= "root";
-	$passBD="root";
+	$passBD="";
 	$pdo = null;
 
 
