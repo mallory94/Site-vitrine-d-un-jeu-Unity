@@ -10,7 +10,7 @@
 
 <div id="id01" class="modal">
 <div id="titreInscription" class="majuscule centrer">S'inscrire</div>
-  <form class="modal-content" action="/action_page.php">
+  <form class="modal-content" action="index.php?controleur=utilisateur&action=verifInscription" method="post">
     <div class="container">
     
       
@@ -76,7 +76,7 @@
       <p class="termesConditions">En créeant un compte vous acceptez nos <br><a href="#" style="color:dodgerblue">Termes et Conditions</a>.</p>
 
       <div class="clearfix">
-        <a href="./index.php"><button type="button" class="btnAnnuler majuscule">Annuler</button></a>
+        <a href="./index.php?controleur=utilisateur&action=accueil"><button type="button" class="btnAnnuler majuscule">Annuler</button></a>
         <button type="submit" class="btnInscription majuscule">S'enregistrer</button>
       </div>
     </div>
