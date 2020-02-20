@@ -29,7 +29,7 @@
     </div>
 
     <div class="container">
-    <a href="./index.php"><button type="button" class="btnAnnuler majuscule">Annuler</button></a>
+    <a href="./index.php?controleur=utilisateur&action=accueil"><button type="button" class="btnAnnuler majuscule">Annuler</button></a>
       <span class="psw">Pas de compte ? <a href="./index.php?controleur=utilisateur&action=redirectionInscription">s'incrire</a>    |   <a href="#">Mot de passe oublié ?</a></span>
     </div>
   </form>
