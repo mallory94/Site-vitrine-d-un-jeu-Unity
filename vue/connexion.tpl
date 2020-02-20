@@ -7,6 +7,7 @@
 
 </style>
 </head>
+
 <body>
 
 <div id="id01" class="modal">
@@ -35,6 +36,6 @@
 </div>
 
 
-
 </body>
+
 </html>
