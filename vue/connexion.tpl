@@ -15,12 +15,42 @@
     
     <div class="container">
       <label for="uname"><b>Pseudo</b></label>
-      <input type="text" placeholder="Pseudo" name="pseudo" required>
+      <input type="text" placeholder=
+      <?php
+        if (isset($_POST['options']['pseudoInexistant'])) {
+					if ($_POST['options']['pseudoInexistant']) {
+            echo("\"Pseudo inexistant\"" . " class=\"rouge\"");
+          }
+          else {
+            echo("\"Pseudo\"");
+          }
+        }
+        else {
+          echo("\"Pseudo\"");
+        }
+      ?>
+      
+      name="pseudo" required>
 
       <label for="psw"><b>Mot de passe</b></label>
-      <input type="password" placeholder="Mot de passe" name="mdp" required>
+      <input type="password" placeholder=
+      <?php
+        $pseudoInexistant = isset($_POST['options']['pseudoInexistant']) && $_POST['options']['pseudoInexistant'];
+        if (isset($_POST['options']['mdpIncorrect'])) {
+          if ($_POST['options']['mdpIncorrect'] && ($pseudoInexistant == false)) {
+            echo("\"Mot de passe incorrect\"" . " class=\"rouge\"");
+          }
+          else {
+            echo("\"Mot de passe\"");
+          }
+        }
+        else {
+          echo("\"Mot de passe\"");
+        }
+      ?>
+       name="mdp" required>
         
-      <button type="submit" class="btnConnexion majuscule" >Connexion</button>
+      <button type="submit" class="btnConnexion majuscule">Connexion</button>
       <!-- <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label> -->
