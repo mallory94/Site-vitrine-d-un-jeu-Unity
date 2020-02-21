@@ -16,7 +16,7 @@
 
     function setBConnectBD($pseudo, $boolean){
         require ("./modele/connect.php");
-        $sql = "UPDATE compte SET bConnect =:val
+        $sql = "UPDATE compte SET bConnecte =:val
         WHERE pseudo=:utilisateurPseudo";
     
         try {
