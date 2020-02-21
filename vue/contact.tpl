@@ -19,6 +19,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="./vue/css/contactUtil.css">
 	<link rel="stylesheet" type="text/css" href="./vue/css/contactMain.css">
+	<link rel="stylesheet" type="text/css" href="./vue/css/contact.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -45,18 +46,31 @@
 						<textarea class="input2" name="message"></textarea>
 						<span class="focus-input2" data-placeholder="MESSAGE"></span>
 					</div>
-
+					
+					
+					
 					<div class="container-contact2-form-btn">
 						<div class="wrap-contact2-form-btn">
 							<div class="contact2-form-bgbtn"></div>
-							<button class="contact2-form-btn">
-								Send Your Message
-							</button>
+							
+								<button class="contact2-form-btn">
+									Envoyer le message
+								</button>
+								
+								
+							
 						</div>
 					</div>
+					
+					<a href="./index.php?controleur=utilisateur&action=accueil"><button class="btnRetour">
+						Retour
+					</button>
+					
+					
 				</form>
 			</div>
 		</div>
+		
 	</div>
 
 

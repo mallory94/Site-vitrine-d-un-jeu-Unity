@@ -1,0 +1,24 @@
+.alignement{
+    display: flex;
+}
+
+#espace{
+    width: 150px;
+    height: 1px;
+}
+
+.btnRetour {
+    text-align: center;
+    background-color: red;
+    color : white;
+    margin-top: 50px;
+    padding: 5px  20px;
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+    background: rgba(26, 117, 253, 0.8);
+  background: -webkit-linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
+  background: -o-linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
+  background: -moz-linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
+  background: linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
+}
