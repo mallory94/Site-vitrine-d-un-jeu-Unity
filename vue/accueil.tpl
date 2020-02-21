@@ -32,7 +32,23 @@
             <li><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Scénario</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
+            <?php 
+              if (isset($_SESSION['bConnect'])){
+                if ($_SESSION['bConnect']) {
+                  echo('<li><a href="./index.php?controleur=utilisateur&action=accueilApresDeconnexion">Déconnexion</a></li>');
+                }
+                else {
+                  echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
+                        <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                      ');
+                }
+              }
+              else {
+                echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
+                      <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                    ');
+              }
+            ?>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
           </ul>
