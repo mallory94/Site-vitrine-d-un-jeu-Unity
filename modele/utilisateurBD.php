@@ -1,11 +1,11 @@
 <?php
-    function inscrireBD($infos){
+    function inscrireBD($infos, $statut){
         require ("./modele/connect.php");
-        $sql = 'INSERT INTO compte (pseudo, mail, mdp) VALUES ( ? , ? , ? )';
+        $sql = 'INSERT INTO compte (pseudo, mail, mdp, statut) VALUES ( ? , ? , ? , ?)';
         try {
-            
+            var_dump($type);
             $commande = $pdo->prepare($sql);
-            $bool = $commande->execute(array($infos['pseudo'], $infos['email'] , $infos['mdp']));
+            $bool = $commande->execute(array($infos['pseudo'], $infos['email'] , $infos['mdp'], $statut));
         }
         catch (PDOException $e) {
             echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
