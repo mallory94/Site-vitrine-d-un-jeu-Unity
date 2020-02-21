@@ -162,3 +162,15 @@ body{
   margin-left: 10px;
   color: rgb(182, 0, 0);
 }
+
+.rouge::placeholder {
+  color: rgb(182, 0, 0);
+}
+
+label{
+  font-size: 16px;
+}
+
+.modal-content .container input{
+  font-size: 16px;
+}
