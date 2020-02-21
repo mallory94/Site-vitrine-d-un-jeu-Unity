@@ -156,3 +156,9 @@ body{
 .centrer{
   text-align: center;
 }
+
+.mdpDifferents{
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: rgb(182, 0, 0);
+}
