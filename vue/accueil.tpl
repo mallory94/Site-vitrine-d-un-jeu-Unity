@@ -30,7 +30,7 @@
           <ul class="links">
             <li><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Classement</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Scénario</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionScenario">Scénario</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
             <?php 
               if (isset($_SESSION['bConnect'])){
