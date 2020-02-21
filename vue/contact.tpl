@@ -28,12 +28,12 @@
 			<div class="wrap-contact2">
 				<form class="contact2-form validate-form">
 					<span class="contact2-form-title">
-						Contact Us
+						Nous contacter
 					</span>
 
 					<div class="wrap-input2 validate-input" data-validate="Un nom est nécessaire">
 						<input class="input2" type="text" name="name">
-						<span class="focus-input2" data-placeholder="NAME"></span>
+						<span class="focus-input2" data-placeholder="NOM"></span>
 					</div>
 
 					<div class="wrap-input2 validate-input" data-validate = "Un email valide est requis: ex@abc.xyz">
