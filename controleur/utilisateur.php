@@ -37,14 +37,17 @@
         if (count($_POST['options']) == 0){
             connecte($_POST['pseudo']);
             accueilApresConnexion();
+            var_dump("vous êtes connecté");
         }
         else {
-            var_dump("vous n'êtes pas connecté");
+            
+            redirectionConnexion();
         }
     }
 
     /* vérifie que les informations entrées lors de l'inscription sont coérentes entre elles mais aussi avec la base de données */
     function verifInscription(){
+        
         //$options est un tableau qui spécifie les erreurs lors d'une inscription.
         $_POST['options'] = array();
         if (mdpDifferents()) {
