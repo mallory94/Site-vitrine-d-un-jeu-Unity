@@ -28,7 +28,7 @@
 			<div class="wrap-contact2">
 				<form class="contact2-form validate-form">
 					<span class="contact2-form-title">
-						Nous contacter
+						Contactez nous
 					</span>
 
 					<div class="wrap-input2 validate-input" data-validate="Un nom est nécessaire">
