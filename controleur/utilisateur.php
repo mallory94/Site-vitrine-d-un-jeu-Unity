@@ -5,7 +5,7 @@
 
     function inscrire($infos) {
         require_once ("./modele/utilisateurBD.php");
-        inscrireBD($infos);
+        inscrireBD($infos, "Joueur");
     }
 
     function connecte($pseudo){
@@ -159,7 +159,7 @@
 
     function accueilApresInscription(){
         $options['provenance'] = "inscription";
-        require ("./vue/accueil.tpl");
+        header("Location:index.php");
     }
 
     function accueilApresDeconnexion(){
@@ -167,13 +167,14 @@
             deconnecte($_SESSION['pseudo']);
             $options['provenance'] = "deconnexion";
         }
-        require ("./vue/accueil.tpl");
+        header("Location:index.php");
+        // require ("./vue/accueil.tpl");
     }
 
     function accueilApresConnexion(){
         $options['provenance'] = "connexion";
         
-        require ("./vue/accueil.tpl");
+        header("Location:index.php");
     }
     
 
