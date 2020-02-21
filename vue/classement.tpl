@@ -3,6 +3,7 @@
 <html class="no-js website" lang="fr">
 
     <head>
+        <title>Classement</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./vue/css/classementSchnaps.css">
         <link rel="stylesheet" href="./vue/css/classement.css">

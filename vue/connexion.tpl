@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = "stylesheet" type="text/css" href="./vue/css/connexion.css"/>
-<style>
-
-</style>
+    <title>Se connecter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type="text/css" href="./vue/css/connexion.css"/>
 </head>
 
 <body>

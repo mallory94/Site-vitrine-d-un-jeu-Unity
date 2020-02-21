@@ -2,6 +2,8 @@
 <html class="no-js" lang="fr">
 
 <head>
+
+    <title>Encyclopédie</title>
     <link rel="stylesheet" href="vue/css/testReset.css" media="all">
     <link rel="stylesheet" href="vue/css/knacss.css" media="all">
     <link rel="stylesheet" href="vue/css/encyclopedieSchnaps.css">

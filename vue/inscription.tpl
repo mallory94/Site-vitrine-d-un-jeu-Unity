@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
-	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"  />
-		<link rel = "stylesheet" type="text/css" href="./vue/css/inscription.css"/>
-
+<head>
+  <title>S'inscrire</title>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"  />
+  <link rel = "stylesheet" type="text/css" href="./vue/css/inscription.css"/>
+</head>
 <body>
     
 
