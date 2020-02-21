@@ -157,6 +157,10 @@
         require ("./vue/inscription.tpl");
     }
 
+    function redirectionScenario(){
+        require ("./vue/scenario.tpl");
+    }
+
     function accueilApresInscription(){
         $options['provenance'] = "inscription";
         header("Location:index.php");
