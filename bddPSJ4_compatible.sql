@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 06 fév. 2020 à 16:41
+-- Généré le :  ven. 21 fév. 2020 à 15:31
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `bdd3`
+-- Base de données :  `base-pjs4`
 --
 
 -- --------------------------------------------------------
@@ -32,9 +32,20 @@ DROP TABLE IF EXISTS `administrateur`;
 CREATE TABLE IF NOT EXISTS `administrateur` (
   `IdAdmin` int(11) NOT NULL AUTO_INCREMENT,
   `rôle` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `IdCompte` int(11) NOT NULL,
   PRIMARY KEY (`IdAdmin`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `administrateur`
+--
+
+INSERT INTO `administrateur` (`IdAdmin`, `rôle`) VALUES
+(1, 'web'),
+(2, 'jeu'),
+(6, 'web'),
+(7, 'jeu'),
+(8, 'design'),
+(12, 'spectateur');
 
 -- --------------------------------------------------------
 
@@ -48,8 +59,17 @@ CREATE TABLE IF NOT EXISTS `commente` (
   `IdTopics` int(11) NOT NULL,
   `dateC` date NOT NULL,
   `heureC` time NOT NULL DEFAULT '00:00:00',
-  PRIMARY KEY (`IdCompte`,`IdTopics`)
+  PRIMARY KEY (`IdCompte`,`IdTopics`),
+  KEY `IdTopics` (`IdTopics`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `commente`
+--
+
+INSERT INTO `commente` (`IdCompte`, `IdTopics`, `dateC`, `heureC`) VALUES
+(3, 1, '2020-02-03', '18:00:00'),
+(4, 2, '2020-02-07', '10:00:00');
 
 -- --------------------------------------------------------
 
@@ -67,19 +87,37 @@ CREATE TABLE IF NOT EXISTS `commentea` (
   KEY `IdCompte` (`IdCompte`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Déchargement des données de la table `commentea`
+--
+
+INSERT INTO `commentea` (`IdMAJ`, `IdCompte`, `dateA`, `heureA`) VALUES
+(1, 2, '2020-02-08', '09:05:00'),
+(1, 7, '2020-02-09', '08:09:00');
+
 -- --------------------------------------------------------
 
 --
--- Structure de la table `composé_de`
+-- Structure de la table `composede`
 --
 
-DROP TABLE IF EXISTS `composé_de`;
-CREATE TABLE IF NOT EXISTS `composé_de` (
+DROP TABLE IF EXISTS `composede`;
+CREATE TABLE IF NOT EXISTS `composede` (
   `IdTourelles` int(11) NOT NULL,
   `IdNiveau` int(11) NOT NULL,
   `IdMonstre` int(11) NOT NULL,
-  PRIMARY KEY (`IdNiveau`,`IdMonstre`,`IdTourelles`)
+  PRIMARY KEY (`IdNiveau`,`IdMonstre`,`IdTourelles`),
+  KEY `composeDe_ibfk_2` (`IdMonstre`),
+  KEY `composeDe_ibfk_3` (`IdTourelles`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `composede`
+--
+
+INSERT INTO `composede` (`IdTourelles`, `IdNiveau`, `IdMonstre`) VALUES
+(1, 1, 1),
+(2, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -90,18 +128,38 @@ CREATE TABLE IF NOT EXISTS `composé_de` (
 DROP TABLE IF EXISTS `compte`;
 CREATE TABLE IF NOT EXISTS `compte` (
   `IdCompte` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `prenom` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `mail` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `dateN` date NOT NULL,
   `mdp` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `pseudo` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `type` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `bConnecte` tinyint(1) NOT NULL,
+  `statut` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `bConnecte` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`IdCompte`),
   UNIQUE KEY `mail` (`mail`(50)) USING HASH,
   UNIQUE KEY `pseudo` (`pseudo`(50)) USING HASH
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `compte`
+--
+
+INSERT INTO `compte` (`IdCompte`, `mail`, `mdp`, `pseudo`, `statut`, `bConnecte`) VALUES
+(1, 'gare@gmail.com', 'OJ8UHN3D0', 'Coop3', 'administrateur', 1),
+(2, 'manger@gmail.com', 'ERTFG', 'Houi2', 'administrateur', 1),
+(3, 'garfieldCatFat@gmail.com', 'OJ20S98UHN3D0', 'Catman93', 'joueur', 1),
+(4, 'beybou@gmail.com', '987UYHGJ', 'BeyKing', 'joueur', 0),
+(5, 'elise@gmail.com', '0987YHENR', 'Dune09', 'joueur', 1),
+(6, 'idolaJerem@hotmail.fr', '234R5TGFD', 'Admin98', 'administrateur', 1),
+(7, 'flemme@gmail.com', 'GT567UYHG', 'FlemmeDeLetre', 'administrateur', 1),
+(8, 'julesF@hotmail.fr', '6TGHU7', 'JulementDrole', 'administrateur', 1),
+(9, 'edouardhultembourg@gmail.com', 'VFT5678UH', 'Huledou07', 'joueur', 0),
+(10, 'berenice@hotmail.fr', 'VFRT56', 'Berner87', 'joueur', 1),
+(11, 'plusdinspi@gmail.com', '98O9IUI', 'Eheh', 'joueur', 0),
+(12, 'finishme@gmail.com', '0987YTG', 'Ouiiii', 'administrateur', 1),
+(13, 'intru@gmail.com', '123ERR', 'FiereDetreUnIntru', 'joueur', 1),
+(14, 'jeancharles@gmail.com', '2ZE3R', 'Kingeek34', 'joueur', 1),
+(15, 'erine@gmail.com', '2ZE3R4T', 'ErineIR345', 'joueur', 0),
+(16, 'sorry@gmail.com', 'HHH87YH', 'Okey', 'joueur', 1),
+(17, 'test@gmail.com', '$2y$10$PXiU1NTg9LLpUmt.O5Bmt.yEcmwrHQLDN3mcdDrBiqRqYFuLXlwOu', 'test', 'Joueur', 1);
 
 -- --------------------------------------------------------
 
@@ -112,11 +170,26 @@ CREATE TABLE IF NOT EXISTS `compte` (
 DROP TABLE IF EXISTS `joueur`;
 CREATE TABLE IF NOT EXISTS `joueur` (
   `IdJoueur` int(11) NOT NULL AUTO_INCREMENT,
-  `derniereUtilisation` time NOT NULL DEFAULT '00:00:00',
+  `derniereUtilisation` date NOT NULL,
   `nbUtilisation` int(11) NOT NULL DEFAULT '0',
-  `IdCompte` int(11) NOT NULL,
   PRIMARY KEY (`IdJoueur`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `joueur`
+--
+
+INSERT INTO `joueur` (`IdJoueur`, `derniereUtilisation`, `nbUtilisation`) VALUES
+(3, '2019-12-03', 2),
+(4, '2020-02-05', 5),
+(5, '2020-02-09', 23),
+(9, '2020-02-03', 6),
+(10, '2020-01-30', 9),
+(11, '2020-02-04', 3),
+(13, '2020-02-08', 9),
+(14, '2020-02-02', 2),
+(15, '2020-02-04', 7),
+(16, '2020-02-09', 1);
 
 -- --------------------------------------------------------
 
@@ -131,8 +204,16 @@ CREATE TABLE IF NOT EXISTS `maj` (
   `titre` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `dateM` date NOT NULL,
   `IdAdmin` int(11) NOT NULL,
-  PRIMARY KEY (`IdMAJ`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`IdMAJ`),
+  KEY `IdAdmin` (`IdAdmin`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `maj`
+--
+
+INSERT INTO `maj` (`IdMAJ`, `description`, `titre`, `dateM`, `IdAdmin`) VALUES
+(1, 'Que diriez-vous d\'un nouveau type de monstre super badasse ? Venez le découvrir en exclusivité ', 'Nouveau Monstre !', '2020-02-09', 6);
 
 -- --------------------------------------------------------
 
@@ -148,7 +229,16 @@ CREATE TABLE IF NOT EXISTS `monstres` (
   `imgMonstre` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `typeMonstre` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`IdMonstre`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `monstres`
+--
+
+INSERT INTO `monstres` (`IdMonstre`, `vitesseM`, `nomMonstre`, `imgMonstre`, `typeMonstre`) VALUES
+(1, 3, 'Tueur', '', 'Feu\r\n'),
+(2, 2, 'Ravageur', '', 'Eau'),
+(3, 4, 'Fuyeur', '', 'terre');
 
 -- --------------------------------------------------------
 
@@ -163,7 +253,14 @@ CREATE TABLE IF NOT EXISTS `niveau` (
   `nomNiv` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `nbMonstres` int(11) NOT NULL,
   PRIMARY KEY (`IdNiveau`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `niveau`
+--
+
+INSERT INTO `niveau` (`IdNiveau`, `imgNiv`, `nomNiv`, `nbMonstres`) VALUES
+(1, '', 'Preliminaire', 8);
 
 -- --------------------------------------------------------
 
@@ -183,6 +280,22 @@ CREATE TABLE IF NOT EXISTS `score` (
   KEY `IdNiveau` (`IdNiveau`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Déchargement des données de la table `score`
+--
+
+INSERT INTO `score` (`IdJoueur`, `IdNiveau`, `dernierScore`, `nbMonstresTues`, `tpsJeu`, `meilleurScore`) VALUES
+(3, 1, 4, 8, '04:03:00', 4),
+(4, 1, 1, 1, '00:04:00', 1),
+(5, 1, 5, 11, '32:00:00', 6),
+(9, 1, 8, 13, '10:00:00', 8),
+(10, 1, 6, 6, '00:06:00', 6),
+(11, 1, 4, 5, '04:00:00', 4),
+(13, 1, 3, 12, '00:05:00', 5),
+(14, 1, 7, 7, '00:04:00', 7),
+(15, 1, 8, 15, '02:00:00', 8),
+(16, 1, 2, 2, '00:04:00', 2);
+
 -- --------------------------------------------------------
 
 --
@@ -194,7 +307,15 @@ CREATE TABLE IF NOT EXISTS `topics` (
   `IdTopics` int(11) NOT NULL AUTO_INCREMENT,
   `nomT` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`IdTopics`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `topics`
+--
+
+INSERT INTO `topics` (`IdTopics`, `nomT`) VALUES
+(1, 'Comment tricher ?'),
+(2, 'Comment gagner ?');
 
 -- --------------------------------------------------------
 
@@ -210,7 +331,16 @@ CREATE TABLE IF NOT EXISTS `tourelles` (
   `degats` int(11) NOT NULL,
   `vitesseT` int(11) NOT NULL,
   PRIMARY KEY (`IdTourelles`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `tourelles`
+--
+
+INSERT INTO `tourelles` (`IdTourelles`, `imgTourelle`, `nomTourelles`, `degats`, `vitesseT`) VALUES
+(1, '', 'Tour1', 12, 2),
+(2, '', 'Tour2', 14, 3),
+(3, '', 'Tour3', 15, 4);
 
 --
 -- Contraintes pour les tables déchargées
@@ -226,26 +356,35 @@ ALTER TABLE `administrateur`
 -- Contraintes pour la table `commente`
 --
 ALTER TABLE `commente`
-  ADD CONSTRAINT `commente_ibfk_1` FOREIGN KEY (`IdCompte`) REFERENCES `compte` (`IdCompte`);
+  ADD CONSTRAINT `commente_ibfk_1` FOREIGN KEY (`IdCompte`) REFERENCES `compte` (`IdCompte`),
+  ADD CONSTRAINT `commente_ibfk_2` FOREIGN KEY (`IdTopics`) REFERENCES `topics` (`IdTopics`);
 
 --
 -- Contraintes pour la table `commentea`
 --
 ALTER TABLE `commentea`
-  ADD CONSTRAINT `commentea_ibfk_1` FOREIGN KEY (`IdCompte`) REFERENCES `compte` (`IdCompte`),
-  ADD CONSTRAINT `commentea_ibfk_2` FOREIGN KEY (`IdMAJ`) REFERENCES `maj` (`IdMAJ`);
+  ADD CONSTRAINT `commentea_ibfk_2` FOREIGN KEY (`IdMAJ`) REFERENCES `maj` (`IdMAJ`),
+  ADD CONSTRAINT `commentea_ibfk_3` FOREIGN KEY (`IdCompte`) REFERENCES `administrateur` (`IdAdmin`);
 
 --
--- Contraintes pour la table `composé_de`
+-- Contraintes pour la table `composede`
 --
-ALTER TABLE `composé_de`
-  ADD CONSTRAINT `composé_de_ibfk_1` FOREIGN KEY (`IdNiveau`) REFERENCES `niveau` (`IdNiveau`);
+ALTER TABLE `composede`
+  ADD CONSTRAINT `composeDe_ibfk_1` FOREIGN KEY (`IdNiveau`) REFERENCES `niveau` (`IdNiveau`),
+  ADD CONSTRAINT `composeDe_ibfk_2` FOREIGN KEY (`IdMonstre`) REFERENCES `monstres` (`IdMonstre`),
+  ADD CONSTRAINT `composeDe_ibfk_3` FOREIGN KEY (`IdTourelles`) REFERENCES `tourelles` (`IdTourelles`);
 
 --
 -- Contraintes pour la table `joueur`
 --
 ALTER TABLE `joueur`
   ADD CONSTRAINT `joueur_ibfk_1` FOREIGN KEY (`IdJoueur`) REFERENCES `compte` (`IdCompte`);
+
+--
+-- Contraintes pour la table `maj`
+--
+ALTER TABLE `maj`
+  ADD CONSTRAINT `maj_ibfk_1` FOREIGN KEY (`IdAdmin`) REFERENCES `administrateur` (`IdAdmin`);
 
 --
 -- Contraintes pour la table `score`
