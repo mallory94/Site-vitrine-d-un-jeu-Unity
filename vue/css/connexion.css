@@ -184,3 +184,15 @@ background:  radial-gradient(circle, rgba(74,250,255,1) 0%, rgba(2,23,63,1) 2%, 
 html, body {
   height: 100%;
 }
+
+label{
+  font-size: 16px;
+}
+
+.modal-content .container input{
+  font-size: 16px;
+}
+
+.rouge::placeholder {
+  color: rgb(182, 0, 0);
+}
