@@ -77,7 +77,7 @@
 
       <div class="clearfix">
         <a href="./index.php?controleur=utilisateur&action=accueil"><button type="button" class="btnAnnuler majuscule">Annuler</button></a>
-        <button type="submit" class="btnInscription majuscule">S'enregistrer</button>
+        <a href="./index.php?controleur=utilisateur&action=verifInscription"><button type="submit" class="btnInscription majuscule">S'enregistrer</button></a>
       </div>
     </div>
   </form>
