@@ -12,7 +12,7 @@
 
 <div id="id01" class="modal">
 <div class="majuscule" id="titre" >se connecter</div>
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate" action="./index.php?controleur=utilisateur&action=verifConnexion" method="post">
   
     
     <div class="container">
