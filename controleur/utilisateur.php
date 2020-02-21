@@ -19,7 +19,7 @@
         require_once ("./modele/utilisateurBD.php");
         $_SESSION['bConnect'] = false;
         $_SESSION= array();
-        setBConnectBD($pseudo, false);
+        setBConnectBD($pseudo, "0");
     }
     
     /* FONCTIONS DE VERIFICATION */
