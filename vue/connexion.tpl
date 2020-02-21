@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Se connecter</title>
+  <title>Se connecter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel = "stylesheet" type="text/css" href="./vue/css/connexion.css"/>
+  <script src="./vue/js/connexion.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -50,7 +51,7 @@
       ?>
        name="mdp" required>
         
-      <button type="submit" class="btnConnexion majuscule">Connexion</button>
+      <button type="submit"  class="btnConnexion majuscule">Connexion</button>
       <!-- <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label> -->
@@ -58,12 +59,14 @@
 
     <div class="container">
     <a href="./index.php?controleur=utilisateur&action=accueil"><button type="button" class="btnAnnuler majuscule">Annuler</button></a>
-      <span class="psw">Pas de compte ? <a href="./index.php?controleur=utilisateur&action=redirectionInscription">s'incrire</a>    |   <a href="#">Mot de passe oublié ?</a></span>
+      <span class="psw">Pas de compte ? <a href="./index.php?controleur=utilisateur&action=redirectionInscription">s'incrire</a>    |   <a onClick="cheh()" href="#">Mot de passe oublié ?</a></span>
     </div>
   </form>
 </div>
 
 
 </body>
+
+
 
 </html>
