@@ -5,13 +5,39 @@
 		<title>A propos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./vue/css/aProposAnimationText.css" />
 		<link rel="stylesheet" href="./vue/css/aProposMain.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+		
+		
 	</head>
 	<body>
+	
+		
+	
+	
+
+
 		<!-- Banner -->
+
+		
 			<section id="banner">
-				<h1>Pour mieux nous connaître</h1>
+			<div id="home-news">
+				<div class="home_header">
+					<strong>Spend</strong>
+					<span>your time with us</span>
+				</div>
+				<div class="home_header">
+					<strong>Music</strong>
+					<span>you love only a click away </span>
+				</div>
+				<div class="home_header">
+					<span>explore. listen.</span>
+					<strong>share</strong>
+				</div>
+				</div>
 			</section>
+			<script type="text/javascript" src="./vue/js/aProposAnimation.js"></script>
 
 		<!-- One -->
 			<section id="one" class="wrapper">

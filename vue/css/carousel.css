@@ -1,0 +1,21 @@
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    animation-name: lightOpacityIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    animation-name : lightOpacityOut;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lightOpacityIn {
+    from {background-color: rgba(255, 255, 255, 0);}
+    to {background-color: rgba(255, 255, 255, 0.50);}
+}
+
+@keyframes lightOpacityOut {
+    from {background-color: rgba(255, 255, 255, 0.50);}
+    to {background-color: rgba(255, 255, 255, 0);}
+}
