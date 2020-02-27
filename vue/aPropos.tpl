@@ -24,16 +24,17 @@
 			<section id="banner">
 			<div id="home-news">
 				<div class="home_header">
-					<strong>Spend</strong>
-					<span>your time with us</span>
+					<span>Tout savoir</span>
+					<strong>de l'équipe</strong>
 				</div>
 				<div class="home_header">
-					<strong>Music</strong>
-					<span>you love only a click away </span>
+					<span>A propos de</span>
+					<strong>Nous</strong>
 				</div>
 				<div class="home_header">
-					<span>explore. listen.</span>
-					<strong>share</strong>
+					<span>Les</span>
+					<strong>parents</strong>
+					<span>d'UMSI</span>
 				</div>
 				</div>
 			</section>
