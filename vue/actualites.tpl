@@ -60,16 +60,11 @@
     <div id="containerGrid">
         <div class="parent">
             <div class="div1 double"> 
-                <img class="fit-picture"
-                    src="./vue/images/carousel/laboDrawing.jfif"
-                    alt=""
-                >
+                <div class="content-div-titre">Le jeu sort officiellement en Beta ouverte (ou fermée, on sait pas encore)! </div>
+                <div class="content-div"></div>
             </div>
             <div class="div2">
-                <img class="fit-picture"
-                    src="https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg"
-                    alt=""
-                >
+                
             </div>
             <div class="div3"> </div>
             <div class="div4"> </div>
