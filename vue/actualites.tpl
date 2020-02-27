@@ -57,6 +57,33 @@
     <!-- FIN DU CODE POUR LE CAROUSEL -->
 
 
+    <div id="containerGrid">
+        <div class="parent">
+            <div class="div1 double"> 
+                <img class="fit-picture"
+                    src="./vue/images/carousel/laboDrawing.jfif"
+                    alt=""
+                >
+            </div>
+            <div class="div2">
+                <img class="fit-picture"
+                    src="https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg"
+                    alt=""
+                >
+            </div>
+            <div class="div3"> </div>
+            <div class="div4"> </div>
+            <div class="div5"> </div>
+            <div class="div6 double"> </div>
+            <div class="div7"> </div>
+            <div class="div8"> </div>
+            <div class="div9"> </div>
+            <div class="div10"> </div>
+        </div>
+    </div>
+    
+
+
 
     <section id="four" class="wrapper style3">
         <div class="inner">
