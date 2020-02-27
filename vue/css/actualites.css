@@ -46,4 +46,7 @@
 .wrapper .inner h2 {
     color: #ffffff;
     z-index: 34;
+body{
+    background-color: #000;
+}
 }
