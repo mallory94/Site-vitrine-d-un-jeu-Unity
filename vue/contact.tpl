@@ -47,8 +47,6 @@
 						<span class="focus-input2" data-placeholder="MESSAGE"></span>
 					</div>
 					
-					
-					
 					<div class="container-contact2-form-btn">
 						<div class="wrap-contact2-form-btn">
 							<div class="contact2-form-bgbtn"></div>
@@ -56,18 +54,11 @@
 								<button class="contact2-form-btn">
 									Envoyer le message
 								</button>
-								
-								
-							
 						</div>
 					</div>
-					
-					<a href="./index.php?controleur=utilisateur&action=accueil"><button class="btnRetour">
-						Retour
-					</button>
-					
-					
+					<a href="./index.php"  class="btn btn-default btnRetour">Retour</a>
 				</form>
+				
 			</div>
 		</div>
 		
