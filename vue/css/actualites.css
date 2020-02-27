@@ -1,0 +1,46 @@
+#titre {
+    text-align: center;
+}
+
+
+.wrapper.style3 {
+    background-color: #000;
+    color: #bfbfbf;
+    background-image: url(https://templated.co/items/demos/transitive/images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.wrapper {
+    padding: 6rem 0 4rem 0;
+    position: relative;
+    margin: 0;
+}
+
+ .wrapper.style3:before {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
+    transition-delay: 1.25s;
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.616);
+    height: 100%;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.wrapper .inner h2 {
+    color: #ffffff;
+    z-index: 34;
+}
