@@ -32,6 +32,8 @@
             <li><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionScenario">Scénario</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
             <?php 
               if (isset($_SESSION['bConnect'])){
                 if ($_SESSION['bConnect']) {
@@ -49,8 +51,6 @@
                     ');
               }
             ?>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
           </ul>
         </div>
       <script type="text/javascript" src="vue/js/testMenu.js"></script>
