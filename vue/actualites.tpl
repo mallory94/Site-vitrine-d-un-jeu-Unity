@@ -15,7 +15,7 @@
 
     
     <div class="container-fluid">
-        <div id="myCarousel" class="carousel slide border" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="./vue/images/carousel/laboDrawing.jfif" alt="slide1">
