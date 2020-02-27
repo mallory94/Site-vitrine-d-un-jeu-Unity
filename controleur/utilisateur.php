@@ -40,7 +40,6 @@
             var_dump("vous êtes connecté");
         }
         else {
-            
             redirectionConnexion();
         }
     }
