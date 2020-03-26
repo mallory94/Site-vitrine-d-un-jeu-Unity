@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="vue/css/encyclopedieSchnaps.css">
     <link rel="stylesheet" href="vue/css/encyclopedie.css">
     <link rel="stylesheet" href="vue/css/encyclopedieCard.css">
-
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body onload="x=0" onkeydown="document.images[0].style.msTransform='rotate('+((x=++x%4)*90)+'deg)'">
@@ -26,8 +26,11 @@
 
 <div class="slide-container">
 
-     
-
+    
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div id='title'>
 
 <div class="wrapper">
     <div class="clash-card fantome robot1">
