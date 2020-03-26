@@ -76,7 +76,7 @@ button:hover {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 0% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 0% auto 0px auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 450px; /* Could be more or less, depending on screen size */
 
@@ -130,11 +130,7 @@ hr {
 
 
 body{
-  background: rgb(1,18,59);
-  background: -moz-radial-gradient(circle, rgba(1,18,59,1) 10%, rgba(74,250,255,1) 51%, rgba(5,52,124,1) 80%);
-  background: -webkit-radial-gradient(circle, rgba(1,18,59,1) 10%, rgba(74,250,255,1) 51%, rgba(5,52,124,1) 80%);
-  background: radial-gradient(circle, rgba(1,18,59,1) 10%, rgba(74,250,255,1) 51%, rgba(5,52,124,1) 80%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01123b",endColorstr="#05347c",GradientType=1);
+  background: rgb(74,250,255);
 }
 
 
