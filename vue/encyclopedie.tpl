@@ -124,6 +124,112 @@
     </div> <!-- end clash-card fantome-->
   </div> <!-- end wrapper -->
   
+
+  <div class="wrapper">
+    <div class="clash-card fantome robot1">
+      <div class="clash-card__image clash-card__image--fantome">
+        <img src="./vue/images/gifMonstres/robinet.gif" alt="minitron" />
+      </div>
+      <div class="clash-card__unit-name">minitron</div>
+      <div class="clash-card__level clash-card__level--fantome">sous-titre</div>
+      <div class="clash-card__unit-description">
+        Description à remplir :o
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
+        <div class="one-third">
+          <div class="stat">❤️</div>
+          <div class="stat-value">vie</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">➕➕➕</div>
+          <div class="stat-value">vitesse</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">🛡️</div>
+          <div class="stat-value">défense</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card fantome-->
+  </div> <!-- end wrapper -->
+
+  <div class="wrapper">
+    <div class="clash-card fantome">
+      <div class="clash-card__image clash-card__image--fantome">
+        <img src="./vue/images/gifMonstres/robot2.gif" alt="mediatron" />
+      </div>
+      <div class="clash-card__unit-name">mediatron</div>
+      <div class="clash-card__level clash-card__level--fantome">sous-titre</div>
+      <div class="clash-card__unit-description">
+        Description à remplir :o
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
+        <div class="one-third">
+          <div class="stat">❤️❤️</div>
+          <div class="stat-value">santé</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">➕➕</div>
+          <div class="stat-value">vitesse</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">🛡️🛡️</div>
+          <div class="stat-value">défense</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card fantome-->
+  </div> <!-- end wrapper -->
+
+  <div class="wrapper">
+    <div class="clash-card fantome">
+      <div class="clash-card__image clash-card__image--fantome">
+        <img src="./vue/images/gifMonstres/robot3.gif" alt="robot3" />
+      </div>
+      <div class="clash-card__unit-name">robot3</div>
+      <div class="clash-card__level clash-card__level--fantome">sous-titre</div>
+      <div class="clash-card__unit-description">
+        Description à remplir :o
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
+        <div class="one-third">
+          <div class="stat">❤️❤️❤️</div>
+          <div class="stat-value">santé</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">➕</div>
+          <div class="stat-value">vitesse</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">🛡️🛡️🛡️</div>
+          <div class="stat-value">défense</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card fantome-->
+  </div> <!-- end wrapper -->
+
+
+
+
+
+
+
+
+
+
    <!-- <div class="wrapper">
     <div class="clash-card goblin">
       <div class="clash-card__image clash-card__image--goblin">
@@ -154,9 +260,9 @@
       </div>
 
     </div> 
-  </div>  -->
+  </div>
   
-  <!-- <div class="wrapper">
+   <div class="wrapper">
     <div class="clash-card wizard">
       <div class="clash-card__image clash-card__image--wizard">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard.png" alt="wizard" />
