@@ -11,7 +11,7 @@
     
     <link rel="stylesheet" href="vue/css/backgroundVideo.css" media="all">
     <link rel="stylesheet" href="vue/css/animistaFichierPourLettre.css" media="all">
-    <link rel="stylesheet" href="vue/css/testMenu.css">
+    <link rel="stylesheet" href="vue/css/menu.css">
     <link rel="stylesheet" href="vue/css/accueil.css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">

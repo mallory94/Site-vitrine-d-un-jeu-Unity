@@ -24,10 +24,11 @@ ul {
   height: 50px;
   width: 50px;
   margin : 23px;
+  background: #05347C;
 }
 .container ul.menu li {
   position: relative;
-  background: white;
+  background: #4AFAFF;
   margin: 10px;
   height: 8px;
   width: 40px;
@@ -79,9 +80,9 @@ ul {
   border-left:6px;
   border-right:6px;
   border-style:solid;
-  border-color: rgba(0, 0, 0, 0.534);
+  border-color: rgba(5, 53, 124, 0.575);
   transition: border 0.5s;
-  background-color: rgba(0, 0, 0, 0.534);
+  background-color: rgba(5, 53, 124, 0.575);
 }
 
 .container ul.links li:hover {
@@ -101,7 +102,7 @@ ul {
 } */
 
 .container ul.links li a {
-  color: rgb(255, 255, 255);
+  color: #4AFAFF;
   text-decoration: none;
   transition: color 0.5s;
   text-transform: uppercase;
@@ -110,7 +111,7 @@ ul {
   transition: color 0.5s;
 }
 .container ul.links li:hover a {
-  color: rgb(125, 192, 255);
+  color: white;
 
   transition: color 0.5s;
 }
