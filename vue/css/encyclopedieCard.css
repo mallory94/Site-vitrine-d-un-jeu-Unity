@@ -8,16 +8,21 @@
 }
  .slide-container {
 	 margin: auto;
-	 width: 600px;
+	 width: 100%;
 	 text-align: center;
-	 display: -webkit-inline-box;
 	 margin-top: 40px;
+    float: left;
+    overflow: auto;
 }
  .wrapper {
-	 padding-top: 40px;
-	 padding-bottom: 40px;
-	 margin: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin: 40px;
+	min-width: fit-content;
+	max-width: fit-content;
+	float: left;
 }
+
  .wrapper:focus {
 	 outline: 0;
 }
@@ -39,7 +44,7 @@
 	 border-top-left-radius: 14px;
 	 border-top-right-radius: 14px;
 }
- .clash-card__image--harpie {
+ .clash-card__image--kaki {
 	 background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
 }
  .clash-card__image--harpie img {
@@ -48,7 +53,7 @@
 	 top: -65px;
 	 left: 5px;
 }
- .clash-card__image--zombie {
+ .clash-card__image--rose_peche {
 	 background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg");
 }
  .clash-card__image--zombie img {
@@ -60,12 +65,44 @@
  .clash-card__image--fantome {
 	 background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg");
 }
+
  .clash-card__image--fantome img {
 	 width: 340px;
 	 position: absolute;
 	 top: -30px;
 	 left: 0px;
 }
+
+.clash-card__image--minitron img {
+	width: 340px;
+	position: absolute;
+	top: -30px;
+	left: 0px;
+}
+
+.clash-card__image--mediatron {
+	background: url("../images/fond_floutes/blur_mediatron.jpg");
+}
+
+.clash-card__image--mediatron img {
+	width: 340px;
+	position: absolute;
+	top: -30px;
+	left: 0px;
+}
+
+
+.clash-card__image--BF-Bot{
+	background: url("../images/fond_floutes/blur_BF-Bot.jpg");
+}
+
+.clash-card__image--BF-Bot img {
+	width: 340px;
+	position: absolute;
+	top: -30px;
+	left: 0px;
+}
+
  .clash-card__image--goblin {
 	 background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg");
 }
@@ -84,6 +121,14 @@
 	 top: -28px;
 	 left: -10px;
 }
+
+
+.clash-card__image--minitron {
+	background: url("../images/fond_floutes/blur_minitron.jpg");
+}
+
+
+
  .clash-card__level {
 	 text-transform: uppercase;
 	 font-size: 12px;
@@ -91,14 +136,27 @@
 	 margin-bottom: 3px;
 }
  .clash-card__level--harpie {
-	 color: #ec9b3b;
+	 color: #9b683f;
 }
  .clash-card__level--zombie {
-	 color: #ee5487;
+	 color: #92af94;
 }
  .clash-card__level--fantome {
 	 color: #f6901a;
 }
+
+.clash-card__level--minitron {
+	color: #fe9959;
+}
+
+.clash-card__level--mediatron {
+	color: #50c717;
+}
+
+.clash-card__level--BF-Bot {
+	color: #be3444;
+}
+
  .clash-card__level--goblin {
 	 color: #82bb30;
 }
@@ -116,16 +174,16 @@
 	 margin-bottom: 10px;
 }
  .clash-card__unit-stats--harpie {
-	 background: #ec9b3b;
+	 background: #9b683f;
 }
  .clash-card__unit-stats--harpie .one-third {
-	 border-right: 1px solid #bd7c2f;
+	 border-right: 1px solid rgb(105, 72, 32);
 }
  .clash-card__unit-stats--zombie {
-	 background: #ee5487;
+	 background: #92af94;
 }
  .clash-card__unit-stats--zombie .one-third {
-	 border-right: 1px solid #d04976;
+	 border-right: 1px solid #677a68;
 }
  .clash-card__unit-stats--fantome {
 	 background: #f6901a;
@@ -145,6 +203,32 @@
  .clash-card__unit-stats--wizard .one-third {
 	 border-right: 1px solid #309eff;
 }
+
+
+.clash-card__unit-stats--minitron {
+	background: #fe9959;
+}
+.clash-card__unit-stats--minitron .one-third {
+	border-right: 1px solid #885230;
+}
+
+
+
+.clash-card__unit-stats--mediatron {
+	background: #50c717;
+}
+.clash-card__unit-stats--mediatron .one-third {
+	border-right: 1px solid #29640e;
+}
+
+
+.clash-card__unit-stats--BF-Bot {
+	background: #be3444;
+}
+.clash-card__unit-stats--BF-Bot .one-third {
+	border-right: 1px solid #611c24;
+}
+
  .clash-card__unit-stats {
 	 color: white;
 	 font-weight: 700;
