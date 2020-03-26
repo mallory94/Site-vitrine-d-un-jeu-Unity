@@ -147,17 +147,17 @@
       <div class="clash-card__unit-stats clash-card__unit-stats--harpie clearfix">
         <div class="centrer">
           <div class="one-third">
-            <div class="stat">20</div>
-            <div class="stat-value">attaque</div>
+            <div class="stat"></div>
+            <div class="stat-value">santé</div>
           </div>
 
           <div class="one-third">
-            <div class="stat">16</div>
+            <div class="stat"></div>
             <div class="stat-value">vitesse</div>
           </div>
 
           <div class="one-third no-border">
-            <div class="stat">150</div>
+            <div class="stat"></div>
             <div class="stat-value">défense</div>
           </div>
         </div>
@@ -180,17 +180,17 @@
       <div class="clash-card__unit-stats clash-card__unit-stats--zombie clearfix">
         <div class="centrer">
           <div class="one-third">
-            <div class="stat">25</div>
-            <div class="stat-value">attaque</div>
+            <div class="stat"></div>
+            <div class="stat-value">santé</div>
           </div>
 
           <div class="one-third">
-            <div class="stat">24</div>
+            <div class="stat"></div>
             <div class="stat-value">vitesse</div>
           </div>
 
           <div class="one-third no-border">
-            <div class="stat">300</div>
+            <div class="stat"></div>
             <div class="stat-value">défense</div>
           </div>
         </div>
@@ -213,17 +213,17 @@
       <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
         <div class="centrer">
           <div class="one-third">
-            <div class="stat">2</div>
-            <div class="stat-value">attaque</div>
+            <div class="stat"></div>
+            <div class="stat-value">santé</div>
           </div>
 
           <div class="one-third">
-            <div class="stat">12</div>
+            <div class="stat"></div>
             <div class="stat-value">vitesse</div>
           </div>
 
           <div class="one-third no-border">
-            <div class="stat">2250</div>
+            <div class="stat"></div>
             <div class="stat-value">défense</div>
           </div>
         </div>
@@ -233,83 +233,6 @@
   </div> <!-- end wrapper -->
   
 
-</div>
-
-  
-
-
-
-
-
-
-
-
-
-
-   <!-- <div class="wrapper">
-    <div class="clash-card goblin">
-      <div class="clash-card__image clash-card__image--goblin">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin.png" alt="goblin" />
-      </div>
-      <div class="clash-card__level clash-card__level--goblin">Level 5</div>
-      <div class="clash-card__unit-name">The Goblin</div>
-      <div class="clash-card__unit-description">
-        Description à remplir :o
-      </div>
-
-      <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
-        <div class="one-third">
-          <div class="stat">30</div>
-          <div class="stat-value">attaque</div>
-        </div>
-
-        <div class="one-third">
-          <div class="stat">32</div>
-          <div class="stat-value">vitesse</div>
-        </div>
-
-        <div class="one-third no-border">
-          <div class="stat">100</div>
-          <div class="stat-value">défense</div>
-        </div>
-
-      </div>
-
-    </div> 
-  </div>
-  
-   <div class="wrapper">
-    <div class="clash-card wizard">
-      <div class="clash-card__image clash-card__image--wizard">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard.png" alt="wizard" />
-      </div>
-      <div class="clash-card__level clash-card__level--wizard">Level 6</div>
-      <div class="clash-card__unit-name">The Wizard</div>
-      <div class="clash-card__unit-description">
-        The Wizard is a terrifying presence on the battlefield. Pair him up with some of his fellows and cast concentrated blasts of destruction on anything, land or sky!
-      </div>
-
-      <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
-        <div class="one-third">
-          <div class="stat">5</div>
-          <div class="stat-value">attaque</div>
-        </div>
-
-        <div class="one-third">
-          <div class="stat">16</div>
-          <div class="stat-value">vitesse</div>
-        </div>
-
-        <div class="one-third no-border">
-          <div class="stat">4000</div>
-          <div class="stat-value">défense</div>
-        </div>
-
-      </div>
-
-    </div>
-  </div> -->
-  
 </div> 
     </main>
     
