@@ -1,0 +1,93 @@
+body{
+    /* background-color:#0088ff; */
+    background: rgb(0,136,255);
+    background: radial-gradient(circle, rgba(0,136,255,1) 53%, rgba(74,250,255,1) 100%);
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+  }
+  /*.tunnel{
+    width:80vmax;
+    height:80vmax;
+    background-color:#0077cc;
+    margin:auto;
+    display:flex;
+    overflow:hidden;
+    div{
+      display:flex;
+      margin:auto;
+      width:80%;
+      height:80%;
+      background-color:rgba(0,0,0,0.2);
+      animation:spin 10s linear infinite;
+    }
+  }*/
+  .tunnel{
+    width:100vmax;
+    height:100vmax;
+    margin-top:calc(50vh - 50vmax);
+    margin-left:calc(50vw - 50vmax);
+  }
+  .cercle{
+    display:flex;
+    margin:auto;
+    overflow:hidden;
+    width:80%;
+    height:80%;
+    background-color:rgba(0,0,0,0.25);
+    border-top-right-radius:50%;
+    border-bottom-right-radius:40% 50%;
+    border-bottom-left-radius:50% 60%;
+    border-top-left-radius:50% 40%;
+    animation:spin 20s linear infinite;
+  }
+  
+  #premierCercle{
+    width:97%;
+    height:97%;
+  }
+
+  @keyframes spin{
+    0%{
+      transform:rotate(0deg);
+    }
+    100%{
+      transform:rotate(360deg);
+    }
+  }
+  @keyframes zoom{
+    0%{
+      transform:scale(1);
+    }
+    100%{
+      transform:scale(1.2);
+    }
+  }
+
+
+  
+.avanceEtTourne {
+    animation: cssAnimation 5s 1 ease;
+    -webkit-animation: cssAnimation 5s 1 ease;
+    -moz-animation: cssAnimation 5s 1 ease;
+    -o-animation: cssAnimation 5s 1 ease;
+  }
+  @keyframes cssAnimation {
+    from { transform: rotate(0deg) scale(0.01) skew(1deg) translate(0px, -141px); }
+    to { transform: rotate(720deg) scale(1) skew(1deg) translate(0px); }
+  }
+  
+  
+  @-webkit-keyframes cssAnimation {
+  from { -webkit-transform: rotate(0deg) scale(0.01) skew(1deg) translate(0px, -141px); }
+  to { -webkit-transform: rotate(720deg) scale(1) skew(1deg) translate(0px); }
+  }
+  @-moz-keyframes cssAnimation {
+  from { -moz-transform: rotate(0deg) scale(0.01) skew(1deg) translate(0px, -141px); }
+  to { -moz-transform: rotate(720deg) scale(1) skew(1deg) translate(0px); }
+  }
+  @-o-keyframes cssAnimation {
+  from { -o-transform: rotate(0deg) scale(0.01) skew(1deg) translate(0px, -141px); }
+  to { -o-transform: rotate(720deg) scale(1) skew(1deg) translate(0px); }
+  }
