@@ -232,7 +232,7 @@
     </div> <!-- end clash-card fantome-->
   </div> <!-- end wrapper -->
   
-
+</div>
 </div> 
     </main>
     
