@@ -30,7 +30,7 @@
   <div class="wrapper">
     <div class="clash-card harpie">
       <div class="clash-card__image clash-card__image--harpie">
-        <img src="./vue/images/HarpieChibiAnim.gif" alt="harpie" />
+        <img src="./vue/images/gifMonstres/HarpieChibiAnim.gif" alt="harpie" />
       </div>
       
       <div class="clash-card__unit-name">Leucosies</div>
@@ -63,7 +63,7 @@
   <div class="wrapper">
     <div class="clash-card zombie">
       <div class="clash-card__image clash-card__image--zombie">
-        <img src="./vue/images/zombie.gif" alt="zombie" />
+        <img src="./vue/images/gifMonstres/zombie.gif" alt="zombie" />
       </div>
       <div class="clash-card__unit-name">Zombies</div>
       <div class="clash-card__level clash-card__level--zombie">they aren't happy</div>
@@ -95,7 +95,7 @@
   <div class="wrapper">
     <div class="clash-card fantome">
       <div class="clash-card__image clash-card__image--fantome">
-        <img src="./vue/images/fantome.gif" alt="fantom" />
+        <img src="./vue/images/gifMonstres/fantome.gif" alt="fantom" />
       </div>
       <div class="clash-card__unit-name">Fantoms</div>
       <div class="clash-card__level clash-card__level--fantome">Deadly smiling</div>
