@@ -13,9 +13,6 @@
 	</head>
 	<body>
 	
-		
-	
-	
 
 
 		<!-- Banner -->
@@ -45,7 +42,7 @@
 				<div class="inner">
 					<header class="align-center">
 						<h2>Quelques informations sur nous</h2>
-						<p>blablablabla</p>
+						<p> Notre équipe se compose de 7 humains fous spécialisés dans le développement web, de jeu vidéo et de graphisme.Notre objectif est de produire un jeu divertissant, vous faisant voyager dans une autre dimension.</p>
 					</header>
 					
 				</div>
@@ -55,37 +52,58 @@
 			<section id="two" class="wrapper style1 special">
 				<div class="inner">
 					<header>
-						<h2>Ipsum Feugiat</h2>
-						<p>Semper suscipit posuere apede</p>
+						<h2 class="titreU">Voici les parents de U.M.S.I</h2>
+					
 					</header>
 					<div class="flex flex-4">
 						<div class="box person">
 							<div class="image round">
 								<img src="./vue/images/pic03.jpg" alt="Person 1" />
 							</div>
-							<h3>Magna</h3>
-							<p>Cipdum dolor</p>
+							<h3>Minh-Quân BUI</h3>
+							<p>Developpeur du jeu</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
 								<img src="./vue/images/pic04.jpg" alt="Person 2" />
 							</div>
-							<h3>Ipsum</h3>
-							<p>Vestibulum comm</p>
+							<h3>Mallory GACK</h3>
+							<p>Developpeur WEB et du jeu</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
 								<img src="./vue/images/pic05.jpg" alt="Person 3" />
 							</div>
-							<h3>Tempus</h3>
-							<p>Fusce pellentes</p>
+							<h3>Anthony REINO JOAQUIM</h3>
+							<p>Developpeur du jeu</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
 								<img src="./vue/images/pic06.jpg" alt="Person 4" />
 							</div>
-							<h3>Dolore</h3>
-							<p>Praesent placer</p>
+							<h3>Damien HUANG</h3>
+							<p>Developpeur du jeu</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="./vue/images/pic06.jpg" alt="Person 4" />
+							</div>
+							<h3>Marine MARSAL</h3>
+							<p>Artiste</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="./vue/images/pic06.jpg" alt="Person 4" />
+							</div>
+							<h3>Tiffany HAIDARALY</h3>
+							<p>Developpeur WEB</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="./vue/images/pic06.jpg" alt="Person 4" />
+							</div>
+							<h3>Marie-Amélie DUGRAIS</h3>
+							<p>Developpeur WEB et chef de projet</p>
 						</div>
 					</div>
 				</div>

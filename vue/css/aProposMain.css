@@ -21,6 +21,7 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
+		background-color: #05347c;
 	}
 
 	body {
@@ -1669,6 +1670,7 @@
 	h2 {
 		font-size: 1.75em;
 		font-weight: 100;
+		color:rgba(74,250,255,1);
 	}
 
 	h3 {
@@ -1794,6 +1796,7 @@
 			section.wrapper header h2, article.wrapper header h2 {
 				font-size: 2.75em;
 				margin: 0 0 .5em 0;
+				color: #4afaff;
 			}
 
 			section.wrapper header p, article.wrapper header p {
@@ -1858,7 +1861,7 @@
 		}
 
 	header p {
-		color: #bbb;
+		color: white;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -1871,6 +1874,10 @@
 	header h3 + p {
 		font-size: 1.1em;
 		margin-top: -0.8em;
+	}
+
+	.titreU{
+		color:rgba(74,250,255,1);
 	}
 
 	header h4 + p,
@@ -2935,7 +2942,6 @@
 	#banner {
 		padding: 12em 0 10em 0;
 		background: rgb(1,18,59);
-		background: radial-gradient(circle, rgba(1,18,59,1) 10%, rgba(74,250,255,1) 51%, rgba(5,52,124,1) 80%);
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
