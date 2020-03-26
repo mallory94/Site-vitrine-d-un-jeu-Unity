@@ -44,7 +44,7 @@
         <div class="centrer">
           <div class="one-third">
             <div class="stat">❤️</div>
-            <div class="stat-value">vie</div>
+            <div class="stat-value">santé</div>
           </div>
 
           <div class="one-third">
