@@ -40,21 +40,22 @@
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--harpie clearfix">
-        <div class="one-third">
-          <div class="stat">20</div>
-          <div class="stat-value">attaque</div>
-        </div>
+        <div class="centrer">
+          <div class="one-third">
+            <div class="stat">20</div>
+            <div class="stat-value">attaque</div>
+          </div>
 
-        <div class="one-third">
-          <div class="stat">16</div>
-          <div class="stat-value">vitesse</div>
-        </div>
+          <div class="one-third">
+            <div class="stat">16</div>
+            <div class="stat-value">vitesse</div>
+          </div>
 
-        <div class="one-third no-border">
-          <div class="stat">150</div>
-          <div class="stat-value">défense</div>
+          <div class="one-third no-border">
+            <div class="stat">150</div>
+            <div class="stat-value">défense</div>
+          </div>
         </div>
-
       </div>
 
     </div> <!-- end clash-card harpie-->
@@ -72,21 +73,22 @@
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--zombie clearfix">
-        <div class="one-third">
-          <div class="stat">25</div>
-          <div class="stat-value">attaque</div>
-        </div>
+        <div class="centrer">
+          <div class="one-third">
+            <div class="stat">25</div>
+            <div class="stat-value">attaque</div>
+          </div>
 
-        <div class="one-third">
-          <div class="stat">24</div>
-          <div class="stat-value">vitesse</div>
-        </div>
+          <div class="one-third">
+            <div class="stat">24</div>
+            <div class="stat-value">vitesse</div>
+          </div>
 
-        <div class="one-third no-border">
-          <div class="stat">300</div>
-          <div class="stat-value">défense</div>
+          <div class="one-third no-border">
+            <div class="stat">300</div>
+            <div class="stat-value">défense</div>
+          </div>
         </div>
-
       </div>
 
     </div> <!-- end clash-card zombie-->
@@ -104,21 +106,22 @@
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
-        <div class="one-third">
-          <div class="stat">2</div>
-          <div class="stat-value">attaque</div>
-        </div>
+        <div class="centrer">
+          <div class="one-third">
+            <div class="stat">2</div>
+            <div class="stat-value">attaque</div>
+          </div>
 
-        <div class="one-third">
-          <div class="stat">12</div>
-          <div class="stat-value">vitesse</div>
-        </div>
+          <div class="one-third">
+            <div class="stat">12</div>
+            <div class="stat-value">vitesse</div>
+          </div>
 
-        <div class="one-third no-border">
-          <div class="stat">2250</div>
-          <div class="stat-value">défense</div>
+          <div class="one-third no-border">
+            <div class="stat">2250</div>
+            <div class="stat-value">défense</div>
+          </div>
         </div>
-
       </div>
 
     </div> <!-- end clash-card fantome-->
@@ -137,28 +140,29 @@
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
-        <div class="one-third">
-          <div class="stat">❤️</div>
-          <div class="stat-value">vie</div>
-        </div>
+        <div class="centrer">
+          <div class="one-third">
+            <div class="stat">❤️</div>
+            <div class="stat-value">vie</div>
+          </div>
 
-        <div class="one-third">
-          <div class="stat">➕➕➕</div>
-          <div class="stat-value">vitesse</div>
-        </div>
+          <div class="one-third">
+            <div class="stat">➕➕➕</div>
+            <div class="stat-value">vitesse</div>
+          </div>
 
-        <div class="one-third no-border">
-          <div class="stat">🛡️</div>
-          <div class="stat-value">défense</div>
+          <div class="one-third no-border">
+            <div class="stat">🛡️</div>
+            <div class="stat-value">défense</div>
+          </div>
         </div>
-
       </div>
 
     </div> <!-- end clash-card fantome-->
   </div> <!-- end wrapper -->
 
   <div class="wrapper">
-    <div class="clash-card fantome">
+    <div class="clash-card">
       <div class="clash-card__image clash-card__image--fantome">
         <img src="./vue/images/gifMonstres/robot2.gif" alt="mediatron" />
       </div>
@@ -169,21 +173,22 @@
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
-        <div class="one-third">
-          <div class="stat">❤️❤️</div>
-          <div class="stat-value">santé</div>
-        </div>
+        <div class="centrer">
+          <div class="one-third">
+            <div class="stat">❤️❤️</div>
+            <div class="stat-value">santé</div>
+          </div>
+          
+          <div class="one-third">
+            <div class="stat">➕➕</div>
+            <div class="stat-value">vitesse</div>
+          </div>
 
-        <div class="one-third">
-          <div class="stat">➕➕</div>
-          <div class="stat-value">vitesse</div>
+          <div class="one-third no-border">
+            <div class="stat">🛡️🛡️</div>
+            <div class="stat-value">défense</div>
+          </div>
         </div>
-
-        <div class="one-third no-border">
-          <div class="stat">🛡️🛡️</div>
-          <div class="stat-value">défense</div>
-        </div>
-
       </div>
 
     </div> <!-- end clash-card fantome-->
@@ -201,21 +206,22 @@
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
-        <div class="one-third">
-          <div class="stat">❤️❤️❤️</div>
-          <div class="stat-value">santé</div>
-        </div>
+        <div class="centrer">
+          <div class="one-third">
+            <div class="stat">❤️❤️</div>
+            <div class="stat-value">santé</div>
+          </div>
 
-        <div class="one-third">
-          <div class="stat">➕</div>
-          <div class="stat-value">vitesse</div>
-        </div>
+          <div class="one-third">
+            <div class="stat">➕</div>
+            <div class="stat-value">vitesse</div>
+          </div>
 
-        <div class="one-third no-border">
-          <div class="stat">🛡️🛡️🛡️</div>
-          <div class="stat-value">défense</div>
+          <div class="one-third no-border">
+            <div class="stat">🛡️🛡️🛡️</div>
+            <div class="stat-value">défense</div>
+          </div>
         </div>
-
       </div>
 
     </div> <!-- end clash-card fantome-->
