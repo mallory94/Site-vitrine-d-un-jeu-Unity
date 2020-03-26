@@ -42,7 +42,7 @@
 				<div class="inner">
 					<header class="align-center">
 						<h2>Quelques informations sur nous</h2>
-						<p> Notre équipe se compose de 7 humains fous spécialisés dans le développement web, de jeu vidéo et de graphisme.Notre objectif est de produire un jeu divertissant, vous faisant voyager dans une autre dimension.</p>
+						<p> Notre équipe se compose de 7 humains fous spécialisés dans le développement web, de jeu vidéo et de graphisme. Notre objectif est de produire un jeu divertissant, vous faisant voyager dans une autre dimension.</p>
 					</header>
 					
 				</div>
@@ -122,16 +122,7 @@
 				<div class="inner">
 					<div class="flex">
 						<div class="copyright">
-							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-						</div>
-						<ul class="icons">
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
-							<li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
-							<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
-						</ul>
-					</div>
+							
 				</div>
 			</footer>
 
