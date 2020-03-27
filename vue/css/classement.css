@@ -11,6 +11,8 @@
 #titre {
     position: absolute;
     left: 50%;
+    color:#4AFAFF;
+    
 }
 
 #texteInterneTitre{
@@ -86,6 +88,10 @@ div.tableauClassement {
 .divTableCell, .divTableHead { 
     display: table-cell;
 }
+.divTableCell, .divTableHead, footer{
+    font-family: 'Luckiest Guy', cursive;
+}
+
 .divTableHeading { 
     display: table-header-group;
 }
@@ -96,16 +102,25 @@ div.tableauClassement {
     display: table-row-group;
 }
 
+.divTableCell {
+    color : rgb(208, 208, 208);
+}
 
 #main {
     width : 80%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #05347C;
 }
 
+
+body{
+    background-color: #01123B;
+}
 
 footer{
     padding-top: 5em;
     text-align: center;
     font-size:25px;
+    color : rgb(70, 192, 248);
 }
