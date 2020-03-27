@@ -1,3 +1,0 @@
-function cheh(){
-    alert("Cheh");
-}
