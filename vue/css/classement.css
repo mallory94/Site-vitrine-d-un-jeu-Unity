@@ -1,4 +1,41 @@
+
+.titre {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+.categorieClassement {
+    margin-left :40px;
+}
+
 footer{
     padding-top: 5em;
     text-align: center;
 }
+
+
+div.tableauClassement {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .divTable.tableauClassement .divTableCell, .divTable.tableauClassement .divTableHead {
+    border: 0px solid #AAAAAA;
+    padding: 10px 10px;
+  }
+  .divTable.tableauClassement .divTableHeading {
+    background: #DDDDDD;
+  }
+  .divTable.tableauClassement .divTableHeading .divTableHead {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  /* DivTable.com */
+  .divTable{ display: table; }
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}
