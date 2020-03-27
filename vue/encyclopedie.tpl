@@ -36,7 +36,7 @@
       <div class="clash-card__image  clash-card__image--minitron">
         <img src="./vue/images/gifMonstres/robinet.gif" alt="minitron" />
       </div>
-      <div class="clash-card__unit-name">minitron</div>
+      <div class="clash-card__unit-name">Minitron</div>
       <div class="clash-card__level clash-card__level--minitron">The small faster</div>
       <div class="clash-card__unit-description">
       Digne successeur de BB-8, rien ne lui échappe, sa rapidité est un atout incontestable. Et comme on dit : tout ce qui est petit est mignon mais tout ce qui est rapide est min...itron.
@@ -69,10 +69,10 @@
       <div class="clash-card__image clash-card__image--mediatron clash-card__image--rose_peche">
         <img src="./vue/images/gifMonstres/robot2.gif" alt="mediatron" />
       </div>
-      <div class="clash-card__unit-name">mediatron</div>
+      <div class="clash-card__unit-name">Mediatron</div>
       <div class="clash-card__level clash-card__level--mediatron">The versatility robot</div>
       <div class="clash-card__unit-description">
-      Malgré son apparence élancée et maigrichonne, sa polyvalence est néanmoins sa plus grand capacité, cela fera alors de lui : un des ennemis les plus redoutable.
+      Malgré son apparence élancée et maigrichonne, sa polyvalence est néanmoins sa plus grand capacité, cela fera alors de lui : un de vos ennemis les plus redoutable.
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--mediatron clearfix">
