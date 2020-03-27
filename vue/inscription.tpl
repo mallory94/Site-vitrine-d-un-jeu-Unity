@@ -18,12 +18,7 @@
             <div class="cercle">
               <div class="cercle">
                 <div class="cercle">
-                  <!-- <div class="cercle">
-                    <div class="cercle">
-                      <div class="cercle">
-                      </div>
-                    </div>
-                  </div> -->
+
                 </div>
               </div>
             </div>
@@ -33,7 +28,7 @@
     </div>
   </div>
 </div>
-<div id="id01" class="modal avanceEtTourne">
+<div id="id01" class="modal">
 <div id="titreInscription" class="majuscule centrer">S'inscrire</div>
   <form class="modal-content" action="index.php?controleur=utilisateur&action=verifInscription" method="post">
     <div class="container">

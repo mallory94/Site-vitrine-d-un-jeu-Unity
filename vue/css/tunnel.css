@@ -65,29 +65,3 @@ body{
     }
   }
 
-
-  
-.avanceEtTourne {
-    animation: cssAnimation 5s 1 ease;
-    -webkit-animation: cssAnimation 5s 1 ease;
-    -moz-animation: cssAnimation 5s 1 ease;
-    -o-animation: cssAnimation 5s 1 ease;
-  }
-  @keyframes cssAnimation {
-    from { transform: rotate(0deg) scale(0.01) skew(1deg) translate(0px, -141px); }
-    to { transform: rotate(720deg) scale(1) skew(1deg) translate(0px); }
-  }
-  
-  
-  @-webkit-keyframes cssAnimation {
-  from { -webkit-transform: rotate(0deg) scale(0.01) skew(1deg) translate(0px, -141px); }
-  to { -webkit-transform: rotate(720deg) scale(1) skew(1deg) translate(0px); }
-  }
-  @-moz-keyframes cssAnimation {
-  from { -moz-transform: rotate(0deg) scale(0.01) skew(1deg) translate(0px, -141px); }
-  to { -moz-transform: rotate(720deg) scale(1) skew(1deg) translate(0px); }
-  }
-  @-o-keyframes cssAnimation {
-  from { -o-transform: rotate(0deg) scale(0.01) skew(1deg) translate(0px, -141px); }
-  to { -o-transform: rotate(720deg) scale(1) skew(1deg) translate(0px); }
-  }
