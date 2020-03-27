@@ -110,17 +110,7 @@ function pseudoInexistant($pseudo)
 
 
 
-function getListeCategories()
-{
-    require_once("./modele/scoreBD.php");
-    return getListeCategoriesBD();
-}
 
-function getListeScores(&$listeCategories)
-{
-    require_once("./modele/scoreBD.php");
-    return getListeScoresBD($listeCategories);
-}
 
 
 
@@ -218,13 +208,13 @@ function getlogingame()
 
 function getListeCategories()
 {
-    require("./Modele/scoreBD.php");
+    require_once("./Modele/scoreBD.php");
     return getListeCategoriesBD();
 }
 
 function getListeScores(&$listeCategories)
 {
-    require("./Modele/scoreBD.php");
+    require_once("./Modele/scoreBD.php");
     return getListeScoresBD($listeCategories);
 }
 
@@ -244,4 +234,4 @@ function getListeScores(&$listeCategories)
     /* API FIN */
 
 ?>
-?>
+
