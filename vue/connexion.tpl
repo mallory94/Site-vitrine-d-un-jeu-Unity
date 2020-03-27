@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel = "stylesheet" type="text/css" href="./vue/css/connexion.css"/>
   <link rel = "stylesheet" type="text/css" href="./vue/css/tunnel.css"/>
-  <script src="./vue/js/connexion.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -34,7 +33,7 @@
     </div>
   </div>
 </div>
-<div id="id01" class="modal avanceEtTourne">
+<div id="id01" class="modal">
   <div class="majuscule" id="titre" >se connecter</div>
     <form class="modal-content animate" action="./index.php?controleur=utilisateur&action=verifConnexion" method="post">
     

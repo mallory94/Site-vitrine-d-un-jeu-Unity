@@ -11,6 +11,8 @@
 #titre {
     position: absolute;
     left: 50%;
+    color:#4AFAFF;
+    
 }
 
 #texteInterneTitre{
@@ -26,10 +28,17 @@
     top: 0%;
     transform: rotate(18deg)  scaleX(-1);
     z-index: 3;
-    transition: left 10s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition: left 5s linear;
     left: -10%;
 }
 
+.avanceVersDroite {
+    transform: rotate(18deg)  scaleX(-1);
+}
+
+.avanceVersGauche {
+    transform: rotate(-18deg)  scaleX(1)!important;
+}
 
 div#texteInterneTitre * {
     display: initial;
@@ -48,10 +57,7 @@ div#texteInterneTitre * {
     margin-left :40px;
 }
 
-footer{
-    padding-top: 5em;
-    text-align: center;
-}
+
 
 
 div.tableauClassement {
@@ -82,6 +88,10 @@ div.tableauClassement {
 .divTableCell, .divTableHead { 
     display: table-cell;
 }
+.divTableCell, .divTableHead, footer{
+    font-family: 'Luckiest Guy', cursive;
+}
+
 .divTableHeading { 
     display: table-header-group;
 }
@@ -92,6 +102,25 @@ div.tableauClassement {
     display: table-row-group;
 }
 
+.divTableCell {
+    color : rgb(208, 208, 208);
+}
+
+#main {
+    width : 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #05347C;
+}
 
 
+body{
+    background-color: #01123B;
+}
 
+footer{
+    padding-top: 5em;
+    text-align: center;
+    font-size:25px;
+    color : rgb(70, 192, 248);
+}
