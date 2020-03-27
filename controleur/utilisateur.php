@@ -5,7 +5,6 @@
 
     function inscrire($infos) {
         require_once ("./modele/utilisateurBD.php");
-        var_dump($infos);
         inscrireBD($infos, "Joueur");
     }
 
@@ -195,5 +194,19 @@
 
 
 
+
+    
+    /* DEBUT API PRIVEE */
+
+
+    function enregistrerNouveauScore(){
+        
+    }
+
+    function enregistrerNouveauCompte(){
+
+    }
+
+    /* API FIN */
 
 ?>

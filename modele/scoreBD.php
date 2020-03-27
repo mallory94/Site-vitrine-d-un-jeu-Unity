@@ -249,4 +249,10 @@ function creerTopicsBD($idT, $nomT, $texte){
 	$creer->execute();
 }
 
+
+
+function enregistrerNouveauScoreBD($IdJoueur, $IdNiveau, $ernierScore, $nbMonstresTues, $tpsJeu, $eilleurScore){
+	
+}
+
 ?>
