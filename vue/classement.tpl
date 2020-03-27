@@ -6,11 +6,21 @@
         <title>Classement</title>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./vue/css/classementSchnaps.css">
         <link rel="stylesheet" href="./vue/css/classement.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./vue/js/minitronRush.js"></script>
+        
     </head>
+<header>
+<div class="titreEtMinitron">
+    <div id="titre">
+        <div id="texteInterneTitre"><div class="lettresDevant">Cla</div><div class="lettresDerriere">sse</div><div class="lettresDevant">ment</div></div>
+    </div>
+    <img id="minitron" src="./vue/images/crop-img/crop-minitron.gif" alt="minitron" />
+</div>
+</header>
 <body>
-    <div class="titre">Classement</div>
+    
     <main id="main" role="main" class="main">
     <div class="divTable tableauClassement">
         <div class="divTableHeading">

@@ -1,10 +1,48 @@
 
-.titre {
+.titreEtMinitron {
     font-family: 'Luckiest Guy', cursive;
     font-size: 80px;
-    text-align: center;
+    text-align: center;  
+    height: fit-content;
+    border-bottom: solid 1px black;
+    overflow: hidden;
 }
 
+#titre {
+    position: absolute;
+    left: 50%;
+}
+
+#texteInterneTitre{
+    position: relative;
+    left: -50%;
+}
+
+#minitron{
+    position: relative;
+    width:auto;
+    height:120px;
+    display: block;
+    top: 0%;
+    transform: rotate(18deg)  scaleX(-1);
+    z-index: 3;
+    transition: left 10s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    left: -10%;
+}
+
+
+div#texteInterneTitre * {
+    display: initial;
+}
+
+.lettresDevant{
+    z-index: 4;
+    position: relative;
+}
+
+.lettresDerriere{
+    z-index: 2;
+}
 
 .categorieClassement {
     margin-left :40px;
@@ -32,10 +70,28 @@ div.tableauClassement {
     font-weight: bold;
   }
   /* DivTable.com */
-  .divTable{ display: table; }
-  .divTableRow { display: table-row; }
-  .divTableHeading { display: table-header-group;}
-  .divTableCell, .divTableHead { display: table-cell;}
-  .divTableHeading { display: table-header-group;}
-  .divTableFoot { display: table-footer-group;}
-  .divTableBody { display: table-row-group;}
+.divTable{
+    display: table;
+    }
+.divTableRow { 
+    display: table-row; 
+}
+.divTableHeading { 
+    display: table-header-group;
+}
+.divTableCell, .divTableHead { 
+    display: table-cell;
+}
+.divTableHeading { 
+    display: table-header-group;
+}
+.divTableFoot { 
+    display: table-footer-group;
+}
+.divTableBody { 
+    display: table-row-group;
+}
+
+
+
+
