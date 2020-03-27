@@ -1,7 +1,11 @@
-function menu(){
-  var menu = document.querySelector(".menu");
-  var links = document.querySelector(".links");
 
+var menu;
+var links;
+
+
+$( function() {
+  menu = document.querySelector(".menu");
+  links = document.querySelector(".links");
 
   menu.addEventListener("click",function(e){
     e.preventDefault();
@@ -13,5 +17,11 @@ function menu(){
       links.classList.remove("active_links");
     }
   });
-}
-menu();
+
+  setTimeout(function(){
+    $("#menu").click();
+  }, 1500);
+
+
+
+});

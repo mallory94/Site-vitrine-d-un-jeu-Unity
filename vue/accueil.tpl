@@ -5,6 +5,11 @@
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Accueil</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="vue/css/knacss.css" media="all">
     <link rel="stylesheet" href="vue/css/styles.css" media="all">
     
@@ -22,7 +27,7 @@
       
 
       <div class="container">
-          <ul class="menu">
+          <ul id="menu" class="menu">
             <li></li>
             <li></li>
             <li></li>
@@ -53,16 +58,8 @@
             ?>
           </ul>
         </div>
-      <script type="text/javascript" src="vue/js/testMenu.js"></script>
-    <!-- <nav id="navigation" role="navigation">
-      <ul class="pam">
-        <li class="pam inbl">Picon bière</li>
-        <li class="pam inbl">Melfor</li>
-        <li class="pam inbl">Carola</li>
-        <li class="pam inbl">Kuglof</li>
-        <li class="pam inbl">Wurscht</li>
-      </ul>
-    </nav> -->
+      <script type="text/javascript" src="vue/js/menu.js"></script>
+
   </header>
 
   <div class="espace-vide"></div>
