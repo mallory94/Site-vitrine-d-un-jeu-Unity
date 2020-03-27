@@ -2,16 +2,30 @@
     function inscrireBD($infos, $statut){
         require ("./modele/connect.php");
         $sql = 'INSERT INTO compte (pseudo, mail, mdp, statut) VALUES ( ? , ? , ? , ?)';
+
         try {
-            var_dump($type);
             $commande = $pdo->prepare($sql);
             $bool = $commande->execute(array($infos['pseudo'], $infos['email'] , $infos['mdp'], $statut));
+            inscrireJoueurBD($infos['pseudo']);
         }
         catch (PDOException $e) {
             echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
             die();
         }
         return ;
+    }
+
+    function inscrireJoueurBD($pseudo){
+        require ("./modele/connect.php");
+        $sql = 'INSERT INTO joueur (IdJoueur , derniereUtilisation, nbUtilisation) VALUES ((SELECT IdCompte FROM COMPTE WHERE pseudo=?), NULL, 0)';
+        try {
+            $commande = $pdo->prepare($sql);
+            $bool = $commande->execute(array($pseudo));
+        }
+        catch (PDOException $e) {
+            return($e);
+            die();
+        }
     }
 
     function setBConnectBD($pseudo, $boolean){
