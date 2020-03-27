@@ -18,6 +18,7 @@
 <div class="website">
     <header class="header" role="banner">
     <h1>ENCYCLOPEDIE</h1>
+    <h1> Venez découvrir l'univers d'U.M.S.I</h1>
     </header>
 
     
@@ -29,7 +30,6 @@
 <div id='stars'></div>
 <div id='stars2'></div>
 <div id='stars3'></div>
-<div id='title'>
 
 <div class="wrapper">
     <div class="clash-card fantome robot1">
@@ -37,9 +37,9 @@
         <img src="./vue/images/gifMonstres/robinet.gif" alt="minitron" />
       </div>
       <div class="clash-card__unit-name">minitron</div>
-      <div class="clash-card__level clash-card__level--minitron">sous-titre</div>
+      <div class="clash-card__level clash-card__level--minitron">The small faster</div>
       <div class="clash-card__unit-description">
-        Description à remplir :o
+      Digne successeur de BB-8, rien ne lui échappe, sa rapidité est un atout incontestable. Et comme on dit : tout ce qui est petit est mignon mais tout ce qui est rapide est min...itron.
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--minitron clearfix">
@@ -70,9 +70,9 @@
         <img src="./vue/images/gifMonstres/robot2.gif" alt="mediatron" />
       </div>
       <div class="clash-card__unit-name">mediatron</div>
-      <div class="clash-card__level clash-card__level--mediatron">sous-titre</div>
+      <div class="clash-card__level clash-card__level--mediatron">The versatility robot</div>
       <div class="clash-card__unit-description">
-        Description à remplir :o
+      Malgré son apparence élancée et maigrichonne, sa polyvalence est néanmoins sa plus grand capacité, cela fera alors de lui : un des ennemis les plus redoutable.
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--mediatron clearfix">
@@ -103,9 +103,9 @@
         <img src="./vue/images/gifMonstres/robot3.gif" alt="BF-Bot" />
       </div>
       <div class="clash-card__unit-name">BF-Bot</div>
-      <div class="clash-card__level clash-card__level--BF-Bot">sous-titre</div>
+      <div class="clash-card__level clash-card__level--BF-Bot">The unbreakable brute</div>
       <div class="clash-card__unit-description">
-        Description à remplir :o
+      Derrière sa carapace de fer se cache une véritable machine de guerre. Sa plus grande faiblesse est néanmoins sa vitesse. Même si sa défense est votre plus grande méfiance. 
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--BF-Bot clearfix">
