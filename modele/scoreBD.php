@@ -35,7 +35,7 @@ function getListeCategoriesBD()
 
 
 //prend en parametre un tableau que la fonction rempli avec le nom des colonnes
-/*
+
 function getListeScoresBD(){
 	require ("./modele/connect.php"); 
 
@@ -67,33 +67,9 @@ function getListeScoresBD(){
 		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
 		die(); 
 	}
-}*/
-//version Damien
-function getListeScoresBD(&$listeCategories)
-{
-	require("./Modele/connect.php");
-
-
-	$sql = "SELECT c.pseudo as Pseudo, niv.nomNiv as Niveau, s.meilleurScore as MeilleurScore, s.nbMonstresTues as nbmonst , s.tpsJeu, s.dernierScore FROM ((score s INNER JOIN joueur j ON s.IdJoueur = j.IdJoueur) inner join niveau niv on s.IdNiveau=niv.IdNiveau ) inner join compte c on c.IdCompte=j.IdJoueur ORDER BY s.meilleurScore DESC";
-	$resultat = array();
-
-	try {
-		$commande = $pdo->prepare($sql);
-		$bool = $commande->execute();
-		//var_dump($bool);
-		if ($bool) {
-			$resultat = $commande->fetchAll(PDO::FETCH_ASSOC);
-			$listeCategories = array("Pseudo", "Niveau", "Meilleur Score", "nbMonstresTues", "Temps de jeu total", "Dernier score enregistré");
-			//var_dump($resultat);
-			return $resultat;
-		} else {
-			return array();
-		}
-	} catch (PDOException $e) {
-		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
-		die();
-	}
 }
+
+
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -275,5 +251,4 @@ function enregistrerNouveauScoreBD($IdJoueur, $IdNiveau, $ernierScore, $nbMonstr
 	
 }
 
-?>
 ?>
