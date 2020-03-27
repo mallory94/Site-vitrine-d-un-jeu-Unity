@@ -3,33 +3,31 @@
 
 
 
-function getListeCategoriesBD(){
-	require ("./modele/connect.php"); 
+function getListeCategoriesBD()
+{
+	require("./modele/connect.php");
 
-    $sql = "SELECT column_name 
+	$sql = "SELECT column_name 
     FROM information_schema.columns 
     WHERE table_name='score' 
     AND table_schema='base-pjs4'";
-    
-    $resultat= array();
 
-	try{
+	$resultat = array();
+
+	try {
 		$commande = $pdo->prepare($sql);
 		$bool = $commande->execute();
-		
-		if($bool){
+
+		if ($bool) {
 			$resultat = $commande->fetchAll(PDO::FETCH_ASSOC);
 			//var_dump($resultat);
 			return $resultat;
-		}
-		else{
+		} else {
 			return array();
 		}
-
-	}
-	catch (PDOException $e) {
+	} catch (PDOException $e) {
 		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
-		die(); 
+		die();
 	}
 }
 
@@ -37,6 +35,7 @@ function getListeCategoriesBD(){
 
 
 //prend en parametre un tableau que la fonction rempli avec le nom des colonnes
+/*
 function getListeScoresBD(){
 	require ("./modele/connect.php"); 
 
@@ -68,166 +67,186 @@ function getListeScoresBD(){
 		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
 		die(); 
 	}
+}*/
+//version Damien
+function getListeScoresBD(&$listeCategories)
+{
+	require("./Modele/connect.php");
+
+
+	$sql = "SELECT c.pseudo as Pseudo, niv.nomNiv as Niveau, s.meilleurScore as MeilleurScore, s.nbMonstresTues as nbmonst , s.tpsJeu, s.dernierScore FROM ((score s INNER JOIN joueur j ON s.IdJoueur = j.IdJoueur) inner join niveau niv on s.IdNiveau=niv.IdNiveau ) inner join compte c on c.IdCompte=j.IdJoueur ORDER BY s.meilleurScore DESC";
+	$resultat = array();
+
+	try {
+		$commande = $pdo->prepare($sql);
+		$bool = $commande->execute();
+		//var_dump($bool);
+		if ($bool) {
+			$resultat = $commande->fetchAll(PDO::FETCH_ASSOC);
+			$listeCategories = array("Pseudo", "Niveau", "Meilleur Score", "nbMonstresTues", "Temps de jeu total", "Dernier score enregistré");
+			//var_dump($resultat);
+			return $resultat;
+		} else {
+			return array();
+		}
+	} catch (PDOException $e) {
+		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
+		die();
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 //jsp si c'est utile 
-function getTopics($id) {
-	require ("./modele/connect.php"); 
+function getTopics($id)
+{
+	require("./modele/connect.php");
 
-    $sql = "SELECT * 
+	$sql = "SELECT * 
 			FROM topics 
-			WHERE IdTopics =:id";	
-		
-    $resultat= array(); 
+			WHERE IdTopics =:id";
 
-	try{
+	$resultat = array();
+
+	try {
 		$commande = $pdo->prepare($sql);
 
 		$commande->bindParam(':id', $id);
 		$bool = $commande->execute();
 
-		if($bool) {
+		if ($bool) {
 			$resultat = $commande->fetchAll(PDO::FETCH_ASSOC);
 		}
-	
-	}
-	catch (PDOException $e) {
+	} catch (PDOException $e) {
 		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
-		die(); 
+		die();
 	}
 
-    return $resultat[0];
+	return $resultat[0];
 }
 
 
 //renvoit la liste de tous les noms des topics
-function topicsBD() {
-	require ("./modele/connect.php"); 
-	$res= array(); 
-		
-	$sql ="SELECT distinct nomT from topics";
-		
-		$reponse = $pdo->query($sql);
-		while ($donnees = $reponse->fetch())
-		{
-			$res[]=$donnees['nomT'];
-		}
-		$reponse->closeCursor();
-		return $res;
-	}
-	
-//liste des tourelles 
-function getListeTourellesBD(){
-	require ("./modele/connect.php"); 
+function topicsBD()
+{
+	require("./modele/connect.php");
+	$res = array();
 
-    $sql = "SELECT IdTourelles as Tourelles , imgTourelle as Image, nomTourelles as Nom, degats as Degats, vitesseT as Vitesse
+	$sql = "SELECT distinct nomT from topics";
+
+	$reponse = $pdo->query($sql);
+	while ($donnees = $reponse->fetch()) {
+		$res[] = $donnees['nomT'];
+	}
+	$reponse->closeCursor();
+	return $res;
+}
+
+//liste des tourelles 
+function getListeTourellesBD()
+{
+	require("./modele/connect.php");
+
+	$sql = "SELECT IdTourelles as Tourelles , imgTourelle as Image, nomTourelles as Nom, degats as Degats, vitesseT as Vitesse
 			FROM tourelles";
-    
-	$resultat= array();
-	
-	try{
+
+	$resultat = array();
+
+	try {
 		$commande = $pdo->prepare($sql);
 		$bool = $commande->execute();
-		
-		if($bool){
+
+		if ($bool) {
 			$resultat = $commande->fetchAll(PDO::FETCH_ASSOC);
 			var_dump($resultat);
 			return $resultat;
-		}
-		else{
+		} else {
 			return array();
 		}
-
-	}
-	catch (PDOException $e) {
+	} catch (PDOException $e) {
 		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
-		die(); 
+		die();
 	}
 }
 
 //liste des monstres
-function getListeMonstresBD(){
-	require ("./modele/connect.php"); 
+function getListeMonstresBD()
+{
+	require("./modele/connect.php");
 
-    $sql = "SELECT IdMonstre as Monstre, imgMonstre as Image, nomMonstre as Nom, typeMonstre as Type, vitesseM as Vitesse
+	$sql = "SELECT IdMonstre as Monstre, imgMonstre as Image, nomMonstre as Nom, typeMonstre as Type, vitesseM as Vitesse
 			FROM monstres";
-    
-	$resultat= array();
-	
-	try{
+
+	$resultat = array();
+
+	try {
 		$commande = $pdo->prepare($sql);
 		$bool = $commande->execute();
-		
-		if($bool){
+
+		if ($bool) {
 			$resultat = $commande->fetchAll(PDO::FETCH_ASSOC);
 			var_dump($resultat);
 			return $resultat;
-		}
-		else{
+		} else {
 			return array();
 		}
-
-	}
-	catch (PDOException $e) {
+	} catch (PDOException $e) {
 		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
-		die(); 
+		die();
 	}
 }
 
 //liste des niveaux
-function getListeNiveauBD(){
-	require ("./modele/connect.php"); 
+function getListeNiveauBD()
+{
+	require("./modele/connect.php");
 
-    $sql = "SELECT IdNiveau as Niveau, imgNiv as Image, nbMonstres as NombreMonstres, nomNiv as Nom
+	$sql = "SELECT IdNiveau as Niveau, imgNiv as Image, nbMonstres as NombreMonstres, nomNiv as Nom
 			FROM niveau";
-    
-	$resultat= array();
-	
-	try{
+
+	$resultat = array();
+
+	try {
 		$commande = $pdo->prepare($sql);
 		$bool = $commande->execute();
-		
-		if($bool){
+
+		if ($bool) {
 			$resultat = $commande->fetchAll(PDO::FETCH_ASSOC);
 			var_dump($resultat);
 			return $resultat;
-		}
-		else{
+		} else {
 			return array();
 		}
-
-	}
-	catch (PDOException $e) {
+	} catch (PDOException $e) {
 		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
-		die(); 
+		die();
 	}
 }
 
 //fonction qui insère un nouveau test dans la base de données
 // function insererMAJ($id_admin,$titre_maj){
-	// require ("./modele/connect.php"); 
-	// $resultat_reponse= array(); 
-	// $date = date("Y-m-d");
-	// $select_reponse="INSERT INTO maj (IdMAJ,description,titre,dateM,IdAdmin) VALUES (0,:,:num_grpe,:titre_test,:date,1)"; 
+// require ("./modele/connect.php"); 
+// $resultat_reponse= array(); 
+// $date = date("Y-m-d");
+// $select_reponse="INSERT INTO maj (IdMAJ,description,titre,dateM,IdAdmin) VALUES (0,:,:num_grpe,:titre_test,:date,1)"; 
 ////	ici la valeur 0 permet d'auto incrémenter dans la colonne id_test
-	// $cde_question = $pdo->prepare($select_reponse);
-		
-	// $b_question = $cde_question->execute(array(
-	// 'id_prof' => $id_prof,
-	// 'num_grpe' => $num_grpe,
-	// 'titre_test' => $titre_test,
-	// 'date' => $date
-	// )
-	// );
+// $cde_question = $pdo->prepare($select_reponse);
+
+// $b_question = $cde_question->execute(array(
+// 'id_prof' => $id_prof,
+// 'num_grpe' => $num_grpe,
+// 'titre_test' => $titre_test,
+// 'date' => $date
+// )
+// );
 // }
 
 //creation maj
-function creerMAJ($idM, $description, $titre){
-	require ("./modele/connect.php"); 
+function creerMAJ($idM, $description, $titre)
+{
+	require("./modele/connect.php");
 	$date = date("Y-m-d");
-	$sql= "INSERT INTO maj (IdMAJ,description,titre,dateM) VALUES (0, :description, :titre, :date)";
+	$sql = "INSERT INTO maj (IdMAJ,description,titre,dateM) VALUES (0, :description, :titre, :date)";
 
 	$creer = $pdo->prepare($sql);
 	$creer->bindParam(':IdMAJ', $idM);
@@ -238,9 +257,10 @@ function creerMAJ($idM, $description, $titre){
 }
 
 //creation topics
-function creerTopicsBD($idT, $nomT, $texte){
-	require ("./modele/connect.php"); 
-	$sql= "INSERT INTO topics (IdTopics,nomT,texte) VALUES (0, :nomT, :texte)";
+function creerTopicsBD($idT, $nomT, $texte)
+{
+	require("./modele/connect.php");
+	$sql = "INSERT INTO topics (IdTopics,nomT,texte) VALUES (0, :nomT, :texte)";
 
 	$creer = $pdo->prepare($sql);
 	$creer->bindParam(':IdTopics', $idT);
@@ -255,4 +275,5 @@ function enregistrerNouveauScoreBD($IdJoueur, $IdNiveau, $ernierScore, $nbMonstr
 	
 }
 
+?>
 ?>
