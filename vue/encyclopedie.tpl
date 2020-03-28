@@ -4,6 +4,7 @@
 <head>
 
     <title>Encyclopédie</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="vue/css/testReset.css" media="all">
     <link rel="stylesheet" href="vue/css/knacss.css" media="all">
     <link rel="stylesheet" href="vue/css/encyclopedieSchnaps.css">
