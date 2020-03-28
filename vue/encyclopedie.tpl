@@ -73,7 +73,7 @@
       <div class="clash-card__unit-name">Mediatron</div>
       <div class="clash-card__level clash-card__level--mediatron">The versatility robot</div>
       <div class="clash-card__unit-description">
-      Malgré son apparence élancée et maigrichonne, sa polyvalence est néanmoins sa plus grand capacité, cela fera alors de lui : un de vos ennemis les plus redoutable.
+      Malgré son apparence élancée et maigrichonne, sa polyvalence est néanmoins sa plus grande capacité, cela fera alors de lui : un de vos ennemis les plus redoutable.
       </div>
 
       <div class="clash-card__unit-stats clash-card__unit-stats--mediatron clearfix">
