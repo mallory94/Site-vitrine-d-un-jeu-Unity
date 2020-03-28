@@ -28,7 +28,7 @@
                <h2>Péripéties</h2>
                <br>
                <p>
-                  Après de longues et rudes semaines de recherche, vous finissez par enfin créer le tout premier trou de vers stable. Mais cela ne fut qu’un bel espoir très vite envolé dès lors que le portail laissa échapper des créatures semblant venir d’une autre dimension.
+                  Après de longues et rudes semaines de recherche, vous finissez par enfin créer le tout premier trou de vers stable. Mais cela ne fut qu’un bel espoir très vite envolé, dès lors que le portail laissa échapper des créatures semblant venir d’une autre dimension.
                </p>
             </div>
             <div class="page" style="background-image : url(vue/images/all.png); background-repeat:no-repeat; background-position: center; background-size: 100%; " ></div>

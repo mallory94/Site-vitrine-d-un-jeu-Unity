@@ -88,10 +88,14 @@ div.tableauClassement {
 .divTableCell, .divTableHead { 
     display: table-cell;
 }
-.divTableCell, .divTableHead, footer{
+.divTableHead, footer{
     font-family: 'Luckiest Guy', cursive;
 }
 
+
+.divTableCell {
+    font-family: "Lato";
+}
 .divTableHeading { 
     display: table-header-group;
 }

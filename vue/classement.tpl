@@ -6,6 +6,7 @@
         <title>Classement</title>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="./vue/css/classement.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="./vue/js/minitronRush.js"></script>
