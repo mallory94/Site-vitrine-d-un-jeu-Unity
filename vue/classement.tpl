@@ -37,10 +37,10 @@
                     echo('<div class="divTableRow">
                             <div class="divTableCell">' . $listeScores[$k]['pseudo'] . '</div>
                             <div class="divTableCell">' . $listeScores[$k]['niveau'] . '</div>
-                            <div class="divTableCell">' . $listeScores[$k]['meilleurScore'] . '</div>
+                            <div class="divTableCell">' . $listeScores[$k]['dernierScore'] . '</div>
                             <div class="divTableCell">' . $listeScores[$k]['nbMonstresTues'] . '</div>
                             <div class="divTableCell">' . $listeScores[$k]['tempsJeu'] . '</div>
-                            <div class="divTableCell">' . $listeScores[$k]['dernierScore'] . '</div>
+                            <div class="divTableCell">' . $listeScores[$k]['meilleurScore'] . '</div>
                             </div>');
                     }
             ?>
