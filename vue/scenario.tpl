@@ -19,7 +19,7 @@
                <br>
                <h2>Situation initiale </h2>
                <br> 
-               <p>Dans une petite ville en Amérique du Nord, Mme.Enokson est une vieille professeure de laboratoire connue pour ses idées farfelues. Depuis son plus jeune âge, cette dernière aime tenter l’impossible et l’inaccessible. De ce fait, quelques années plus tard, Mme.Enokson, venant de l’institut Rafenwer, essaye de créer des trous de vers artificiels. Pour l’aider dans sa quête, elle embauche un stagiaire, en l'occurrence vous, afin de réaliser ses expériences.</p>
+               <p>Dans une petite ville d'Amérique du Nord, vit Mme.Enokson, une scientifique expérimentée connue pour ses idées farfelues. Depuis son plus jeune âge, cette dernière aime tenter l’impossible et l’inaccessible. De ce fait, quelques années plus tard, Mme.Enokson, venant de l’institut Rafenwer, essaye de créer des trous de vers artificiels. Pour l’aider dans sa quête, elle embauche un stagiaire, en l'occurrence vous, afin de réaliser ses expériences.</p>
             </div>
             <div class="page"  style="background-image : url(vue/images/robots.png); background-repeat:no-repeat; background-position: center; background-size: 90%; " ></div>
             <div class="page"style="z-index:8;">
@@ -28,7 +28,7 @@
                <h2>Péripéties</h2>
                <br>
                <p>
-                  Après de longues et rudes semaines de recherche, vous finissez par enfin créer le tout premier trou de vers stable. Mais cela ne fut qu’un bel espoir très vite envolé, dès lors que le portail laissa échapper des créatures semblant venir d’une autre dimension.
+                  Après de longues et rudes semaines de recherche, vous finissez par enfin créer le tout premier trou de vers stable. Tout semble se dérouler comme prévu, lorsque tout à coup le portail laisse échapper des créatures venant d’une toute autre dimension.
                </p>
             </div>
             <div class="page" style="background-image : url(vue/images/all.png); background-repeat:no-repeat; background-position: center; background-size: 100%; " ></div>
