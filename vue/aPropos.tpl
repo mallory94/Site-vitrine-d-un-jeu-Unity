@@ -58,52 +58,52 @@
 					<div class="flex flex-4">
 						<div class="box person">
 							<div class="image round">
-								<img src="./vue/images/pic03.jpg" alt="Person 1" />
+								<img src="./vue/images/Minh-Quan.png" alt="Person 1" />
 							</div>
 							<h3>Minh-Quân BUI</h3>
-							<p>Developpeur du jeu</p>
+							<p> Développeur Unity Game Designer, level Designer</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
-								<img src="./vue/images/pic04.jpg" alt="Person 2" />
+								<img src="./vue/images/Mallory.png" alt="Person 2" />
 							</div>
 							<h3>Mallory GACK</h3>
-							<p>Developpeur WEB et du jeu</p>
+							<p>Développeur WEB full stack</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
-								<img src="./vue/images/pic05.jpg" alt="Person 3" />
+								<img src="./vue/images/Anthony.png" alt="Person 3" />
 							</div>
 							<h3>Anthony REINO JOAQUIM</h3>
-							<p>Developpeur du jeu</p>
+							<p>Game Designer & Développeur Unity</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
-								<img src="./vue/images/pic06.jpg" alt="Person 4" />
+								<img src="./vue/images/Damien.png" alt="Person 4" />
 							</div>
 							<h3>Damien HUANG</h3>
-							<p>Developpeur du jeu</p>
+							<p>Développeur Unity Back-end</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
-								<img src="./vue/images/pic06.jpg" alt="Person 4" />
+								<img src="./vue/images/Marine.png" alt="Person 4" />
 							</div>
 							<h3>Marine MARSAL</h3>
-							<p>Artiste</p>
+							<p>Artiste & Développeuse Unity Intégration animation</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
-								<img src="./vue/images/pic06.jpg" alt="Person 4" />
+								<img src="./vue/images/Tiffany.png" alt="Person 4" />
 							</div>
 							<h3>Tiffany HAIDARALY</h3>
-							<p>Developpeur WEB</p>
+							<p>Développeuse WEB & base de données</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
-								<img src="./vue/images/pic06.jpg" alt="Person 4" />
+								<img src="./vue/images/Marie-Amelie.png" alt="Person 4" />
 							</div>
 							<h3>Marie-Amélie DUGRAIS</h3>
-							<p>Developpeur WEB et chef de projet</p>
+							<p>Cheffe de projet & développeuse WEB</p>
 						</div>
 					</div>
 				</div>
