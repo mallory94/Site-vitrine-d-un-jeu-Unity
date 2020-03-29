@@ -220,18 +220,7 @@ function getListeScores(&$listeCategories)
 
 
     
-    /* DEBUT API PRIVEE */
 
-
-    function enregistrerNouveauScore(){
-        
-    }
-
-    function enregistrerNouveauCompte(){
-
-    }
-
-    /* API FIN */
 
 ?>
 

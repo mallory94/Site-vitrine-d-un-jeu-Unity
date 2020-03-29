@@ -247,8 +247,20 @@ function creerTopicsBD($idT, $nomT, $texte)
 
 
 
-function enregistrerNouveauScoreBD($IdJoueur, $IdNiveau, $ernierScore, $nbMonstresTues, $tpsJeu, $eilleurScore){
-	
+function enregistrerNouveauScoreBD($IdJoueur, $IdNiveau, $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore){
+		require ("./modele/connect.php");
+
+        $sql = "INSERT INTO score (IdJoueur, IdNiveau, dernierScore, nbMonstresTues, tpsJeu, meilleurScore) VALUES (?,?,?,?,?,?)";
+        try {
+            $commande = $pdo->prepare($sql);
+			$bool =  $commande->execute(array($IdJoueur, $IdNiveau , $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore));
+			var_dump("salut");
+        }
+        catch (PDOException $e) {
+            echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
+            die();
+        }
+        return ;
 }
 
 ?>
