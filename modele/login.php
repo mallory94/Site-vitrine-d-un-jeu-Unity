@@ -47,5 +47,7 @@ function logingame()
     $retour = array();
     $retour[0] = $resultat[0]['prenom'];
     $retour[1] = $score;
-    print_r($retour[0] . " " . $retour[1]);
+    $retour2 = $resultat;
+    print_r($retour[0] . " " . $retour[1] . " ");
+    print_r($retour2[0]['IdCompte'] . " " . $retour2[0]['nom'] . " " . $retour2[0]['prenom'] . " " . $retour2[0]['mail'] . " " . $retour2[0]['dateN'] . " " . $retour2[0]['mdp'] . " " . $retour2[0]['pseudo'] . " " . $retour2[0]['type'] . " " . $retour2[0]['bConnecte']);
 }
