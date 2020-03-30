@@ -11,7 +11,7 @@ function logingame()
 
 
     $sql_login = "SELECT * FROM compte where pseudo=? and mdp=?";
-    $sql_score = "SELECT meilleurScore FROM score where pseudo=? and mdp=?";
+    $sql_score = "SELECT * FROM score s INNER JOIN compte c ON c.IdCompte=s.IdJoueur where pseudo=? and mdp=?";
     $resultat = array();
 
     try {
@@ -27,27 +27,40 @@ function logingame()
             $_SESSION['username'] = $username;
             $_SESSION['password'] = $password;
             $_SESSION['name'] = $resultat[0]['prenom'];
-            if ($bool2) {
-                $bestscore = $commande2->fetchAll(PDO::FETCH_ASSOC);
-                $_SESSION['bestscore'] = $resultat[0]['meilleurScore'];
-            } else {
-                $score = 0;
-                $_SESSION['bestscore'] = 0;
-            }
         } else {
             print_r("pas trouvé");
             return;
+        }
+        $retour2 = $resultat;
+        $bestscore = $commande2->fetchAll(PDO::FETCH_ASSOC);
+        if ($bestscore == null) {
+            $sql_newscore = "INSERT INTO score(IdJoueur,IdNiveau,dernierScore,nbMonstresTues,tpsJeu,meilleurScore) VALUES(?,1,0,0,'00:00:00',0)";
+            $commande3 = $pdo->prepare($sql_newscore);
+
+            $bool3 = $commande3->execute([$retour2[0]['IdCompte']]);
+            $score = 0;
+            $_SESSION['bestscore'] = 0;
+        } else {
+
+
+            $score = $bestscore[0]['meilleurScore'];
         }
     } catch (PDOException $e) {
         echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
         die();
     }
     //echo "connexion reussie";
-    //var_dump($resultat);
+
     $retour = array();
     $retour[0] = $resultat[0]['prenom'];
     $retour[1] = $score;
+
     $retour2 = $resultat;
     print_r($retour[0] . " " . $retour[1] . " ");
-    print_r($retour2[0]['IdCompte'] . " " . $retour2[0]['nom'] . " " . $retour2[0]['prenom'] . " " . $retour2[0]['mail'] . " " . $retour2[0]['dateN'] . " " . $retour2[0]['mdp'] . " " . $retour2[0]['pseudo'] . " " . $retour2[0]['type'] . " " . $retour2[0]['bConnecte']);
+    print_r($retour2[0]['IdCompte'] . " " . $retour2[0]['nom'] . " " . $retour2[0]['prenom'] . " " . $retour2[0]['mail'] . " " . $retour2[0]['dateN'] . " " . $retour2[0]['mdp'] . " " . $retour2[0]['pseudo'] . " " . $retour2[0]['type'] . " " . $retour2[0]['bConnecte'] . " ");
+    if ($bestscore != null) {
+        print_r($bestscore[0]['IdJoueur'] . " " . $bestscore[0]['IdNiveau'] . " " . $bestscore[0]['dernierScore'] . " " . $bestscore[0]['nbMonstresTues'] . " " . $bestscore[0]['tpsJeu'] . " " . $bestscore[0]['meilleurScore']);
+    } else {
+        print_r($retour2[0]['IdCompte'] . " 1 0 0 00:00:00 0");
+    }
 }
