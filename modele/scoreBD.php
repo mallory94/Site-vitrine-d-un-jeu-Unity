@@ -247,19 +247,26 @@ function creerTopicsBD($idT, $nomT, $texte)
 
 function enregistrerNouveauScoreBD($IdJoueur, $IdNiveau, $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore)
 {
-	require("./modele/connect.php");
+	require("./Modele/connect.php");
 	$sql = "INSERT INTO joueur (IdJoueur, derniereUtilisation, nbUtilisation )VALUES (?,CURRENT_DATE,?)";
 	$sql2 = "INSERT INTO score (IdJoueur, IdNiveau, dernierScore, nbMonstresTues, tpsJeu, meilleurScore) VALUES (?,?,?,?,?,?)";
 	try {
 		$commande = $pdo->prepare($sql);
-		$bool = $commande->execute($IdJoueur, 1);
+		$bool = $commande->execute(array($IdJoueur, 1));
 		$commande2 = $pdo->prepare($sql2);
-		$bool2 =  $commande2->execute($IdJoueur, $IdNiveau, $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore);
+		$bool2 =  $commande2->execute(array($IdJoueur, $IdNiveau, $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore));
+		if ($bool == false) {
+			$sql4 = "UPDATE  joueur set nbUtilisation=nbUtilisation+1 where IdJoueur=?";
+			$commande4 = $pdo->prepare($sql4);
+			$bool = $commande4->execute(array($IdJoueur));
+		}
 		if ($bool2 == false) {
 			$sql3 = "UPDATE score set IdNiveau=?,dernierScore=?,nbMonstresTues=nbMonstreTues+?,tpsJeu=tpsJeu+?,meilleurScore=? where IdJoueur=?";
 			$commande3 = $pdo->prepare($sql3);
-			$bool3 =  $commande3->execute($IdNiveau, $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore, $IdJoueur);
+			$bool3 =  $commande3->execute(array($IdNiveau, $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore, $IdJoueur));
 		}
+
+
 		var_dump("salut");
 	} catch (PDOException $e) {
 		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
