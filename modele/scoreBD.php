@@ -255,13 +255,13 @@ function enregistrerNouveauScoreBD($IdJoueur, $IdNiveau, $dernierScore, $nbMonst
 		$bool = $commande->execute(array($IdJoueur, 1));
 		$commande2 = $pdo->prepare($sql2);
 		$bool2 =  $commande2->execute(array($IdJoueur, $IdNiveau, $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore));
-		if ($bool == false) {
+		if (!$bool) {
 			$sql4 = "UPDATE  joueur set nbUtilisation=nbUtilisation+1 where IdJoueur=?";
 			$commande4 = $pdo->prepare($sql4);
-			$bool = $commande4->execute(array($IdJoueur));
+			$bool4 = $commande4->execute(array($IdJoueur));
 		}
-		if ($bool2 == false) {
-			$sql3 = "UPDATE score set IdNiveau=?,dernierScore=?,nbMonstresTues=nbMonstreTues+?,tpsJeu=tpsJeu+?,meilleurScore=? where IdJoueur=?";
+		if (!$bool2) {
+			$sql3 = "UPDATE score set IdNiveau=?,dernierScore=?,nbMonstresTues=nbMonstresTues+?,tpsJeu=?,meilleurScore=? where IdJoueur=?";
 			$commande3 = $pdo->prepare($sql3);
 			$bool3 =  $commande3->execute(array($IdNiveau, $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore, $IdJoueur));
 		}
