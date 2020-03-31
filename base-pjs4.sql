@@ -215,7 +215,7 @@ CREATE TABLE IF NOT EXISTS `maj` (
 --
 
 INSERT INTO `maj` (`IdMAJ`, `description`, `titre`, `dateM`, `IdAdmin`) VALUES
-(1, 'Que diriez-vous d\'un nouveau type de monstre super badasse ? Venez le découvrir en exclusivité ', 'Nouveau Monstre !', '2020-02-09', 6);
+(1, 'Que diriez-vous d un nouveau type de monstre super badasse ? Venez le découvrir en exclusivité ', 'Nouveau Monstre !', '2020-02-09', 6);
 
 -- --------------------------------------------------------
 
