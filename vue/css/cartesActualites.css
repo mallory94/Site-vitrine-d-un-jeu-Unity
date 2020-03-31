@@ -1,0 +1,197 @@
+
+* {
+    transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.intro p {
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.intro a {
+    color: #88bcf5;
+    border-bottom: 2px solid transparent;
+}
+.intro a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #88bcf5;
+}
+.paracard {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 66.66666%;
+    transform-style: preserve-3d;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border: 0px;
+    background-size: 110% 110%;
+    background-position: center center;
+    
+}
+
+
+.dcard:hover {
+    z-index: 3;
+}
+
+.dcard {
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    display: block;
+    perspective: 500px;
+    border-radius: 12px;
+}
+.col-md-12, .col-md-4 {
+}
+.col-md-12 .dcard {
+    perspective: 3000px;
+}
+.frame {
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 95%;
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+}
+
+.frame:after {
+    width: calc(100% - 40px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    height: calc(100% - 40px);
+    content: "";
+    display: block;
+    left: 20px;
+    top: 20px;
+    position: absolute;
+    transform: translateZ(30px);
+}
+.dcard:hover .paracard .frame {
+    background: rgba(0, 0, 0, 0.0);
+    
+}
+.dcard:hover .paracard .frame:after {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+.frame h2  {
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transform: translateZ(50px);
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.frame h2   {
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transform: translateZ(50px);
+    text-align: left;
+    
+    font-size: 24px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+
+.trigger {
+    position: absolute;
+    height: 33.333333%;
+    width: 33.333333%;
+    display: block;
+    z-index: 2;
+}
+.trigger:nth-child(1) {
+    left: 0%;
+    top: 0%;
+}
+.trigger:nth-child(1):hover ~ .paracard {
+    transform: rotateY(8deg) rotateX(-5deg);
+    background-position: top left;
+}
+.trigger:nth-child(2) {
+    left: 33.333333%;
+    top: 0%;
+}
+.trigger:nth-child(2):hover ~ .paracard {
+    transform: rotateY(0deg) rotateX(-5deg);
+    background-position: top center;
+}
+.trigger:nth-child(3) {
+    left: 66.666666%;
+    top: 0%;
+}
+.trigger:nth-child(3):hover ~ .paracard {
+    transform: rotateY(-8deg) rotateX(-5deg);
+    background-position: top right;
+}
+.trigger:nth-child(4) {
+    left: 0%;
+    top: 33.333333%;
+}
+.trigger:nth-child(4):hover ~ .paracard {
+    transform: rotateY(8deg);
+    background-position: center left;
+}
+.trigger:nth-child(5) {
+    left: 33.333333%;
+    top: 33.333333%;
+}
+.trigger:nth-child(5):hover ~ .paracard {
+    transform: rotateY(0deg) rotateX(0deg);
+    background-position: center center;
+}
+.trigger:nth-child(6) {
+    left: 66.666666%;
+    top: 33.333333%;
+}
+.trigger:nth-child(6):hover ~ .paracard {
+    transform: rotateY(-8deg) rotateX(0deg);
+    background-position: center right;
+}
+.trigger:nth-child(7) {
+    left: 0%;
+    top: 66.666666%;
+}
+.trigger:nth-child(7):hover ~ .paracard {
+    transform: rotateY(8deg) rotateX(5deg);
+    background-position: bottom left;
+}
+.trigger:nth-child(8) {
+    left: 33.333333%;
+    top: 66.666666%;
+}
+.trigger:nth-child(8):hover ~ .paracard {
+    transform: rotateY(0deg) rotateX(5deg);
+    background-position: bottom center;
+}
+.trigger:nth-child(9) {
+    left: 66.666666%;
+    top: 66.666666%;
+}
+.trigger:nth-child(9):hover ~ .paracard {
+    transform: rotateY(-8deg) rotateX(5deg);
+    background-position: bottom right;
+}
+
+
+
+
+
+.carteMediatron{
+    background-size: 120% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.carteMinitron{
+    background-size: 120% 100%;
+    background-repeat: no-repeat;
+}

@@ -1,6 +1,9 @@
 #titre {
+    font-family: 'Luckiest Guy';
     text-align: center;
-    color:white;
+    font-size: 80px!important;
+    color: #4ae2ff;
+    text-shadow: -2px 0 #000000, 0 2px #7b7b7b, 2px 0 black, 0 -2px #b812d0;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -50,7 +53,12 @@
 }
 
 body{
-    background-color: #000;
+    background-color: #01123B;
+    background: radial-gradient(circle, rgba(1,18,59,1) 10%, rgba(74,250,255,1) 51%, rgba(5,52,124,1) 80%);
+    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #containerGrid{
@@ -157,3 +165,19 @@ body{
     from {opacity: 1;}
     to {opacity: 0.95;}
 } */
+
+
+div#myCarousel {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case-md4{
+    width:85%;
+}
+
+
+.separationLigne {
+    margin-top:40px;
+}

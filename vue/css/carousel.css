@@ -15,10 +15,10 @@
 
 @keyframes lightOpacityIn {
     from {background-color: rgba(255, 255, 255, 0);}
-    to {background-color: rgba(255, 255, 255, 0.50);}
+    to {background-color: #32507e49;}
 }
 
 @keyframes lightOpacityOut {
-    from {background-color: rgba(255, 255, 255, 0.50);}
+    from {background-color: #32507e49;}
     to {background-color: rgba(255, 255, 255, 0);}
 }

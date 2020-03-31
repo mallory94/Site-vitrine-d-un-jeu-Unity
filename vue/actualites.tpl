@@ -2,6 +2,7 @@
 <html class="no-js" lang="fr">
     <head>
     <title>Actualités</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -9,20 +10,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./vue/css/carousel.css" media="all">
     <link rel="stylesheet" href="./vue/css/actualites.css" media="all">
+    <link rel="stylesheet" href="./vue/css/cartesActualites.css" media="all">
+    <script src="./vue/js/cartesActualites.js"></script>
     
     </head>
-    <div id="titre"><h1>ACTUALITES</h1></div>
+    <div id="titre">ACTUALITÉS</div>
     <body>
     <!-- DEBUT DU CODE POUR LE CAROUSEL -->
 
 
 
     
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="./vue/images/carousel/laboDrawing.jfif" alt="slide1">
+                    <img class="d-block w-100" src="https://image.noelshack.com/fichiers/2020/09/4/1582820572-labo.png" alt="slide1">
                     <div class="carousel-caption d-none d-sm-block">
                     </div>
                 </div>
@@ -51,45 +54,203 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
+    </div> -->
     
     
     <!-- FIN DU CODE POUR LE CAROUSEL -->
 
+  <div class="lignesCartesActualites">
 
-    <div id="containerGrid">
-        <div class="parent">
-            <div class="div1 double"> 
-                <div class="content-div-titre">Le jeu sort officiellement en Beta ouverte (ou fermée, on sait pas encore)! </div>
-                <div class="content-div"></div>
+    <div class="row mt-5">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <div class="dcard premiereColonne">
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+
+                <div class="paracard" style="background-image: url(./vue/images/carousel/laboDrawing.jfif);">
+                    <div class="frame">
+                        <h2>
+                            <div class="titreArticle">Le jeu sort officiellement en Beta ouverte !</div>
+                            <div class="sousTitreArticle">Nous sommes heureux de pouvoir vous l'annoncer après des années de travail intensif sans rémunération</div>
+                        </h2>
+                    </div>
+                    <div class="fond"></div>
+                </div>
             </div>
-            <div class="div2">
-                
-            </div>
-            <div class="div3"> </div>
-            <div class="div4"> </div>
-            <div class="div5"> </div>
-            <div class="div6 double"> </div>
-            <div class="div7"> </div>
-            <div class="div8"> </div>
-            <div class="div9"> </div>
-            <div class="div10"> </div>
         </div>
+
+        <div class="col-md-4">
+            <div class="dcard">
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+
+                <div class="paracard" style="background-image: url(./vue/images/actus/BF-Bot-portal.png);">
+                    <div class="frame">
+                        <h2>
+                            <div class="titreArticle">Les BF-Bot ont franchi le portail !</div>
+                            <div class="sousTitreArticle case-md4">Ces créatures aussi corpulentes que résistantes écrasent tout sur leur passage</div>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    
 
 
 
-    <section id="four" class="wrapper style3">
+    <section id="four" class="wrapper style3 separationLigne">
         <div class="inner">
 
-            <header class="align-center">
-                <h2>Morbi interdum mollis sapien</h2>
-                <p>Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
-            </header>
+            
 
         </div>
     </section>
+
+
+    <div class="row mt-5">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <div class="dcard premiereColonne">
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+
+                <div class="paracard carteMediatron" style="background-image: url(./vue/images/actus/mediatron.png);">
+                    <div class="frame">
+                        <h2>
+                            <div class="titreArticle">Les Mediatrons débarquent !</div>
+                            <div class="sousTitreArticle case-md5">Personne ne sait de quoi sont capables leurs longs bras</div>
+                        </h2>
+                    </div>
+                    <div class="fond"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="dcard">
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+
+                <div class="paracard carteMinitron" style="background-image: url(./vue/images/actus/minitron-spark-bg.png);">
+                    <div class="frame">
+                        <h2>
+                            <div class="titreArticle">Les Minitrons nous envahissent !</div>
+                            <div class="sousTitreArticle case-md5">Ne les laissez pas sortir</div>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="four" class="wrapper style3 separationLigne">
+        <div class="inner">
+
+            
+
+        </div>
+    </section>
+
+
+    <div class="row mt-5">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <div class="dcard premiereColonne">
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+
+                <div class="paracard" style="background-image: url(./vue/images/actus/preliminaire.png);">
+                    <div class="frame">
+                        <h2>
+                            <div class="titreArticle">La carte du labo vient d'être implantée !</div>
+                            <div class="sousTitreArticle">Nous venons de mettre en place le décor du laboratoire où vous attendent d'interminables batailles.</div>
+                        </h2>
+                    </div>
+                    <div class="fond"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="dcard">
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+
+                <div class="paracard" style="background-image: url(./vue/images/actus/stagiaire.png);">
+                    <div class="frame">
+                        <h2>
+                            <div class="titreArticle">Bravo ! Vous avez été sélectionné !</div>
+                            <div class="sousTitreArticle case-md4">Mme. Enokson vous a choisi pour réaliser de multiples expériences farfelues !</div>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- https://image.noelshack.com/fichiers/2020/09/4/1582820572-labo.png -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
