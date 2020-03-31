@@ -215,7 +215,7 @@
                   <div class="cartes">
                      <h1 style=" padding: 23px 50px 24px 13px;">CARTES </h1>
                      <div>
-                        <img src="./vue/images/carousel/laboEbauche.png" style="padding: 23px 50px 24px 22px; opacity:99%;"/>
+                        <img src="./vue/images/laboEbauche.png" style="padding: 23px 50px 24px 22px; opacity:99%;"/>
                      </div>
                   </div>
                </div>
@@ -230,11 +230,11 @@
                <div>
                <br><br>
             <div class="tourelles" >
-               <h1> TOURELLES </h1>
+               <h1> BOUTIQUE </h1>
                <div class="wrapper">
                   <div class="clash-card bois tourelle1">
                      <div class="clash-card__image  clash-card__image--bois">
-                        <img src="" alt="" /> <!-- image à insérer -->
+                        <img src="./vue/images/tourelles/caisse.png" alt="caisse" /> <!-- image à insérer -->
                      </div>
                      <div class="clash-card__unit-name">Caisse en bois</div>
                      <div class="clash-card__level clash-card__level--bois">sous titre</div>
@@ -245,15 +245,15 @@
                         <div class="centrer">
                            <div class="one-third">
                               <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat-value">Dégâts</div>
                            </div>
                            <div class="one-third">
                               <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat-value">Vitesse d'attaque</div>
                            </div>
                            <div class="one-third no-border">
                               <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat-value">Prix</div>
                            </div>
                         </div>
                      </div>
@@ -264,7 +264,7 @@
                <div class="wrapper">
                   <div class="clash-card">
                      <div class="clash-card__image clash-card__image--Rayon-de-la-mort clash-card__image--rose_peche">
-                        <img src="" alt="" /> <!-- image -->
+                        <img src="./vue/images/tourelles/tourelleCube.gif" alt="Rayon-de-la-mort" /> <!-- image -->
                      </div>
                      <div class="clash-card__unit-name">Rayon de la mort </div>
                      <div class="clash-card__level clash-card__level--Rayon-de-la-mort">sous titre</div>
@@ -275,15 +275,15 @@
                         <div class="centrer">
                            <div class="one-third">
                               <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat-value">Dégâts</div>
                            </div>
                            <div class="one-third">
                               <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat-value">Vitesse d'attaque</div>
                            </div>
                            <div class="one-third no-border">
                               <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat-value">Prix</div>
                            </div>
                         </div>
                      </div>
@@ -293,8 +293,8 @@
                <!-- end wrapper -->
                <div class="wrapper">
                   <div class="clash-card ">
-                     <div class="clash-card__image clash-card__image--generateur-foutre">
-                        <img src="" alt="" /> <!-- image -->
+                     <div class="clash-card__image clash-card__image--generateur-foudre">
+                        <img src="./vue/images/tourelles/tourelleTesla4.gif" alt="Tesla" /> <!-- image -->
                      </div>
                      <div class="clash-card__unit-name">Générateur de foudre</div>
                      <div class="clash-card__level clash-card__level--generateur-foudre">sous titre</div>
@@ -304,16 +304,16 @@
                      <div class="clash-card__unit-stats clash-card__unit-stats--generateur-foudre clearfix">
                         <div class="centrer">
                            <div class="one-third">
-                              <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat"><b></b></div>
+                              <div class="stat-value"><b>Dégâts</b></div>
                            </div>
                            <div class="one-third">
-                              <div class="stat"></div>
-                              <div class="stat-value"></div>
+                           <div class="stat"><b></b></div>
+                              <div class="stat-value"><b>Vitesse d'attaque</b></div>
                            </div>
                            <div class="one-third no-border">
-                              <div class="stat"></div>
-                              <div class="stat-value"></div>
+                           <div class="stat"><b></b></div>
+                              <div class="stat-value"><b>Prix</b></div>
                            </div>
                         </div>
                      </div>
@@ -335,15 +335,15 @@
                         <div class="centrer">
                            <div class="one-third">
                               <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat-value">Dégâts</div>
                            </div>
                            <div class="one-third">
                               <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat-value">Vitesse d'attaque</div>
                            </div>
                            <div class="one-third no-border">
                               <div class="stat"></div>
-                              <div class="stat-value"></div>
+                              <div class="stat-value">Prix</div>
                            </div>
                         </div>
                      </div>

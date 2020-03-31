@@ -18,8 +18,6 @@
 }
 
  .wrapper {
-
-	
 	margin: 40px;
 	min-width: fit-content;
 	max-width: fit-content;
@@ -142,6 +140,44 @@
 
 
 
+.clash-card__image--bois { /*boiiiiiiiiiiiiiiiiiiiiiiiiiiiis*/
+	background: url("../images/fond_floutes/blur_bois.jpg");
+
+}
+
+.clash-card__image--bois img { /*boiiiiiiiiiiiiiiiiiiiiiiiiiiiis*/
+	width: 168px;
+
+}
+
+
+.clash-card__image--generateur-foudre { /*generateur-foudre*/
+	background: url("../images/fond_floutes/blur_tesla.jpg");
+
+}
+
+.clash-card__image--generateur-foudre img { /*generateur-foudre*/
+	width: 345px;
+	position: absolute;
+	top: -28px;
+	left: 1px;
+
+}
+
+.clash-card__image--Rayon-de-la-mort { /*Rayon-de-la-mort*/
+	background: url("../images/fond_floutes/blur_rayon.jpg");
+
+}
+
+.clash-card__image--Rayon-de-la-mort img { /*Rayon-de-la-mort*/
+    width: 258px;
+    position: absolute;
+    top: -16px;
+    left: 27px;
+
+}
+
+
  .clash-card__level {
 	 text-transform: uppercase;
 	 font-size: 12px;
@@ -160,6 +196,18 @@
 
 .clash-card__level--minitron {
 	color: #fe9959;
+}
+
+.clash-card__level--bois { /*boiiiiiiiiiiiiiiiiiiiiiiiiiiiis*/
+	color: #af7d5d;
+}
+
+.clash-card__level--generateur-foudre { /*generateur-foudre*/
+	color: #24ebfb;
+}
+
+.clash-card__level--Rayon-de-la-mort { /*Rayon-de-la-mort*/
+	color: #ff1c24;
 }
 
 .clash-card__level--mediatron {
@@ -192,6 +240,31 @@
  .clash-card__unit-stats--harpie .one-third {
 	 border-right: 1px solid rgb(105, 72, 32);
 }
+
+.clash-card__unit-stats--generateur-foudre {  /*generateur-foudre*/
+	background: #24ebfb;
+}
+.clash-card__unit-stats--generateur-foudre .one-third { /*generateur-foudre*/
+	border-right: 1px solid grey;
+}
+
+
+.clash-card__unit-stats--Rayon-de-la-mort {  /*Rayon-de-la-mort*/
+	background: #ff1c24;
+}
+.clash-card__unit-stats--Rayon-de-la-mort .one-third { /*Rayon-de-la-mort*/
+	border-right: 1px solid black;
+}
+
+
+.clash-card__unit-stats--bois {  /*boiiiiiiiiiiiiiiiiiis*/
+	background: #af7d5d;
+}
+.clash-card__unit-stats--bois .one-third { /*boiiiiiiiiiiiiiiiiiiiis*/
+	border-right: 1px solid rgb(105, 72, 32);
+}
+
+
  .clash-card__unit-stats--zombie {
 	 background: #92af94;
 }
