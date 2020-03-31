@@ -195,3 +195,9 @@
     background-size: 120% 100%;
     background-repeat: no-repeat;
 }
+
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
