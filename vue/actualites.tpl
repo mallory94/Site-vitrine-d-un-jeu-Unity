@@ -75,7 +75,7 @@
                 <div class="trigger"></div>
                 <div class="trigger"></div>
 
-                <div class="paracard" style="background-image: url(./vue/images/carousel/laboDrawing.jfif);">
+                <div class="paracard" style="background-image: url(./vue/images/actus/laboDrawing.jfif);">
                     <div class="frame">
                         <h2>
                             <div class="titreArticle">Le jeu sort officiellement en Beta ouverte !</div>
