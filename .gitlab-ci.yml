@@ -33,8 +33,11 @@ variables:
 test:app:
   script:
     # executed during container startup
-  - COPY ./sql-scripts/ /docker-entrypoint-initdb.d/
+    #- COPY ./sql-scripts/ /docker-entrypoint-initdb.d/
     # lance la base de données
-  - sudo service mysqld start
+    #- sudo service mysqld start
   #- docker run --name mysql -e MYSQL_ROOT_PASSWORD=gitlab_set_ROOT_PASSWORD -d mysql:tag
-  - phpunit --configuration phpunit.xml
+  - cd vendor
+  - cd bin
+  - phpunit
+  #- phpunit --configuration phpunit.xml

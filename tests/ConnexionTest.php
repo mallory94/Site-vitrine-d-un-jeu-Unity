@@ -12,6 +12,7 @@ class ConnexionTest extends TestCase  {
         // chdir("../../");
         // echo ("répertoire courant = " . getcwd());
         require_once("./controleur/utilisateur.php");
+        echo("lancement de la fonction test_mdpDifferents\n");
         $this->assertFalse(mdpDifferents("oh","oh"));
     }
     
