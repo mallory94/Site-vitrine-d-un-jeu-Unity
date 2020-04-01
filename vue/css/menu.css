@@ -6,7 +6,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: transparent;
   /* background: linear-gradient(45deg, #9436ff, #ff2626); */
+}
+
+li {
+  background: transparent;
 }
 
 ul {
@@ -80,7 +85,8 @@ ul {
   border-left:6px;
   border-right:6px;
   border-style:solid;
-  border-color: rgba(5, 53, 124, 0.575);
+
+  box-sizing: border-box;
   transition: border 0.5s;
   background-color: rgba(5, 53, 124, 0.575);
 }
@@ -91,7 +97,6 @@ ul {
   border-left:26px;
   border-right:26px;
   border-style:solid;
-  border-color: rgba(0, 0, 0, 0.534);
   transition: border 0.5s;
 }
 
@@ -136,20 +141,48 @@ header{
 }
 
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1810px) {
   .container ul.links li a {
-      font-size: x-large;
+      font-size: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 1550px) {
+  .container ul.links li a {
+      font-size: 15px;
+  }
+  
+}
+
+
+@media screen and (max-width: 1300px) {
+  .container ul.links li a {
+      font-size: 10px;
   }
 }
 
-@media screen and (max-width: 1310px) {
+@media screen and (max-width: 1050px) {
   .container ul.links li a {
-      font-size: large;
+      font-size: 5px;
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 755px) {
   .container ul.links li a {
-      font-size: medium;
+      font-size: 25px;
+  }
+
+  .container ul.links {
+    background-color: #011e40;
+  }
+
+  .container .active_links{
+    margin-left : 0px!important;
+    flex-direction : column;
+    flex: inherit;
+  }
+  ul#menu.menu.active_menu{
+    margin-right: 10px;
   }
 }
