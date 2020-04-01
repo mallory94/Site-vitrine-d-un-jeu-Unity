@@ -54,13 +54,13 @@ function verifInscription()
 
     //$options est un tableau qui spécifie les erreurs lors d'une inscription.
     $_POST['options'] = array();
-    if (mdpDifferents()) {
+    if (mdpDifferents($_POST['mdp'],$_POST['mdp_bis'])) {
         $_POST['options']['mdpDifferents'] = true;
     }
-    if (pseudoDejaPris()) {
+    if (pseudoDejaPris($_POST['pseudo'])) {
         $_POST['options']['pseudoDejaPris'] = true;
     }
-    if (emailDejaUtilise()) {
+    if (emailDejaUtilise($_POST['email'])) {
         $_POST['options']['emailDejaUtilise'] = true;
     }
     if (count($_POST['options']) == 0) {
@@ -74,21 +74,21 @@ function verifInscription()
     }
 }
 
-function mdpDifferents()
+function mdpDifferents($mdp1,$mdp2)
 {
-    return ($_POST['mdp'] != $_POST['mdp_bis']);
+    return ($mdp1 != $mdp2);
 }
 
-function pseudoDejaPris()
+function pseudoDejaPris($pseudo)
 {
     require_once("./modele/utilisateurBD.php");
-    return pseudoDejaPrisBD($_POST['pseudo']);
+    return pseudoDejaPrisBD($pseudo);
 }
 
-function emailDejaUtilise()
+function emailDejaUtilise($email)
 {
     require_once("./modele/utilisateurBD.php");
-    return (emailDejaUtiliseBD($_POST['email']));
+    return (emailDejaUtiliseBD($email));
 }
 
 function mdpIncorrect($pseudo, $mdpSaisi)
@@ -200,6 +200,7 @@ function accueilApresConnexion()
 
     header("Location:index.php");
 }
+
 function getlogingame()
 {
     require("./Modele/login.php");
