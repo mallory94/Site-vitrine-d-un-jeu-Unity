@@ -20,6 +20,9 @@
 	<link rel="stylesheet" type="text/css" href="./vue/css/contactUtil.css">
 	<link rel="stylesheet" type="text/css" href="./vue/css/contactMain.css">
 	<link rel="stylesheet" type="text/css" href="./vue/css/contact.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!--===============================================================================================-->
 </head>
 <body>
