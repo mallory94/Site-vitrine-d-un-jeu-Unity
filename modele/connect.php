@@ -19,6 +19,6 @@ try {
 	$pdo = new PDO("mysql:server=$hostname; dbname=$base", "$loginBD", "$passBD");
 	echo("Connexion à la base de donnée effectuée");
 } catch (PDOException $e) {
-	var_dump($e->getTrace());
-	die("Echec de connexion : " . $e->getMessage() . "\n Description =  " . $e->getTrace() . "\n");
+	die("Echec de connexion : " . $e->getMessage() . "\n Description =  " . $e->getTraceAsString() . "\n Code = " . $e->getCode() .
+	"\n toString = " . $e->__toString() . "\n");
 }
