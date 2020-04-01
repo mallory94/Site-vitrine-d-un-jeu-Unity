@@ -38,13 +38,9 @@
                               <div class="stat">❤️</div>
                               <div class="stat-value">santé</div>
                            </div>
-                           <div class="one-third">
+                           <div class="one-third no-border">
                               <div class="stat">➕➕➕</div>
                               <div class="stat-value">vitesse</div>
-                           </div>
-                           <div class="one-third no-border">
-                              <div class="stat">🛡️</div>
-                              <div class="stat-value">défense</div>
                            </div>
                         </div>
                      </div>
@@ -68,14 +64,11 @@
                               <div class="stat">❤️❤️</div>
                               <div class="stat-value">santé</div>
                            </div>
-                           <div class="one-third">
+                           <div class="one-third no-border">
                               <div class="stat">➕➕</div>
                               <div class="stat-value">vitesse</div>
                            </div>
-                           <div class="one-third no-border">
-                              <div class="stat">🛡️🛡️</div>
-                              <div class="stat-value">défense</div>
-                           </div>
+                           
                         </div>
                      </div>
                   </div>
@@ -95,17 +88,14 @@
                      <div class="clash-card__unit-stats clash-card__unit-stats--BF-Bot clearfix">
                         <div class="centrer">
                            <div class="one-third">
-                              <div class="stat">❤️❤️</div>
+                              <div class="stat">❤️❤️❤️</div>
                               <div class="stat-value">santé</div>
                            </div>
-                           <div class="one-third">
+                           <div class="one-third no-border">
                               <div class="stat">➕</div>
                               <div class="stat-value">vitesse</div>
                            </div>
-                           <div class="one-third no-border">
-                              <div class="stat">🛡️🛡️🛡️</div>
-                              <div class="stat-value">défense</div>
-                           </div>
+                           
                         </div>
                      </div>
                   </div>
@@ -125,17 +115,14 @@
                      <div class="clash-card__unit-stats clash-card__unit-stats--harpie clearfix">
                         <div class="centrer">
                            <div class="one-third">
-                              <div class="stat"></div>
+                              <div class="stat">inconnue</div>
                               <div class="stat-value">santé</div>
                            </div>
-                           <div class="one-third">
-                              <div class="stat"></div>
+                           <div class="one-third no-border">
+                              <div class="stat">inconnue</div>
                               <div class="stat-value">vitesse</div>
                            </div>
-                           <div class="one-third no-border">
-                              <div class="stat"></div>
-                              <div class="stat-value">défense</div>
-                           </div>
+                           
                         </div>
                      </div>
                   </div>
@@ -155,17 +142,14 @@
                      <div class="clash-card__unit-stats clash-card__unit-stats--zombie clearfix">
                         <div class="centrer">
                            <div class="one-third">
-                              <div class="stat"></div>
+                              <div class="stat">inconnue</div>
                               <div class="stat-value">santé</div>
                            </div>
-                           <div class="one-third">
-                              <div class="stat"></div>
+                           <div class="one-third no-border">
+                              <div class="stat">inconnue</div>
                               <div class="stat-value">vitesse</div>
                            </div>
-                           <div class="one-third no-border">
-                              <div class="stat"></div>
-                              <div class="stat-value">défense</div>
-                           </div>
+                           
                         </div>
                      </div>
                   </div>
@@ -185,17 +169,14 @@
                      <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
                         <div class="centrer">
                            <div class="one-third">
-                              <div class="stat"></div>
+                              <div class="stat">inconnue</div>
                               <div class="stat-value">santé</div>
                            </div>
-                           <div class="one-third">
-                              <div class="stat"></div>
+                           <div class="one-third no-border">
+                              <div class="stat">inconnue</div>
                               <div class="stat-value">vitesse</div>
                            </div>
-                           <div class="one-third no-border">
-                              <div class="stat"></div>
-                              <div class="stat-value">défense</div>
-                           </div>
+                           
                         </div>
                      </div>
                   </div>
