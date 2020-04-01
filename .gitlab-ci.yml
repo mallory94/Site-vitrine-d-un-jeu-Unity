@@ -1,4 +1,4 @@
-image: php:5.6
+image: php:7
 
 before_script:
 - bash ci/docker_install.sh > /dev/null
@@ -6,6 +6,35 @@ before_script:
 # Install mysql driver
 - docker-php-ext-install pdo_mysql
 
+
+before_script:
+# Install git, the php image doesn't have installed
+- apt-get update -yqq
+- apt-get install git -yqq
+
+# Install mysql driver
+- docker-php-ext-install pdo_mysql
+
+# Install composer
+- curl -sS https://getcomposer.org/installer | php
+
+# Install all project dependencies
+- php composer.phar install
+
+
+
+services:
+- mysql
+
+variables:
+  # Configure mysql environment variables (https://hub.docker.com/_/mysql/)
+  MYSQL_DATABASE: "mysql"
+  MYSQL_ROOT_PASSWORD: ""
+  
+
+test:mysql:
+  script:
+  - vendor/bin/phpunit --configuration phpunit_mysql.xml --coverage-text
 
 
 test:app:
