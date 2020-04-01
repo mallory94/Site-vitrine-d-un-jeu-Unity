@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":292:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:5:{s:33:"ConnexionTest::test_mdpDifferents";d:0.014;s:36:"ConnexionTest::test_pseudoInexistant";d:0.01;s:36:"ConnexionTest::test_emailDejaUtilise";d:0.004;s:34:"ConnexionTest::test_pseudoDejaPris";d:0.005;s:30:"ConnexionTest::test_recupMdpBD";d:0.005;}}}
