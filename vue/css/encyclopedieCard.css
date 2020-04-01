@@ -178,6 +178,20 @@
 }
 
 
+.clash-card__image--pistocanon { /*pistocanon*/
+	background: url("../images/fond_floutes/blur_pistocanon.jpg");
+
+}
+
+.clash-card__image--pistocanon img { /*pistocanon*/
+    width: 258px;
+    position: absolute;
+    top: -16px;
+    left: 27px;
+
+}
+
+
  .clash-card__level {
 	 text-transform: uppercase;
 	 font-size: 12px;
@@ -208,6 +222,10 @@
 
 .clash-card__level--Rayon-de-la-mort { /*Rayon-de-la-mort*/
 	color: #ff1c24;
+}
+
+.clash-card__level--pistocanon { /*pistocanon*/
+	color: #82c3fb;
 }
 
 .clash-card__level--mediatron {
@@ -253,6 +271,13 @@
 	background: #ff1c24;
 }
 .clash-card__unit-stats--Rayon-de-la-mort .one-third { /*Rayon-de-la-mort*/
+	border-right: 1px solid black;
+}
+
+.clash-card__unit-stats--pistocanon {  /*pistocanon*/
+	background: #82c3fb;
+}
+.clash-card__unit-stats--pistocanon .one-third { /*pistocanon*/
 	border-right: 1px solid black;
 }
 

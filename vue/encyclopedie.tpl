@@ -305,7 +305,7 @@
                <div class="wrapper">
                   <div class="clash-card ">
                      <div class="clash-card__image clash-card__image--pistocanon">
-                        <img src="" alt="" /> <!-- image -->
+                        <img src="./vue/images/tourelles/tourelleClassique.gif" alt="pistocanon" /> <!-- image -->
                      </div>
                      <div class="clash-card__unit-name">Pistocanon à énergie</div>
                      <div class="clash-card__level clash-card__level--pistocanon">sous titre</div>

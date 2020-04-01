@@ -59,6 +59,61 @@
     
     <!-- FIN DU CODE POUR LE CAROUSEL -->
 
+     
+    <div class="row mt-5">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <div class="dcard premiereColonne">
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+
+                <div class="paracard carteMediatron" style="background-image: url(./vue/images/actus/laboDrawing.jfif);">
+                   
+                    <div class="frame">
+                   
+                        <h2>
+                            <div class="titreArticle">Le jeu sort officiellement en Beta ouverte !</div>
+                            <div class="sousTitreArticle">Nous sommes heureux de pouvoir vous l'annoncer après des années de travail intensif sans rémunération</div>
+                        </h2>
+                    </div>
+                    <div class="fond"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="dcard">
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+
+                <div class="paracard carteMinitron" style="background:linear-gradient(to left, black, black 50%, aqua 70%, black 75%);">
+                    <div class="frame">
+                    <img src="./vue/images/actus/prof.png" style="width:70%" />
+                        <h2>
+                            <div class="titreArticle">Mme. Enokson, la professeure à l’origine de tout ce chaos vient d’arriver dans l’univers d’U.M.S.I !</div>
+                            <div class="sousTitreArticle case-md5">Personne ne s'attendait à ça</div>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
   <div class="lignesCartesActualites">
 
     <div class="row mt-5">
@@ -75,11 +130,11 @@
                 <div class="trigger"></div>
                 <div class="trigger"></div>
 
-                <div class="paracard" style="background-image: url(./vue/images/actus/laboDrawing.jfif);">
+                <div class="paracard" style="background-image: url(./vue/images/actus/preliminaire.png);">
                     <div class="frame">
                         <h2>
-                            <div class="titreArticle">Le jeu sort officiellement en Beta ouverte !</div>
-                            <div class="sousTitreArticle">Nous sommes heureux de pouvoir vous l'annoncer après des années de travail intensif sans rémunération</div>
+                            <div class="titreArticle">La carte du labo vient d'être implantée !</div>
+                            <div class="sousTitreArticle">Nous venons de mettre en place le décor du laboratoire où vous attendent d'interminables batailles.</div>
                         </h2>
                     </div>
                     <div class="fond"></div>
@@ -168,34 +223,12 @@
 
     </div>
 
-    
+   
 
 
     <div class="row mt-5">
         <div class="col-md-1"></div>
-        <div class="col-md-6">
-            <div class="dcard premiereColonne">
-                <div class="trigger"></div>
-                <div class="trigger"></div>
-                <div class="trigger"></div>
-                <div class="trigger"></div>
-                <div class="trigger"></div>
-                <div class="trigger"></div>
-                <div class="trigger"></div>
-                <div class="trigger"></div>
-                <div class="trigger"></div>
-
-                <div class="paracard carteLabo" style="background-image: url(./vue/images/actus/preliminaire.png);">
-                    <div class="frame">
-                        <h2>
-                            <div class="titreArticle">La carte du labo vient d'être implantée !</div>
-                            <div class="sousTitreArticle">Nous venons de mettre en place le décor du laboratoire où vous attendent d'interminables batailles.</div>
-                        </h2>
-                    </div>
-                    <div class="fond"></div>
-                </div>
-            </div>
-        </div>
+       
 
         <div class="col-md-4">
             <div class="dcard">
@@ -220,7 +253,32 @@
             </div>
         </div>
 
+        <div class="col-md-6">
+            <div class="dcard premiereColonne">
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+                <div class="trigger"></div>
+
+                <div class="paracard carteLabo" style="background-image: url(./vue/images/actus/tours.png);">
+                    <div class="frame">
+                        <h2>
+                            <div class="titreArticle">Le shop a ouvert !</div>
+                            <div class="sousTitreArticle">Nous venons de mettre en place le shop qui vous permettra d'évoluer</div>
+                        </h2>
+                    </div>
+                    <div class="fond"></div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 
     <!-- https://image.noelshack.com/fichiers/2020/09/4/1582820572-labo.png -->
 
