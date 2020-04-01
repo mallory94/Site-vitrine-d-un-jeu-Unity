@@ -8,7 +8,7 @@
 	$passBD = "root1234";
 	$pdo = null;
 */
-$hostname = "localhost";
+$hostname = "mysql";
 $base = "base-pjs4";
 $loginBD = "root";
 $passBD = "";

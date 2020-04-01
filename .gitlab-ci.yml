@@ -22,9 +22,11 @@ variables:
   MYSQL_DATABASE: gitlab_set_DATABASE
   MYSQL_ROOT_PASSWORD: gitlab_set_ROOT_PASSWORD
 
-test:mysql:
-  script:
-  - vendor/bin/phpunit --configuration phpunit_mysql.xml --coverage-text
+
+  
+# test:mysql:
+#   script:
+#   - vendor/bin/phpunit --configuration phpunit_mysql.xml --coverage-text
 
 
 test:app:
