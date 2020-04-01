@@ -2,18 +2,9 @@ image: php:7
 
 before_script:
 - bash ci/docker_install.sh > /dev/null
-
 # Install mysql driver
 - docker-php-ext-install pdo_mysql
 
-
-before_script:
-# Install git, the php image doesn't have installed
-- apt-get update -yqq
-- apt-get install git -yqq
-
-# Install mysql driver
-- docker-php-ext-install pdo_mysql
 
 # Install composer
 - curl -sS https://getcomposer.org/installer | php
@@ -28,9 +19,8 @@ services:
 
 variables:
   # Configure mysql environment variables (https://hub.docker.com/_/mysql/)
-  MYSQL_DATABASE: "mysql"
-  MYSQL_ROOT_PASSWORD: "test"
-  
+  MYSQL_DATABASE: gitlab_set_DATABASE
+  MYSQL_ROOT_PASSWORD: gitlab_set_ROOT_PASSWORD
 
 test:mysql:
   script:
