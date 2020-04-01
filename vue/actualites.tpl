@@ -87,6 +87,7 @@
             </div>
         </div>
 
+        
         <div class="col-md-4">
             <div class="dcard">
                 <div class="trigger"></div>
