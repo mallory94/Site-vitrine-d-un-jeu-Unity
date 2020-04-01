@@ -194,7 +194,7 @@
                   "></div>
                <div>
                   <div class="cartes">
-                     <h1 style=" padding: 23px 50px 24px 13px;">CARTES </h1>
+                     <h1 style=" padding: 23px 278px 23px 234px;">CARTES </h1>
                      <div>
                         <img src="./vue/images/laboEbauche.png" style="padding: 23px 50px 24px 22px; opacity:99%;"/>
                      </div>
