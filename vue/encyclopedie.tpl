@@ -211,7 +211,7 @@
                <div>
                <br><br>
             <div class="tourelles" >
-               <h1> BOUTIQUE </h1>
+               <h1> TOURELLES </h1>
                <div class="wrapper">
                   <div class="clash-card bois tourelle1">
                      <div class="clash-card__image  clash-card__image--bois">
