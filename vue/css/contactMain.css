@@ -5,22 +5,9 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+html {
+  font-family: 'Luckiest Guy';
 }
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
-}
-
-
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -153,10 +140,10 @@ iframe {
   align-items: center;
   padding: 15px;
   background: rgba(26, 117, 253, 0.8);
-  background: -webkit-linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
-  background: -o-linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
-  background: -moz-linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
-  background: linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
+  background: -webkit-linear-gradient(45deg, #01123b, #05347c, #4afaff);
+  background: -o-linear-gradient(45deg, #01123b, #05347c, #4afaff);
+  background: -moz-linear-gradient(45deg, #01123b, #05347c, #4afaff);
+  background: linear-gradient(45deg,#01123b, #05347c, #4afaff);
 }
 
 .wrap-contact2 {
@@ -232,10 +219,10 @@ iframe {
   transition: all 0.4s;
 
   background: rgba(219,21,99,1);
-  background: -webkit-linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
-  background: -o-linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
-  background: -moz-linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
-  background: linear-gradient(45deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
+  background: -webkit-linear-gradient(45deg, #01123b, #05347c, #4afaff);
+  background: -o-linear-gradient(45deg,#01123b, #05347c, #4afaff);
+  background: -moz-linear-gradient(45deg,#01123b, #05347c, #4afaff);
+  background: linear-gradient(45deg, #01123b, #05347c, #4afaff);
 }
 
 .focus-input2::after {
@@ -323,10 +310,10 @@ textarea.input2 + .focus-input2::after {
   width: 300%;
   height: 100%;
   background: rgb(21, 107, 219);
-  background: -webkit-linear-gradient(-135deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8), rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
-  background: -o-linear-gradient(-135deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8), rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
-  background: -moz-linear-gradient(-135deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8), rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
-  background: linear-gradient(-135deg, rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8), rgba(26, 106, 253, 0.8), rgba(42, 247, 237, 0.8));
+  background: -webkit-linear-gradient(-135deg, #01123b, #05347c, #4afaff);
+  background: -o-linear-gradient(-135deg, #01123b, #05347c, #4afaff);
+  background: -moz-linear-gradient(-135deg, #01123b, #05347c, #4afaff);
+  background: linear-gradient(-135deg,#01123b, #05347c, #4afaff);
   top: 0;
   left: -100%;
 
