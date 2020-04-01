@@ -114,13 +114,6 @@
 
 
 
-    <section id="four" class="wrapper style3 separationLigne">
-        <div class="inner">
-
-            
-
-        </div>
-    </section>
 
 
     <div class="row mt-5">
@@ -174,13 +167,7 @@
 
     </div>
 
-    <section id="four" class="wrapper style3 separationLigne">
-        <div class="inner">
-
-            
-
-        </div>
-    </section>
+    
 
 
     <div class="row mt-5">
