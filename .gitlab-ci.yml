@@ -37,7 +37,6 @@ test:app:
     # lance la base de données
     #- sudo service mysqld start
   #- docker run --name mysql -e MYSQL_ROOT_PASSWORD=gitlab_set_ROOT_PASSWORD -d mysql:tag
-  - cd vendor
-  - cd bin
-  - phpunit
+  - ./vendor/bin/phpunit
+  - .\vendor\bin\phpunit
   #- phpunit --configuration phpunit.xml
