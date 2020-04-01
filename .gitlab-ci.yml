@@ -29,7 +29,7 @@ services:
 variables:
   # Configure mysql environment variables (https://hub.docker.com/_/mysql/)
   MYSQL_DATABASE: "mysql"
-  MYSQL_ROOT_PASSWORD: ""
+  MYSQL_ROOT_PASSWORD: "test"
   
 
 test:mysql:
