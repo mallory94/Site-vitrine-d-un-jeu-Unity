@@ -39,4 +39,4 @@ test:mysql:
 
 test:app:
   script:
-  - phpunit --configuration phpunit_myapp.xml
+  - phpunit --configuration phpunit.xml
