@@ -11,7 +11,7 @@
 $hostname = "mysql";
 $base = "base-pjs4";
 $loginBD = "root";
-$passBD = "";
+$passBD = "root";
 $pdo = null;
 
 
@@ -19,5 +19,6 @@ try {
 	$pdo = new PDO("mysql:server=$hostname; dbname=$base", "$loginBD", "$passBD");
 	echo("Connexion à la base de donnée effectuée");
 } catch (PDOException $e) {
+	var_dump($e->getTrace());
 	die("Echec de connexion : " . $e->getMessage() . "\n Description =  " . $e->getTrace() . "\n");
 }

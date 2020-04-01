@@ -21,9 +21,10 @@ variables:
   # Configure mysql environment variables (https://hub.docker.com/_/mysql/)
   MYSQL_DATABASE: gitlab_set_DATABASE
   MYSQL_ROOT_PASSWORD: gitlab_set_ROOT_PASSWORD
+  DB_HOST: mysql
 
 
-  
+
 # test:mysql:
 #   script:
 #   - vendor/bin/phpunit --configuration phpunit_mysql.xml --coverage-text
@@ -31,4 +32,6 @@ variables:
 
 test:app:
   script:
+  - docker run --name mysql -e MYSQL_ROOT_PASSWORD=gitlab_set_ROOT_PASSWORD -d mysql:tag
+    # COPY all_db.sql /docker-entrypoint-initdb.d/
   - phpunit --configuration phpunit.xml
