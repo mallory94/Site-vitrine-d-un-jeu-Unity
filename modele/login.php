@@ -26,7 +26,6 @@ function logingame()
             $resultat = $commande->fetchAll(PDO::FETCH_ASSOC);
             $_SESSION['username'] = $username;
             $_SESSION['password'] = $password;
-            $_SESSION['name'] = $resultat[0]['prenom'];
         } else {
             print_r("pas trouvé");
             return;
@@ -52,12 +51,12 @@ function logingame()
     //echo "connexion reussie";
 
     $retour = array();
-    $retour[0] = $resultat[0]['prenom'];
+    $retour[0] = $resultat[0]['pseudo'];
     $retour[1] = $score;
 
     $retour2 = $resultat;
     print_r($retour[0] . " " . $retour[1] . " ");
-    print_r($retour2[0]['IdCompte'] . " " . $retour2[0]['nom'] . " " . $retour2[0]['prenom'] . " " . $retour2[0]['mail'] . " " . $retour2[0]['dateN'] . " " . $retour2[0]['mdp'] . " " . $retour2[0]['pseudo'] . " " . $retour2[0]['type'] . " " . $retour2[0]['bConnecte'] . " ");
+    print_r($retour2[0]['IdCompte'] . " " . $retour2[0]['mail'] . " " . $retour2[0]['mdp'] . " " . $retour2[0]['pseudo'] . " " . $retour2[0]['statut'] . " " . $retour2[0]['bConnecte'] . " ");
     if ($bestscore != null) {
         print_r($bestscore[0]['IdJoueur'] . " " . $bestscore[0]['IdNiveau'] . " " . $bestscore[0]['dernierScore'] . " " . $bestscore[0]['nbMonstresTues'] . " " . $bestscore[0]['tpsJeu'] . " " . $bestscore[0]['meilleurScore']);
     } else {
