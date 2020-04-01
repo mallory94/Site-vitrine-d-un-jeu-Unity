@@ -201,3 +201,11 @@
     margin-right: 0px;
     margin-left: 0px;
 }
+
+
+
+@media screen and (max-width: 640px) {
+    .sousTitreArticle{
+        width: 80%;
+    }
+}

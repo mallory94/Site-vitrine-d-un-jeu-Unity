@@ -197,7 +197,7 @@
                 <div class="trigger"></div>
                 <div class="trigger"></div>
 
-                <div class="paracard" style="background-image: url(./vue/images/actus/preliminaire.png);">
+                <div class="paracard carteLabo" style="background-image: url(./vue/images/actus/preliminaire.png);">
                     <div class="frame">
                         <h2>
                             <div class="titreArticle">La carte du labo vient d'être implantée !</div>
