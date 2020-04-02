@@ -91,6 +91,6 @@
 <body>
     <footer class="footer full-bleed" role="contentinfo">
     Vous pensez voir une erreur dans le classement?<br>
-    Contactez nous sur le support
+    Contactez nous <a href="./index.php?controleur=utilisateur&action=redirectionContact">ici</a>
     </footer>
 </html>

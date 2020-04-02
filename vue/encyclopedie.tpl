@@ -83,7 +83,7 @@
                      <div class="clash-card__unit-name">BF-Bot</div>
                      <div class="clash-card__level clash-card__level--BF-Bot">The unbreakable brute</div>
                      <div class="clash-card__unit-description">
-                        Derrière sa carapace de fer se cache une véritable machine de guerre. Sa plus grande faiblesse est néanmoins sa vitesse. Même si sa défense est votre plus grande méfiance. 
+                        Derrière sa carapace de fer se cache une véritable machine de guerre. Sa plus grande faiblesse est néanmoins sa vitesse. Même si sa résistance est votre plus grande méfiance. 
                      </div>
                      <div class="clash-card__unit-stats clash-card__unit-stats--BF-Bot clearfix">
                         <div class="centrer">
@@ -102,92 +102,12 @@
                   <!-- end clash-card fantome-->
                </div>
                <!-- end wrapper -->
-               <div class="wrapper">
-                  <div class="clash-card harpie">
-                     <div class="clash-card__image clash-card__image--kaki clash-card__image--harpie">
-                        <img src="./vue/images/gifMonstres/HarpieChibiAnim.gif" alt="harpie" />
-                     </div>
-                     <div class="clash-card__unit-name">Leucosies</div>
-                     <div class="clash-card__level clash-card__level--harpie">Cute harpies</div>
-                     <div class="clash-card__unit-description">
-                        Description à remplir :o
-                     </div>
-                     <div class="clash-card__unit-stats clash-card__unit-stats--harpie clearfix">
-                        <div class="centrer">
-                           <div class="one-third">
-                              <div class="stat">inconnue</div>
-                              <div class="stat-value">santé</div>
-                           </div>
-                           <div class="one-third no-border">
-                              <div class="stat">inconnue</div>
-                              <div class="stat-value">vitesse</div>
-                           </div>
-                           
-                        </div>
-                     </div>
-                  </div>
-                  <!-- end clash-card harpie-->
-               </div>
-               <!-- end wrapper -->
-               <div class="wrapper">
-                  <div class="clash-card zombie">
-                     <div class="clash-card__image clash-card__image--zombie .clash-card__image--rose_peche">
-                        <img src="./vue/images/gifMonstres/zombie.gif" alt="zombie" />
-                     </div>
-                     <div class="clash-card__unit-name">Zombies</div>
-                     <div class="clash-card__level clash-card__level--zombie">they aren't happy</div>
-                     <div class="clash-card__unit-description">
-                        Description à remplir :o
-                     </div>
-                     <div class="clash-card__unit-stats clash-card__unit-stats--zombie clearfix">
-                        <div class="centrer">
-                           <div class="one-third">
-                              <div class="stat">inconnue</div>
-                              <div class="stat-value">santé</div>
-                           </div>
-                           <div class="one-third no-border">
-                              <div class="stat">inconnue</div>
-                              <div class="stat-value">vitesse</div>
-                           </div>
-                           
-                        </div>
-                     </div>
-                  </div>
-                  <!-- end clash-card zombie-->
-               </div>
-               <!-- end wrapper -->
-               <div class="wrapper">
-                  <div class="clash-card fantome">
-                     <div class="clash-card__image clash-card__image--fantome">
-                        <img src="./vue/images/gifMonstres/fantome.gif" alt="fantom" />
-                     </div>
-                     <div class="clash-card__unit-name">Fantoms</div>
-                     <div class="clash-card__level clash-card__level--fantome">Deadly smiling</div>
-                     <div class="clash-card__unit-description">
-                        Description à remplir :o
-                     </div>
-                     <div class="clash-card__unit-stats clash-card__unit-stats--fantome clearfix">
-                        <div class="centrer">
-                           <div class="one-third">
-                              <div class="stat">inconnue</div>
-                              <div class="stat-value">santé</div>
-                           </div>
-                           <div class="one-third no-border">
-                              <div class="stat">inconnue</div>
-                              <div class="stat-value">vitesse</div>
-                           </div>
-                           
-                        </div>
-                     </div>
-                  </div>
-                  <!-- end clash-card fantome-->
-                  <br><br>
-               </div>
+              
+              
             </div>
-            <br><br>
-            <div></div>
+        
             <div style="
-               padding: 1050px 1px 1px 1px;">
+               padding: 674px 1px 1px 1px;">
                <div style="
                   padding: 1px 1px 1px;
                   background-color: aqua;
