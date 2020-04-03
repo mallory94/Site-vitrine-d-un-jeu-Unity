@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="vue/js/livre.js"></script>
     <link rel="stylesheet" href="./vue/css/static_menu.css">
+    <link rel="stylesheet" href="./vue/css/scenario.css">
 </head>
 
 <header>
