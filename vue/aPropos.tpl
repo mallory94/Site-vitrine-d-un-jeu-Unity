@@ -55,7 +55,7 @@
 			<div id="home-news">
 				<div class="home_header">
 					<span>Tout savoir</span>
-					<strong>de l'équipe</strong>
+					<strong>sur l'équipe</strong>
 				</div>
 				<div class="home_header">
 					<span>A propos de</span>
