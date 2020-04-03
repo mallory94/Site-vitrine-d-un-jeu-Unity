@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./vue/css/static_menu.css">
     <script src="./vue/js/cartesActualites.js"></script>
     
+      <script src="./vue/js/static_menu.js"></script>
     </head>
 
 <header>
@@ -48,7 +49,7 @@
         ?>
         <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
         <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
-        
+        <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
         </ul>
     </div>
     <div id="titre">ACTUALITÉS</div>

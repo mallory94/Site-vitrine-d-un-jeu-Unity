@@ -9,6 +9,8 @@
       <link rel="stylesheet" href="vue/css/encyclopedie.css">
       <link rel="stylesheet" href="vue/css/encyclopedieCard.css">
       <link rel="stylesheet" href="./vue/css/static_menu.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="./vue/js/static_menu.js"></script>
    </head>
    <body onload="x=0" onkeydown="document.images[0].style.msTransform='rotate('+((x=++x%4)*90)+'deg)'">
       <div class="website">
@@ -40,7 +42,7 @@
             ?>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
-            
+            <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
           </ul>
         </div>
             <h1>ENCYCLOPEDIE</h1>

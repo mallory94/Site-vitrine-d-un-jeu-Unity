@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="./vue/css/static_menu.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="./vue/js/minitronRush.js"></script>
-        
+        <script src="./vue/js/static_menu.js"></script>
     </head>
 <header>
 
@@ -46,7 +46,7 @@
             ?>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
-            
+            <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
           </ul>
         </div>
 
