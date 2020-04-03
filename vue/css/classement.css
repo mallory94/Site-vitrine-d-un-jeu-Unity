@@ -145,7 +145,13 @@ footer{
 
     .divTable.tableauClassement .divTableCell, .divTable.tableauClassement .divTableHead {
         padding: 5px 5px;
+        border-left: solid 1px;
       }
+      .divTable.tableauClassement .divTableCell:first-child, .divTable.tableauClassement .divTableHead:first-child {
+
+        border-left: none;
+      }
+
 
     html{
         width: 100%;
