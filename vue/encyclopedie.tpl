@@ -31,13 +31,13 @@
                 }
                 else {
                   echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                        <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                        <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                       ');
                 }
               }
               else {
                 echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                      <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                      <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                     ');
               }
             ?>
@@ -46,14 +46,18 @@
             <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
           </ul>
         </div>
-            <h1>ENCYCLOPEDIE</h1>
-            <h1> Venez découvrir l'univers d'U.M.S.I</h1>
+          
          </header>
-         <br>
+    
          <div class="slide-container">
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
+            <h1 style=" font-size: 80px; padding: 1px 1px 36px 1px;">ENCYCLOPEDIE</h1>
+            <h1 style="font-size: 40px; color : white;"> Venez découvrir l'univers d'U.M.S.I</h1>
+            <br>
+            <br> <br>
+            <br>
             <div class="monstres" >
                <h1> MONSTRES </h1>
                <div class="wrapper">

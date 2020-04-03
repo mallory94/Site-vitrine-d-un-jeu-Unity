@@ -258,7 +258,7 @@ CREATE TABLE IF NOT EXISTS `niveau` (
 --
 
 INSERT INTO `niveau` (`IdNiveau`, `nomNiv`, `nbMonstres`) VALUES
-(1, 'Preliminaire', 8);
+(1, 'Secteur 2', 8);
 
 -- --------------------------------------------------------
 
