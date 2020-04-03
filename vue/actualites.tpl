@@ -24,6 +24,7 @@
     <div class="container">
         
         <ul class="links active_links">
+        <li><a href="./index.php">Accueil</a></li>
         <li><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Classement</a></li>
         <li><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
         <li><a href="./index.php?controleur=utilisateur&action=redirectionScenario">Scénario</a></li>
