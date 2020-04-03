@@ -4,6 +4,7 @@
 	<head>
 		<title>A propos</title>
 		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="./vue/images/icons/portail.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./vue/css/aProposAnimationText.css" />
 		<link rel="stylesheet" href="./vue/css/aProposMain.css" />
