@@ -22,6 +22,9 @@
     <link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
   </head>
   <body>
+  <video playsinline autoplay muted loop id="bgvid">
+    <source src="vue/exempleVideo.mp4" type="video/mp4">
+  </video>
   
   <header id="header" role="banner" class="pam">
       
@@ -65,10 +68,7 @@
 
   <div class="espace-vide"></div>
   <!-- est situé hors du flux -->
-  <video playsinline autoplay muted loop poster="vue/exempleVideo.jpg" id="bgvid">
-    <source src="vue/exempleVideo.webm" type="video/webm">
-    <source src="vue/exempleVideo.mp4" type="video/mp4">
-  </video>
+  
 
   <div id="btnTelechargerJeu" role="" class="pam">
     <!-- <p>TELECHARGER LE JEU</p> -->
