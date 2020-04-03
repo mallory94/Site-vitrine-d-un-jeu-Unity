@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="./vue/css/contactMain.css">
 	<link rel="stylesheet" type="text/css" href="./vue/css/contact.css">
 	<link rel="stylesheet" href="./vue/css/static_menu.css">
-
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./vue/js/static_menu.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!--===============================================================================================-->
@@ -55,7 +56,7 @@
             ?>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
-            
+            <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
           </ul>
         </div>
 		</header>

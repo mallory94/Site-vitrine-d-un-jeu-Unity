@@ -10,7 +10,10 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
 		<link rel="stylesheet" href="./vue/css/static_menu.css">
 		<link rel="stylesheet" href="./vue/css/aPropos.css">
-		
+		<script type="text/javascript" src="./vue/js/aProposAnimation.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="./vue/js/static_menu.js"></script>
+	
 		
 	</head>
 	<body>
@@ -42,7 +45,7 @@
             ?>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
             <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
-            
+            <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
           </ul>
         </div>
 		</header>
@@ -68,7 +71,7 @@
 				</div>
 				</div>
 			</section>
-			<script type="text/javascript" src="./vue/js/aProposAnimation.js"></script>
+			
 
 		<!-- One -->
 			<section id="one" class="wrapper">
