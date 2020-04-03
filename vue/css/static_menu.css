@@ -14,7 +14,7 @@ ul {
 
 
 .container ul.links li a {
-    color: #4AFAFF;
+    color: #4AFAFF!important;
     text-decoration: none;
     transition: color 0.5s;
     text-transform: uppercase;
@@ -31,7 +31,7 @@ ul {
 }
 
   .container ul.links li:hover a {
-    color: white;
+    color: white!important;
   
     transition: color 0.5s;
   }
@@ -55,7 +55,7 @@ ul {
     
   }
   
-  @media screen and (max-width: 1550px) {
+  @media screen and (max-width: 1750px) {
     .container ul.links li a {
         font-size: 20px;
     }
@@ -63,13 +63,19 @@ ul {
   }
   
   
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1470px) {
     .container ul.links li a {
         font-size: 15px;
     }
   }
   
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1200px) {
+    .container ul.links li a {
+        font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
     .container ul.links li a {
         font-size: 10px;
     }
@@ -77,13 +83,13 @@ ul {
 
   
   
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 920px) {
     .container ul.links li a {
         font-size: 25px;
     }
   
     .container ul.links {
-      background-color: #011e40;
+      background-color: #011e40!important;
     }
   
     .container .active_links{
