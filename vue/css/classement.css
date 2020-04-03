@@ -128,3 +128,26 @@ footer{
     font-size:25px;
     color : rgb(70, 192, 248);
 }
+
+@media screen and (max-width: 800px) {
+    .tableauClassement {
+        width:100%;
+    }
+    #main{
+        width:100%;
+    }
+    body{
+        margin: 0px;
+    }
+    .divTableCell{
+        font-size: 11px;
+    }
+
+    .divTable.tableauClassement .divTableCell, .divTable.tableauClassement .divTableHead {
+        padding: 5px 5px;
+      }
+
+    html{
+        width: 100%;
+    }
+}
