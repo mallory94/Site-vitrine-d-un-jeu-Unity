@@ -27,6 +27,7 @@ ul {
     margin-left: 20px;
     margin-right: 20px;
     min-width: fit-content;
+    text-align: center;
 }
 
   .container ul.links li:hover a {
