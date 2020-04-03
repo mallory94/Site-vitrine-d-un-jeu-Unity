@@ -3,7 +3,9 @@ header{
 }
 
 @media screen and (max-width: 755px) {
-    margin-top:15px;
+    header{ 
+        margin-top : 15px;
+    }
 }
 
 #titre {
