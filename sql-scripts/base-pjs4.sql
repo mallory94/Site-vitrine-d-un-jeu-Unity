@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 27 mars 2020 à 17:30
+-- Généré le :  ven. 03 avr. 2020 à 00:30
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -136,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `compte` (
   PRIMARY KEY (`IdCompte`),
   UNIQUE KEY `mail` (`mail`(50)) USING HASH,
   UNIQUE KEY `pseudo` (`pseudo`(50)) USING HASH
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `compte`
@@ -158,10 +158,7 @@ INSERT INTO `compte` (`IdCompte`, `mail`, `mdp`, `pseudo`, `statut`, `bConnecte`
 (13, 'intru@gmail.com', '123ERR', 'FiereDetreUnIntru', 'joueur', 1),
 (14, 'jeancharles@gmail.com', '2ZE3R', 'Kingeek34', 'joueur', 1),
 (15, 'erine@gmail.com', '2ZE3R4T', 'ErineIR345', 'joueur', 0),
-(16, 'sorry@gmail.com', 'HHH87YH', 'Okey', 'joueur', 1),
-(17, 'test@gmail.com', '$2y$10$PXiU1NTg9LLpUmt.O5Bmt.yEcmwrHQLDN3mcdDrBiqRqYFuLXlwOu', 'test', 'Joueur', 0),
-(20, 'oklm@gmail.com', '$2y$10$TOZ3v8LT48hVe6vImJaKSOQe4i7CwXSfRddrLh1ZcVw4Xr0tXsee6', 'oklm', 'Joueur', 0);
-
+(16, 'sorry@gmail.com', 'HHH87YH', 'Okey', 'joueur', 1);
 -- --------------------------------------------------------
 
 --
@@ -171,7 +168,7 @@ INSERT INTO `compte` (`IdCompte`, `mail`, `mdp`, `pseudo`, `statut`, `bConnecte`
 DROP TABLE IF EXISTS `joueur`;
 CREATE TABLE IF NOT EXISTS `joueur` (
   `IdJoueur` int(11) NOT NULL,
-  `derniereUtilisation` date DEFAULT NULL,
+  `derniereUtilisation` date NOT NULL,
   `nbUtilisation` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`IdJoueur`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -190,8 +187,7 @@ INSERT INTO `joueur` (`IdJoueur`, `derniereUtilisation`, `nbUtilisation`) VALUES
 (13, '2020-02-08', 9),
 (14, '2020-02-02', 2),
 (15, '2020-02-04', 7),
-(16, '2020-02-09', 1),
-(20, NULL, 0);
+(16, '2020-02-09', 1);
 
 -- --------------------------------------------------------
 
@@ -215,7 +211,7 @@ CREATE TABLE IF NOT EXISTS `maj` (
 --
 
 INSERT INTO `maj` (`IdMAJ`, `description`, `titre`, `dateM`, `IdAdmin`) VALUES
-(1, 'Que diriez-vous d un nouveau type de monstre super badasse ? Venez le découvrir en exclusivité ', 'Nouveau Monstre !', '2020-02-09', 6);
+(1, 'Que diriez-vous d\'un nouveau type de monstre super badasse ? Venez le découvrir en exclusivité ', 'Nouveau Monstre !', '2020-02-09', 6);
 
 -- --------------------------------------------------------
 
@@ -228,8 +224,7 @@ CREATE TABLE IF NOT EXISTS `monstres` (
   `IdMonstre` int(11) NOT NULL AUTO_INCREMENT,
   `vitesseM` int(11) NOT NULL,
   `nomMonstre` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `imgMonstre` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `typeMonstre` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `sante` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`IdMonstre`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
@@ -237,10 +232,10 @@ CREATE TABLE IF NOT EXISTS `monstres` (
 -- Déchargement des données de la table `monstres`
 --
 
-INSERT INTO `monstres` (`IdMonstre`, `vitesseM`, `nomMonstre`, `imgMonstre`, `typeMonstre`) VALUES
-(1, 3, 'Tueur', '', 'Feu\r\n'),
-(2, 2, 'Ravageur', '', 'Eau'),
-(3, 4, 'Fuyeur', '', 'terre');
+INSERT INTO `monstres` (`IdMonstre`, `vitesseM`, `nomMonstre`, `sante`) VALUES
+(1, 3, 'Tueur', ''),
+(2, 2, 'Ravageur', ''),
+(3, 4, 'Fuyeur', '');
 
 -- --------------------------------------------------------
 
@@ -251,7 +246,6 @@ INSERT INTO `monstres` (`IdMonstre`, `vitesseM`, `nomMonstre`, `imgMonstre`, `ty
 DROP TABLE IF EXISTS `niveau`;
 CREATE TABLE IF NOT EXISTS `niveau` (
   `IdNiveau` int(11) NOT NULL AUTO_INCREMENT,
-  `imgNiv` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `nomNiv` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `nbMonstres` int(11) NOT NULL,
   PRIMARY KEY (`IdNiveau`)
@@ -261,8 +255,8 @@ CREATE TABLE IF NOT EXISTS `niveau` (
 -- Déchargement des données de la table `niveau`
 --
 
-INSERT INTO `niveau` (`IdNiveau`, `imgNiv`, `nomNiv`, `nbMonstres`) VALUES
-(1, '', 'Preliminaire', 8);
+INSERT INTO `niveau` (`IdNiveau`, `nomNiv`, `nbMonstres`) VALUES
+(1, 'Preliminaire', 8);
 
 -- --------------------------------------------------------
 
@@ -289,7 +283,7 @@ CREATE TABLE IF NOT EXISTS `score` (
 INSERT INTO `score` (`IdJoueur`, `IdNiveau`, `dernierScore`, `nbMonstresTues`, `tpsJeu`, `meilleurScore`) VALUES
 (3, 1, 4, 8, '04:03:00', 4),
 (4, 1, 1, 1, '00:04:00', 1),
-(5, 1, 5, 11, '99:00:00', 6),
+(5, 1, 5, 11, '32:00:00', 6),
 (9, 1, 8, 13, '10:00:00', 8),
 (10, 1, 6, 6, '00:06:00', 6),
 (11, 1, 4, 5, '04:00:00', 4),
@@ -328,7 +322,7 @@ INSERT INTO `topics` (`IdTopics`, `nomT`) VALUES
 DROP TABLE IF EXISTS `tourelles`;
 CREATE TABLE IF NOT EXISTS `tourelles` (
   `IdTourelles` int(11) NOT NULL AUTO_INCREMENT,
-  `imgTourelle` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `prix` int(11) NOT NULL,
   `nomTourelles` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `degats` int(11) NOT NULL,
   `vitesseT` int(11) NOT NULL,
@@ -339,7 +333,7 @@ CREATE TABLE IF NOT EXISTS `tourelles` (
 -- Déchargement des données de la table `tourelles`
 --
 
-INSERT INTO `tourelles` (`IdTourelles`, `imgTourelle`, `nomTourelles`, `degats`, `vitesseT`) VALUES
+INSERT INTO `tourelles` (`IdTourelles`, `prix`, `nomTourelles`, `degats`, `vitesseT`) VALUES
 (1, '', 'Tour1', 12, 2),
 (2, '', 'Tour2', 14, 3),
 (3, '', 'Tour3', 15, 4);
