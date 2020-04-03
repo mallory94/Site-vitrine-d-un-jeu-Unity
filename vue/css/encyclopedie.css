@@ -91,3 +91,23 @@ h1{
     }
   }
   
+
+/* reset */
+ul, li {
+  background:none;
+}
+
+.container ul.links {
+    background-color: black!important;
+}
+
+.container {
+  border-bottom : 1px solid #4AFAFF;
+}
+
+ @media screen and (max-width: 920px) {
+  .container ul.links{
+    border: 1px solid #4AFAFF;
+  }
+
+}

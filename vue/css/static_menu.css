@@ -10,6 +10,7 @@ ul {
     flex-direction: row;
     align-items: center;
     max-width: none!important;
+    border-bottom : 1px solid #4AFAFF;
 }
 
 
@@ -31,7 +32,7 @@ ul {
 }
 
   .container ul.links li:hover a {
-    color: white!important;
+    color: white;
   
     transition: color 0.5s;
   }
@@ -89,7 +90,7 @@ ul {
     }
   
     .container ul.links {
-      background-color: #011e40!important;
+      background-color: #011e40;
     }
   
     .container .active_links{
@@ -102,5 +103,5 @@ ul {
       margin-right: 10px;
     }
 
-    
+ 
   }

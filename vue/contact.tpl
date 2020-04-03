@@ -20,13 +20,45 @@
 	<link rel="stylesheet" type="text/css" href="./vue/css/contactUtil.css">
 	<link rel="stylesheet" type="text/css" href="./vue/css/contactMain.css">
 	<link rel="stylesheet" type="text/css" href="./vue/css/contact.css">
+	<link rel="stylesheet" href="./vue/css/static_menu.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!--===============================================================================================-->
 </head>
 <body>
-
+	<header>
+		<div class="container">
+          
+          <ul class="links active_links">
+            <li><a href="./index.php">Accueil</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Classement</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionScenario">Scénario</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
+            <?php 
+              if (isset($_SESSION['bConnect'])){
+                if ($_SESSION['bConnect']) {
+                  echo('<li><a href="./index.php?controleur=utilisateur&action=accueilApresDeconnexion">Déconnexion</a></li>');
+                }
+                else {
+                  echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
+                        <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                      ');
+                }
+              }
+              else {
+                echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
+                      <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                    ');
+              }
+            ?>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
+            <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
+            
+          </ul>
+        </div>
+		</header>
 	<div class="bg-contact2" style="background-image: url('images/bg-01.jpg');">
 		<div class="container-contact2">
 			<div class="wrap-contact2">
