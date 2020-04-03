@@ -4,14 +4,58 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
     }
+ 
   }
   
   @media (min-width: 768px) {
     .grid {
       grid-template-columns: repeat(6, 1fr);
     }
+    
+  }
+
+  @media screen and (min-width: 576px) {
+    #cartes {
+      margin-top: 600px;
+    }
+  
+    #trait {
+      margin-top: 1px;
+    }
+  
+    #titreC {
+      margin-left: 99px;
+    }
+  }
+
+  @media screen and (max-width: 755px) {
+    header{ 
+        margin-top : 15px;
+    }
+    h1{ 
+      margin-top : 15px;
+  }
+
+  #cartes {
+    margin-top: 1277px;
+  }
+
+  #trait {
+    margin-top: 1px;
+  }
+
+  #titreC {
+    margin-left: -33px;
+  }
+   
+  .wrapper {
+    padding: 12px 12px 12px 60px;
   }
   
+}
+
+ 
+
   /* Bonus : Toute la hauteur ? */
   /* .website {min-height: 100vh;}
   

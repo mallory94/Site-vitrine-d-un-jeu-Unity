@@ -137,15 +137,15 @@
               
             </div>
         
-            <div style="
+            <div id="cartes" style="
                padding: 674px 1px 1px 1px;">
-               <div style="
-                  padding: 1px 1px 1px;
+               <div id="trait" style="
+                  padding: 1px 1px 1px 1px;
                   background-color: aqua;
                   "></div>
                <div>
-                  <div class="cartes">
-                     <h1 style=" padding: 23px 278px 23px 234px;">CARTES </h1>
+                  <div >
+                     <h1 id="titreC" style=" padding: 23px 278px 23px 234px;">CARTES </h1>
                      <div>
                         <img src="./vue/images/laboEbauche.png" style="padding: 23px 50px 24px 22px; opacity:99%;"/>
                      </div>
