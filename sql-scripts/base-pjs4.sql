@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 03 avr. 2020 à 00:30
+-- Généré le :  ven. 03 avr. 2020 à 00:58
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -158,7 +158,9 @@ INSERT INTO `compte` (`IdCompte`, `mail`, `mdp`, `pseudo`, `statut`, `bConnecte`
 (13, 'intru@gmail.com', '123ERR', 'FiereDetreUnIntru', 'joueur', 1),
 (14, 'jeancharles@gmail.com', '2ZE3R', 'Kingeek34', 'joueur', 1),
 (15, 'erine@gmail.com', '2ZE3R4T', 'ErineIR345', 'joueur', 0),
-(16, 'sorry@gmail.com', 'HHH87YH', 'Okey', 'joueur', 1);
+(16, 'sorry@gmail.com', 'HHH87YH', 'Okey', 'joueur', 1),
+(17, 'test@gmail.com', '$2y$10$PXiU1NTg9LLpUmt.O5Bmt.yEcmwrHQLDN3mcdDrBiqRqYFuLXlwOu', 'test', 'Joueur', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -270,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `score` (
   `IdNiveau` int(11) NOT NULL,
   `dernierScore` int(11) NOT NULL,
   `nbMonstresTues` int(11) NOT NULL,
-  `tpsJeu` time NOT NULL DEFAULT '00:00:00',
+  `tpsJeu` bigint(20) NOT NULL DEFAULT '0',
   `meilleurScore` int(11) NOT NULL,
   PRIMARY KEY (`IdJoueur`,`IdNiveau`),
   KEY `IdNiveau` (`IdNiveau`)
@@ -281,16 +283,16 @@ CREATE TABLE IF NOT EXISTS `score` (
 --
 
 INSERT INTO `score` (`IdJoueur`, `IdNiveau`, `dernierScore`, `nbMonstresTues`, `tpsJeu`, `meilleurScore`) VALUES
-(3, 1, 4, 8, '04:03:00', 4),
-(4, 1, 1, 1, '00:04:00', 1),
-(5, 1, 5, 11, '32:00:00', 6),
-(9, 1, 8, 13, '10:00:00', 8),
-(10, 1, 6, 6, '00:06:00', 6),
-(11, 1, 4, 5, '04:00:00', 4),
-(13, 1, 3, 12, '00:05:00', 5),
-(14, 1, 7, 7, '00:04:00', 7),
-(15, 1, 8, 15, '02:00:00', 8),
-(16, 1, 2, 2, '00:04:00', 2);
+(3, 1, 4, 8, 40300, 4),
+(4, 1, 1, 1, 400, 1),
+(5, 1, 5, 11, 320000, 6),
+(9, 1, 8, 13, 100000, 8),
+(10, 1, 6, 6, 600, 6),
+(11, 1, 4, 5, 40000, 4),
+(13, 1, 3, 12, 500, 5),
+(14, 1, 7, 7, 400, 7),
+(15, 1, 8, 15, 20000, 8),
+(16, 1, 2, 2, 400, 2);
 
 -- --------------------------------------------------------
 
@@ -334,9 +336,9 @@ CREATE TABLE IF NOT EXISTS `tourelles` (
 --
 
 INSERT INTO `tourelles` (`IdTourelles`, `prix`, `nomTourelles`, `degats`, `vitesseT`) VALUES
-(1, '', 'Tour1', 12, 2),
-(2, '', 'Tour2', 14, 3),
-(3, '', 'Tour3', 15, 4);
+(1, 0, 'Tour1', 12, 2),
+(2, 0, 'Tour2', 14, 3),
+(3, 0, 'Tour3', 15, 4);
 
 --
 -- Contraintes pour les tables déchargées
