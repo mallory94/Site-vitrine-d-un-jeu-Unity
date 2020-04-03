@@ -48,7 +48,6 @@
             
           </ul>
         </div>
-      <script type="text/javascript" src="vue/js/menu.js"></script>
 
 
 
