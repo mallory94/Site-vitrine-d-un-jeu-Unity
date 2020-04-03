@@ -146,3 +146,80 @@ body {
 .page:nth-child(odd){
   background-position: right top;
 }
+
+
+
+@media screen and (max-width: 1650px) {
+
+  .page, .page p, b  {
+    font-size: 15px;
+  }
+  
+
+  #question{
+    line-height: normal;
+    margin-top:0px;
+    padding-top:12px;
+	}
+}
+
+
+@media screen and (max-width: 1250px) {
+
+  .page, .page p, b  {
+    font-size: 13px;
+  }
+  
+ 
+
+}
+
+@media screen and (max-width: 1125px) {
+
+  .page, .page p, b  {
+    font-size: 11px;
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+
+  .page h1 {
+    line-height:normal;
+  }
+
+  p{
+    padding-top:0px;
+  }
+  
+  
+  .page {
+    display: block;
+    position:relative;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .book .page{
+    height: 500px;
+  }
+
+}
+
+@media screen and (max-width: 730px) {
+  .book .page{
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  .book .page{
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .book .page{
+    height: 800px;
+  }
+}

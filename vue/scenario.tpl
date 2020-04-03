@@ -76,12 +76,12 @@
                 <h2>Mission </h2>
                 <br>
                 <p>Désormais, la professeure et vous-même allez tenter de réparer vos erreurs. Vous allez devoir placer des tourelles pour défendre le laboratoire et empêcher les ennemis de franchir le portail et réduire à néant votre dur travail.
-                    <p style="font-size:22px"><b><i>Serez-vous à la hauteur pour empêcher ces ennemis de vous détruire ?</b></i>
+                    <p id="question" style="font-size:22px"><b><i>Serez-vous à la hauteur pour empêcher ces ennemis de vous détruire ?</b></i>
                     </p>
                 </p>
             </div>
-            <div class="page">
-                <h1 style="line-height: 1.5em; padding : 300px 25px 12px 23px;">
+            <div class="page ">
+                <h1 id="titreDernierePage" style="line-height: 1.5em; padding : 100px 25px 12px 23px;">
                Mme. Enokson compte sur vous !  
                <h1>
             </div>
