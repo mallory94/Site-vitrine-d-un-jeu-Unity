@@ -7,3 +7,15 @@ header{
 .book{
 	margin-top:40px;
 }
+
+@media screen and (max-width: 850px) {
+	header{
+		position:initial;
+	}
+	body{
+		display: block;
+	}
+	.pages{
+		left:20%;
+	}
+}
