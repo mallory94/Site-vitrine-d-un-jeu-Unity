@@ -25,6 +25,7 @@ ul {
 .container ul.active_links li {
     margin-left: 20px;
     margin-left: 20px;
+    min-width: fit-content;
 }
 
   .container ul.links li:hover a {
