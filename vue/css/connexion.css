@@ -183,3 +183,10 @@ label{
 .rouge::placeholder {
   color: rgb(182, 0, 0);
 }
+
+
+@media screen and (max-width: 580px) {
+  form.modal-content.animate {
+    width:400px;
+  }
+}
