@@ -2,6 +2,7 @@
 <html class="no-js" lang="fr">
     <head>
     <title>Actualités</title>
+    <link rel="icon" type="image/png" href="./vue/images/icons/portail.png"/>
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">

@@ -2,6 +2,7 @@
 <html class="no-js" lang="fr">
    <head>
       <title>Encyclopédie</title>
+      <link rel="icon" type="image/png" href="./vue/images/icons/portail.png"/>
       <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="vue/css/testReset.css" media="all">
       <link rel="stylesheet" href="vue/css/knacss.css" media="all">

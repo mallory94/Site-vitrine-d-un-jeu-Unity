@@ -5,6 +5,7 @@
     <head>
         <title>Classement</title>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="./vue/images/icons/portail.png"/>
         <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         

@@ -3,6 +3,7 @@
 
 <head>
     <title>Scénario</title>
+    <link rel="icon" type="image/png" href="./vue/images/icons/portail.png"/>
     <link rel="stylesheet" href="vue/css/livre.css">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
