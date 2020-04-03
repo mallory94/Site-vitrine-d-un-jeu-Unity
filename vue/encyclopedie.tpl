@@ -169,22 +169,22 @@
                         <img src="./vue/images/tourelles/caisse.png" alt="caisse" /> <!-- image à insérer -->
                      </div>
                      <div class="clash-card__unit-name">Caisse en bois</div>
-                     <div class="clash-card__level clash-card__level--bois">sous titre</div>
+                     <div class="clash-card__level clash-card__level--bois">The shortcut breaker</div>
                      <div class="clash-card__unit-description">
-                        description :ooo
+                     Vous ne passerez pas
                      </div>
                      <div class="clash-card__unit-stats clash-card__unit-stats--bois clearfix">
                         <div class="centrer">
                            <div class="one-third">
-                              <div class="stat"></div>
+                              <div class="statC">Aucune</div>
                               <div class="stat-value">Dégâts</div>
                            </div>
                            <div class="one-third">
-                              <div class="stat"></div>
+                              <div class="statC">Aucune</div>
                               <div class="stat-value">Vitesse d'attaque</div>
                            </div>
                            <div class="one-third no-border">
-                              <div class="stat"></div>
+                              <div class="statC">50</div>
                               <div class="stat-value">Prix</div>
                            </div>
                         </div>
@@ -199,22 +199,22 @@
                         <img src="./vue/images/tourelles/tourelleCube.gif" alt="Rayon-de-la-mort" /> <!-- image -->
                      </div>
                      <div class="clash-card__unit-name">Rayon de la mort </div>
-                     <div class="clash-card__level clash-card__level--Rayon-de-la-mort">sous titre</div>
+                     <div class="clash-card__level clash-card__level--Rayon-de-la-mort">The dreadful turret</div>
                      <div class="clash-card__unit-description">
-                        Description :oo
+                     Qui dit gros problème, dit gros moyen
                      </div>
                      <div class="clash-card__unit-stats clash-card__unit-stats--Rayon-de-la-mort clearfix">
                         <div class="centrer">
                            <div class="one-third">
-                              <div class="stat"></div>
+                              <div class="statC">1 - ??? pts</div>
                               <div class="stat-value">Dégâts</div>
                            </div>
                            <div class="one-third">
-                              <div class="stat"></div>
+                              <div class="statC">Continue</div>
                               <div class="stat-value">Vitesse d'attaque</div>
                            </div>
                            <div class="one-third no-border">
-                              <div class="stat"></div>
+                              <div class="statC">4000</div>
                               <div class="stat-value">Prix</div>
                            </div>
                         </div>
@@ -229,22 +229,22 @@
                         <img src="./vue/images/tourelles/tourelleTesla4.gif" alt="Tesla" /> <!-- image -->
                      </div>
                      <div class="clash-card__unit-name">Générateur de foudre</div>
-                     <div class="clash-card__level clash-card__level--generateur-foudre">sous titre</div>
+                     <div class="clash-card__level clash-card__level--generateur-foudre">The Tesla Tower</div>
                      <div class="clash-card__unit-description">
-                        Description :oo
+                     Nikola serait fier
                      </div>
                      <div class="clash-card__unit-stats clash-card__unit-stats--generateur-foudre clearfix">
                         <div class="centrer">
                            <div class="one-third">
-                              <div class="stat"><b></b></div>
+                              <div class="statC"><b>500 pts</b></div>
                               <div class="stat-value"><b>Dégâts</b></div>
                            </div>
                            <div class="one-third">
-                           <div class="stat"><b></b></div>
+                           <div class="statC"><b>Lente</b></div>
                               <div class="stat-value"><b>Vitesse d'attaque</b></div>
                            </div>
                            <div class="one-third no-border">
-                           <div class="stat"><b></b></div>
+                           <div class="statC"><b>5000</b></div>
                               <div class="stat-value"><b>Prix</b></div>
                            </div>
                         </div>
@@ -259,22 +259,22 @@
                         <img src="./vue/images/tourelles/tourelleClassique.gif" alt="pistocanon" /> <!-- image -->
                      </div>
                      <div class="clash-card__unit-name">Pistocanon à énergie</div>
-                     <div class="clash-card__level clash-card__level--pistocanon">sous titre</div>
+                     <div class="clash-card__level clash-card__level--pistocanon">The Best Noise Maker</div>
                      <div class="clash-card__unit-description">
-                        Description :oo
+                         Pew Pew Pew
                      </div>
                      <div class="clash-card__unit-stats clash-card__unit-stats--pistocanon clearfix">
                         <div class="centrer">
                            <div class="one-third">
-                              <div class="stat"></div>
+                              <div class="statC">35 pts</div>
                               <div class="stat-value">Dégâts</div>
                            </div>
                            <div class="one-third">
-                              <div class="stat"></div>
+                              <div class="statC">Modérée</div>
                               <div class="stat-value">Vitesse d'attaque</div>
                            </div>
                            <div class="one-third no-border">
-                              <div class="stat"></div>
+                              <div class="statC">2000</div>
                               <div class="stat-value">Prix</div>
                            </div>
                         </div>
