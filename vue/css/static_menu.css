@@ -15,7 +15,7 @@ ul {
 
 
 .container ul.links li a {
-    color: #4AFAFF!important;
+    color: #4AFAFF;
     text-decoration: none;
     transition: color 0.5s;
     text-transform: uppercase;
