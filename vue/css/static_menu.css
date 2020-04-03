@@ -25,11 +25,13 @@ ul {
 }
 
 .container ul.active_links li {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     min-width: fit-content;
     text-align: center;
 }
+
+
 
   .container ul.links li:hover a {
     color: white;
@@ -103,5 +105,19 @@ ul {
       margin-right: 10px;
     }
 
+    li:hover {
+      background-color: #ffffff2b;
+      
+  }
  
+  }
+
+  #btnMenu{
+    color: #01123B;
+    
+  }
+
+  #li-btnMenu{
+    background-color: #4AFAFF;
+    cursor:pointer;
   }
