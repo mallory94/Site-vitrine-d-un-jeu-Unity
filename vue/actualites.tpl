@@ -194,7 +194,7 @@
                 <div class="trigger"></div>
                 <div class="trigger"></div>
 
-                <div class="paracard" style="background-image: url(./vue/images/actus/BF-Bot-portal.png);">
+                <div class="paracard carteBF-Bot" style="background-image: url(./vue/images/actus/BF-Bot-portal.png);">
                     <div class="frame">
                         <h2>
                             <div class="titreArticle">Les BF-Bot ont franchi le portail !</div>
@@ -281,7 +281,7 @@
                 <div class="trigger"></div>
                 <div class="trigger"></div>
 
-                <div class="paracard" style="background-image: url(./vue/images/actus/stagiaire.png);">
+                <div class="paracard carteStagiaire" style="background-image: url(./vue/images/actus/stagiaire.png);">
                     <div class="frame">
                         <h2>
                             <div class="titreArticle">Bravo ! Vous avez été sélectionné !</div>

@@ -182,8 +182,18 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .carteBF-Bot , .carteStagiaire {
+        background-size: 80% 110%;
+        background-repeat: no-repeat;
+        
+    }
 
+    .carteStagiaire{
+        background-color: rgb(157, 223, 226);
+    }
 
+}
 
 .carteMediatron{
     background-size: 120% 100%;
