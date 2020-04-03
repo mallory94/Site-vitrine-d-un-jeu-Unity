@@ -14,7 +14,7 @@
     
   }
 
-  @media screen and (min-width: 576px) {
+  @media screen and (max-width: 1157px) {
     #cartes {
       margin-top: 600px;
     }
