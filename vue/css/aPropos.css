@@ -1,7 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+
 .container{
     width:auto;
 }
 
-header{
+header#menu{
     padding-top:20px;
+    font-family: "Montserrat", sans-serif;
+    z-index : 1000;
+    position : fixed;
+    min-width : 100%;
+    width : auto;
+    
+}
+
+header#menu li{
+    min-height : inherit;
+
 }
