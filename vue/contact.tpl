@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
 	<title>Contact</title>
 	<meta charset="UTF-8">
@@ -44,13 +44,13 @@
                 }
                 else {
                   echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                        <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                        <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                       ');
                 }
               }
               else {
                 echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                      <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                      <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                     ');
               }
             ?>

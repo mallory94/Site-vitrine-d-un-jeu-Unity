@@ -31,13 +31,13 @@
                 }
                 else {
                   echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                        <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                        <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                       ');
                 }
               }
               else {
                 echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                      <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">S\'inscrire</a></li>
+                      <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                     ');
               }
             ?>
@@ -46,14 +46,18 @@
             <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
           </ul>
         </div>
-            <h1>ENCYCLOPEDIE</h1>
-            <h1> Venez découvrir l'univers d'U.M.S.I</h1>
+          
          </header>
-         <br>
+    
          <div class="slide-container">
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
+            <h1 id="ency" style=" font-size: 75px; padding: 1px 1px 36px 1px;">ENCYCLOPEDIE</h1>
+            <h1 id="sousT" style="font-size: 40px; color : white;"> Venez découvrir l'univers d'U.M.S.I</h1>
+            <br>
+            <br> <br>
+            <br>
             <div class="monstres" >
                <h1> MONSTRES </h1>
                <div class="wrapper">
@@ -166,7 +170,7 @@
                <br><br>
             <div class="tourelles" >
                <h1> TOURELLES </h1>
-               <div class="wrapper">
+               <div class="wrapperT">
                   <div class="clash-card bois tourelle1">
                      <div class="clash-card__image  clash-card__image--bois">
                         <img src="./vue/images/tourelles/caisse.png" alt="caisse" /> <!-- image à insérer -->
@@ -196,7 +200,7 @@
                   <!-- end clash-card caisse en bois-->
                </div>
                <!-- end wrapper -->
-               <div class="wrapper">
+               <div class="wrapperT">
                   <div class="clash-card">
                      <div class="clash-card__image clash-card__image--Rayon-de-la-mort clash-card__image--rose_peche">
                         <img src="./vue/images/tourelles/tourelleCube.gif" alt="Rayon-de-la-mort" /> <!-- image -->
@@ -226,7 +230,7 @@
                   <!-- end clash-card rayon de la mort-->
                </div>
                <!-- end wrapper -->
-               <div class="wrapper">
+               <div class="wrapperT">
                   <div class="clash-card ">
                      <div class="clash-card__image clash-card__image--generateur-foudre">
                         <img src="./vue/images/tourelles/tourelleTesla4.gif" alt="Tesla" /> <!-- image -->
@@ -256,7 +260,7 @@
                   <!-- end clash-card generateur de fouudre-->
                </div>
 
-               <div class="wrapper">
+               <div class="wrapperT">
                   <div class="clash-card ">
                      <div class="clash-card__image clash-card__image--pistocanon">
                         <img src="./vue/images/tourelles/tourelleClassique.gif" alt="pistocanon" /> <!-- image -->

@@ -18,6 +18,13 @@
 }
 
  .wrapper {
+	min-width: fit-content;
+	max-width: fit-content;
+	float: left;
+	padding: 6px 6px 6px 251px;
+}
+
+.wrapperT {
 	margin: 40px;
 	min-width: fit-content;
 	max-width: fit-content;
