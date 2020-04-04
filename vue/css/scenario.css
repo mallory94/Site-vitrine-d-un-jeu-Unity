@@ -1,7 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 header#menu{
-	position: absolute;
 	top: 0%;
     font-family: "Montserrat", sans-serif;
     z-index: 1000;

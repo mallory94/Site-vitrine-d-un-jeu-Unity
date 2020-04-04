@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 html {
   height: 100%;
 }
@@ -8,9 +8,19 @@ body {
   background: #090a0f;
 }
 
-header {
-    background-color: black;
+header#menu{
+  padding-top :10px;
+	top: 0%;
+    font-family: "Montserrat", sans-serif;
+    z-index: 10000;
+    position: fixed;
+    min-width: 100%;
+	width: auto;
+	background-color: #151515;
+	
 }
+
+
 
 h1{
   font-family: 'Luckiest Guy';
@@ -26,6 +36,9 @@ h1{
   position: relative;
   width: 200%;
   height:35%;
+}
+.slide-container{
+  padding-top:50px;
 }
 
 
@@ -98,7 +111,7 @@ ul, li {
 }
 
 .container ul.links {
-    background-color: black!important;
+    background-color: #151515!important;
 }
 
 .container {

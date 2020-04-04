@@ -15,8 +15,8 @@
    </head>
    <body onload="x=0" onkeydown="document.images[0].style.msTransform='rotate('+((x=++x%4)*90)+'deg)'">
       <div class="website">
-         <header class="header" role="banner">
-         <div class="container">
+        <header id="menu">
+		<div class="container">
           
           <ul class="links active_links">
             <li><a href="./index.php">Accueil</a></li>
@@ -46,8 +46,7 @@
             <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
           </ul>
         </div>
-          
-         </header>
+		</header>
     
          <div class="slide-container">
             <div id='stars'></div>
