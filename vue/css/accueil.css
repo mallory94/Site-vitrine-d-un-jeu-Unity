@@ -21,7 +21,7 @@ body {
     -webkit-border-radius: 56px 56px 56px 56px;
     border: 0px solid #000000;
     transition : 0.5s;
-    
+    cursor:pointer;
 }
 
 #btnTelechargerJeu:hover{
@@ -162,4 +162,8 @@ html{
 
 #letter-object {
     text-shadow: 0 1px 0 #575757, 0 2px 0 #575757, 0 3px 0 #575757, 0 4px 0 #575757, 0 5px 0 #575757, 0 6px 0 #575757, 0 7px 0 #575757, 0 8px 0 #575757, 0 9px 0 #575757, 0 50px 30px rgba(0,0,0,.3)!important;
+}
+
+#menu{
+    cursor:pointer;
 }
