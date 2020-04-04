@@ -14,12 +14,42 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="./vue/js/minitronRush.js"></script>
         <script src="./vue/js/static_menu.js"></script>
+
+        <script language="javascript">
+			function conversion_seconde_heure(time) {
+				var reste=time;
+				var result='';
+ 
+				var nbJours=Math.floor(reste/(3600*24));
+				reste -= nbJours*24*3600;
+ 
+				var nbHours=Math.floor(reste/3600);
+				reste -= nbHours*3600;
+ 
+				var nbMinutes=Math.floor(reste/60);
+				reste -= nbMinutes*60;
+ 
+				var nbSeconds=reste;
+ 
+				if (nbJours>0)
+					result=result+nbJours+'j ';
+ 
+				if (nbHours>0)
+					result=result+nbHours+'h ';
+ 
+				if (nbMinutes>0)
+					result=result+nbMinutes+'min ';
+ 
+				if (nbSeconds>0)
+					result=result+nbSeconds+'s ';
+         
+         return result;
+			 document.getElementById("tempsdiv").innerHTML= result;
+			}
+ 
+		</script>
     </head>
 <header>
-
-
-      
-
       <div class="container">
           
           <ul class="links active_links">
@@ -75,23 +105,35 @@
         </div>
         <div class="divTableBody">
             <?php for ($k = 0; $k < $nbJoueurs; ++$k) {
-                    echo('<div class="divTableRow">
+               
+                    echo('
+                    <div class="divTableRow">
                             <div class="divTableCell">' . $listeScores[$k]['pseudo'] . '</div>
                             <div class="divTableCell">' . $listeScores[$k]['niveau'] . '</div>
                             <div class="divTableCell">' . $listeScores[$k]['dernierScore'] . '</div>
                             <div class="divTableCell">' . $listeScores[$k]['nbMonstresTues'] . '</div>
-                            <div class="divTableCell">' . $listeScores[$k]['tempsJeu'] . '</div>
+                            <div  id="tempsdiv'.$k.'" class="divTableCell"></div> 
                             <div class="divTableCell">' . $listeScores[$k]['meilleurScore'] . '</div>
-                            </div>');
+                            </div>
+                            <script type="text/javascript">
+                    document.getElementById("tempsdiv'.$k.'").innerHTML= conversion_seconde_heure(' . $listeScores[$k]['tempsJeu'] .');
+                          </script> ');
+                      
+                         
                     }
+                   
             ?>
                 
-
+              
     </div>
     </main>
-<body>
+</body>
     <footer class="footer full-bleed" role="contentinfo">
     Vous pensez voir une erreur dans le classement?<br>
     Contactez nous <a href="./index.php?controleur=utilisateur&action=redirectionContact">ici</a>
     </footer>
+
+
+
+
 </html>
