@@ -51,30 +51,32 @@
     <div class="book">
         <div id="pages" class="pages">
             <div class="page" style="z-index:12;">
-                <h1 style="line-height: 2.5em;"> Bienvenue dans l'univers<br>d'U.M.S.I !<br>Découvrez leur histoire</h1>
+            <img id="cover" src="./vue/images/umsi-logo.png">
+                <h1 style="line-height: 2.5em;"> Découvrez l'histoire du jeu </h1>
+                <img id="cover" src="./vue/images/icons/portail.png">
             </div>
             <div class="page" style="background-image : url(vue/images/persos.png); background-repeat:no-repeat; background-position: center; background-size: 100%; "></div>
             <div class="page" style="z-index:10;">
                 <h1><br>Chapitre 1</h1>
                 <br>
-                <h2>Situation initiale </h2>
+                <h2> Dans un laboratoire fort lointain ... </h2>
                 <br>
-                <p>Dans une petite ville d'Amérique du Nord, vit Mme.Enokson, une scientifique expérimentée et connue pour ses idées farfelues. Depuis son plus jeune âge, elle aime tenter l’impossible et l’inaccessible. Quelques années plus tard, elle décide de créer des trous de vers artificiels. Pour l’aider dans sa quête, elle embauche un stagiaire, en l'occurrence vous, afin de réaliser ces expériences. </p>
+                <p>Dans une petite ville d'Amérique du Nord, vit Mme.Enokson, une scientifique expérimentée et connue pour ses idées farfelues. Depuis son plus jeune âge, elle aime tenter l’impossible et l’inaccessible. Des années plus tard, elle consacre sa vie à un seul objectif : créer des trous de vers artificiels. Mais pour l’aider dans sa quête, elle a besoin d'un acolyte, un compagnon de recherche, un atout sans faille. En d'autres termes un stagiaire : vous. </p>
             </div>
             <div class="page" style="background-image : url(vue/images/essai.png); background-repeat:no-repeat; background-position: center; background-size: 90%; "></div>
             <div class="page" style="z-index:8;">
                 <h1><br>Chapitre 2</h1>
                 <br>
-                <h2>Péripéties</h2>
+                <h2>Puis les portails transdimensionnels furent !</h2>
                 <br>
                 <p>
-                    Après de longues et rudes semaines de recherche, vous finissez par enfin créer ce qui semble être le tout premier trou de vers stable. Tout semble se dérouler comme prévu, lorsque tout à coup, le portail laisse échapper des créatures venant d’une toute autre dimension. La professeure comprend alors que vous vous êtes malencontreusement trompés… </p>
+                    Après de longs et pénibles mois de recherche, vous y parvenait enfin. Eureka ! le premier trou de vers artificiel a été créer grâce à votre participation (minime). Tout semble se dérouler comme prévu, lorsque tout à coup, le portail laisse échapper des créatures venant d’une toute autre dimension. Vite ! Il faut contenir l'invasion, vous allez devoir utiliser tout ce qui est à votre disposition pour les empécher de sortir du laboratoire !</p>
             </div>
             <div class="page" style="background-image : url(vue/images/all.png); background-repeat:no-repeat; background-position: center; background-size: 100%; "></div>
             <div class="page" style="z-index:6;">
                 <h1><br>Chapitre 3</h1>
                 <br>
-                <h2>Mission </h2>
+                <h2> L'invasion </h2>
                 <br>
                 <p>Désormais, la professeure et vous-même allez tenter de réparer vos erreurs. Vous allez devoir placer des tourelles pour défendre le laboratoire et empêcher les ennemis de franchir le portail et réduire à néant votre dur travail.
                     <p id="question" style="font-size:22px"><b><i>Serez-vous à la hauteur pour empêcher ces ennemis de vous détruire ?</b></i>

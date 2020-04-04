@@ -58,6 +58,13 @@ h1, h2 {
   user-select: none;
   background-color:#01123B; /*couleur des pages*/
 }
+
+.book img#cover{
+  width : 70%;
+  margin-left : 15%;
+  margin-right : 15%;
+  
+}
 .book .page:before {
   content: '';
   position: absolute;
@@ -128,7 +135,7 @@ h1, h2 {
 }
 html,
 body {
-  background: #050505;
+  background: #05347c;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 html {

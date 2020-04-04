@@ -8,11 +8,12 @@ header#menu{
     position: fixed;
     min-width: 100%;
 	width: auto;
-	background-color: #05347c;
+	background-color: #01123B;
+	
 }
 
 .book{
-	margin-top:60px;
+	margin-top:50px;
 }
 
 @media screen and (max-width: 920px) {
