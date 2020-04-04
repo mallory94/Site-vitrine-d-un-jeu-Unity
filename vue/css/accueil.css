@@ -10,16 +10,22 @@ body {
     /* font-family: Lustria, serif; */
     text-align: center;
     font-size: 35px;
-    background-color: rgb(255, 255, 255);
-    /* text-shadow: rgb(0, 0, 0) 2px 2px 2px; */
+    background-color: rgba(5,52,124,0.8);
+    box-shadow: black;
     width:fit-content;
+    padding : 1em;
 
     margin:0 auto;
     border-radius: 56px 56px 56px 56px;
     -moz-border-radius: 56px 56px 56px 56px;
     -webkit-border-radius: 56px 56px 56px 56px;
     border: 0px solid #000000;
+    transition : 0.5s;
     
+}
+
+#btnTelechargerJeu:hover{
+    background-color: rgba(5,52,124,1);
 }
 
 
@@ -30,8 +36,8 @@ body {
 }
 
 #letter-object{ 
-    font-family: 'Signika Negative', sans-serif;
-    color: rgb(68, 68, 68);
+    font-family: 'Montserrat', sans-serif;
+    color: #4afaff;
 }
 
 div#letter-object{

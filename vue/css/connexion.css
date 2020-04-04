@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+
 @font-face {
   font-family: "police-umsi";
   src: url("../../vue/fonts/FluoGums.ttf") format("truetype");
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 
-body {font-family: "Montserrat", sans-serif;}
+body {font-family: "Montserrat", sans-serif; color : #60c9d7; font-style : none; letter-spacing: 0.05em;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -26,7 +27,11 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
+  font-family : "Montserrat", sans-serif;
+  letter-spacing: 0.1em;
 }
+
+
 
 button:hover {
   opacity: 0.8;
@@ -55,6 +60,10 @@ button:hover {
   -webkit-text-fill-color: transparent;
 }
 
+.container input[type="text"], .container input[type="password"]{
+  background-color : #fff;
+  font-family: "Montserrat", sans-serif;
+}
 
 /* Center the image and position the close button */
 .imgcontainer {
@@ -76,6 +85,7 @@ img.avatar {
 span.psw {
   float: right;
   padding-top: 16px;
+  padding-bottom : 50px;
 }
 
 /* The Modal (background) */
@@ -93,17 +103,14 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #fff;
   margin: 0% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   padding : 30px;
+  padding-bottom  : 50px;
   border: 1px solid #888;
   width: 500px; /* Could be more or less, depending on screen size */
 
-  border-radius: 23px 23px 23px 23px;
-  -moz-border-radius: 23px 23px 23px 23px;
-  -webkit-border-radius: 23px 23px 23px 23px;
   border: 0px solid #000000;
-
   -webkit-box-shadow: 2px 18px 26px 3px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 18px 26px 3px rgba(0,0,0,0.75);
   box-shadow: 2px 18px 26px 3px rgba(0,0,0,0.75);
