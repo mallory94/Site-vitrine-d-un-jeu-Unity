@@ -11,13 +11,12 @@
 $hostname = "mysql";
 $base = "base-pjs4";
 $loginBD = "root";
-$passBD = "root";
+$passBD = "";
 $pdo = null;
 
 
 try {
 	$pdo = new PDO("mysql:server=$hostname; dbname=$base", "$loginBD", "$passBD");
-	echo("Connexion à la base de donnée effectuée");
 } catch (PDOException $e) {
 	die("Echec de connexion : " . $e->getMessage() . "\n Description =  " . $e->getTraceAsString() . "\n Code = " . $e->getCode() .
 	"\n toString = " . $e->__toString() . "\n");

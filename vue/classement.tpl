@@ -49,8 +49,8 @@
  
 		</script>
     </head>
-<header>
-      <div class="container">
+<header id="menu">
+		<div class="container">
           
           <ul class="links active_links">
             <li><a href="./index.php">Accueil</a></li>
@@ -81,17 +81,18 @@
           </ul>
         </div>
 
+		</header>
 
+<body>
+<div id="bg-img"> <img src="./vue/images/laboDrawing.png"></div>
 
-<div class="titreEtMinitron">
+            <div class="titreEtMinitron">
     <div id="titre">
         <div id="texteInterneTitre"><div class="lettresDevant">Cla</div><div class="lettresDerriere">sse</div><div class="lettresDevant">ment</div></div>
     </div>
     <img id="minitron" src="./vue/images/crop-img/crop-minitron.gif" alt="minitron" />
 </div>
-</header>
-<body>
-    
+
     <main id="main" role="main" class="main">
     <div class="divTable tableauClassement">
         <div class="divTableHeading">
