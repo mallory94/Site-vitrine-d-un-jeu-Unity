@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<meta charset="UTF-8">
     <title>Scénario</title>
     <link rel="icon" type="image/png" href="./vue/images/icons/portail.png"/>
     <link rel="stylesheet" href="vue/css/livre.css">
@@ -61,7 +62,7 @@
                 <br>
                 <h2> Dans un laboratoire fort lointain ... </h2>
                 <br>
-                <p>Dans une petite ville d'Amérique du Nord, vit Mme.Enokson, une scientifique expérimentée et connue pour ses idées farfelues. Depuis son plus jeune âge, elle aime tenter l’impossible et l’inaccessible. Des années plus tard, elle consacre sa vie à un seul objectif : créer des trous de vers artificiels. Mais pour l’aider dans sa quête, elle a besoin d'un acolyte, un compagnon de recherche, un atout sans faille. En d'autres termes un stagiaire : vous. </p>
+                <p>Au coeur d'une petite ville d'Amérique du Nord, vit Mme.Enokson, une scientifique expérimentée et connue pour ses idées farfelues. Depuis son plus jeune âge, elle aime tenter l’impossible et l’inaccessible. Quelques années plus tard, elle décide de consacrer sa vie à un seul objectif : créer des trous de vers artificiels. Mais pour l’aider dans sa quête, elle a besoin d'un acolyte, d'un compagnon de recherche. C'est pourquoi elle embauche un stagiaire : vous. </p>
             </div>
             <div class="page" style="background-image : url(vue/images/essai.png); background-repeat:no-repeat; background-position: center; background-size: 90%; "></div>
             <div class="page" style="z-index:8;">
@@ -70,7 +71,7 @@
                 <h2>Puis les portails transdimensionnels furent !</h2>
                 <br>
                 <p>
-                    Après de longs et pénibles mois de recherche, vous y parvenait enfin. Eureka ! le premier trou de vers artificiel a été créer grâce à votre participation (minime). Tout semble se dérouler comme prévu, lorsque tout à coup, le portail laisse échapper des créatures venant d’une toute autre dimension. Vite ! Il faut contenir l'invasion, vous allez devoir utiliser tout ce qui est à votre disposition pour les empécher de sortir du laboratoire !</p>
+                    Après de longs et pénibles mois de recherche, vous y parvenez enfin. Eureka ! Le premier trou de vers artificiel s'avère être crée grâce à votre participation (minime). Tout semble se dérouler comme prévu, lorsque tout à coup, le portail laisse échapper des créatures venant d’une toute autre dimension. Vite ! Il faut contenir l'invasion, vous allez devoir utiliser tout ce qui est à votre disposition pour les empêcher de sortir du laboratoire !</p>
             </div>
             <div class="page" style="background-image : url(vue/images/all.png); background-repeat:no-repeat; background-position: center; background-size: 100%; "></div>
             <div class="page" style="z-index:6;">
