@@ -132,10 +132,13 @@ footer{
 
 @media screen and (max-width: 600px) {
     div#letter-object{
-        font-size:20px;
+        font-size: 40px;
+        
     }
     #btnTelechargerJeu{
         padding:1rem;
+        position:relative;
+        top:35%;
     }
     .espace-vide{
         height: 0px;
