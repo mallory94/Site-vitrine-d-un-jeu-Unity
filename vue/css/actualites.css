@@ -1,11 +1,21 @@
-header{
-    margin-top:20px;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+
+body{
+    padding-top : 50px;
+}
+header#menu{
+    padding-top :20px;
+    top: 0%;
+    font-family: "Montserrat", sans-serif;
+    z-index: 10000;
+    position: fixed;
+    min-width: 100%;
+    width: auto;
+    background-color: #05347c;
 }
 
 @media screen and (max-width: 755px) {
-    header{ 
-        margin-top : 15px;
-    }
+    
 }
 
 #titre {

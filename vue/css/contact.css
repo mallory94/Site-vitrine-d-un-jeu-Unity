@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 .alignement{
     display: flex;
 }
@@ -28,9 +29,15 @@
     color:white;
 }
 
-header{
-    padding-top:20px;
-    background:#021f54;
+header#menu{
+    padding-top :20px;
+    top: 0%;
+    font-family: "Montserrat", sans-serif;
+    z-index: 10000;
+    position: fixed;
+    min-width: 100%;
+    width: auto;
+    background-color: #05347c;
 }
 
 .container{

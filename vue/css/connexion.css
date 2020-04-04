@@ -3,7 +3,9 @@
   src: url("../../vue/fonts/FluoGums.ttf") format("truetype");
 }
 
-body {font-family: Arial, Helvetica, sans-serif;}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+
+body {font-family: "Montserrat", sans-serif;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {

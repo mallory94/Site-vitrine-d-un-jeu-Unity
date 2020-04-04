@@ -21,12 +21,12 @@ html {
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -121,6 +121,7 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Contact 2 ]*/
 .bg-contact2 {
+  padding-top : 50px;
   width: 100%;  
   background-repeat: no-repeat;
   background-position: center center;
@@ -164,9 +165,9 @@ iframe {
 
 .contact2-form-title {
   display: block;
-  font-family: Poppins-Bold;
+  font-family: "Montserrat", sans-serif;
   font-size: 39px;
-  color: #333333;
+  color: #05347c;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 90px;
@@ -188,7 +189,7 @@ iframe {
   display: block;
   width: 100%;
 
-  font-family: Poppins-Regular;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
@@ -233,7 +234,7 @@ iframe {
   top: 0px;
   left: 0;
 
-  font-family: Poppins-Regular;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   color: #999999;
   line-height: 1.2;
@@ -337,7 +338,7 @@ textarea.input2 + .focus-input2::after {
 
  
 
-  font-family: Poppins-Medium;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -384,7 +385,7 @@ textarea.input2 + .focus-input2::after {
   right: 0px;
   pointer-events: none;
 
-  font-family: Poppins-Regular;
+  font-family: "Montserrat", sans-serif;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -401,7 +402,7 @@ textarea.input2 + .focus-input2::after {
 
 .alert-validate::after {
   content: "\f12a";
-  font-family: FontAwesome;
+  font-family: "Montserrat", sans-serif;
   display: block;
   position: absolute;
   color: #c80000;
