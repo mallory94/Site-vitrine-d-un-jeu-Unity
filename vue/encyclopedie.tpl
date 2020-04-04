@@ -53,7 +53,7 @@
             <div id='stars2'></div>
             <div id='stars3'></div>
             <h1 id="ency" style=" font-size: 75px; padding: 1px 1px 36px 1px;">ENCYCLOPEDIE</h1>
-            <h1 id="sousT" style="font-size: 5vmin; color : white;"> Venez découvrir l'univers d'U.M.S.I</h1>
+            <h1 id="sousT" style="font-size: 40px; color : white;"> Venez découvrir l'univers d'U.M.S.I</h1>
             <br>
             <br> <br>
             <br>
