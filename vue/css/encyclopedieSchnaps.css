@@ -14,9 +14,9 @@
     
   }
 
-  @media screen and (max-width: 1157px) {
+  @media screen and (max-width: 1694px) {
     #cartes {
-      margin-top: 600px;
+      margin-top: 484px;
     }
   
     #trait {
@@ -28,6 +28,13 @@
     }
   }
 
+  @media screen and (max-width: 1131px) {
+    #cartes {
+      margin-top: 1041px;
+    }
+
+}
+
   @media screen and (max-width: 755px) {
     header{ 
         margin-top : 15px;
@@ -36,8 +43,16 @@
       margin-top : 15px;
   }
 
+  #ency {
+    margin-top: 11px;
+  }
+
+  #sousT {
+    font-size: 23px;
+  }
+
   #cartes {
-    margin-top: 1277px;
+    margin-top: 1117px;
   }
 
   #trait {
@@ -48,9 +63,14 @@
     margin-left: -33px;
   }
    
-  .wrapper {
+  .wrapperT {
     padding: 12px 12px 12px 60px;
   }
+
+  .wrapper {
+    margin-left: -149px;
+    margin-top: 22px;
+}
   
 }
 
