@@ -94,7 +94,7 @@
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
       </label> -->
 
-      <p class="termesConditions">En créeant un compte vous acceptez nos <br><a href="#" style="color:dodgerblue">Termes et Conditions</a>.</p>
+      <p class="termesConditions">En créant un compte vous acceptez nos <br><a href="#" style="color:dodgerblue">Termes et Conditions</a>.</p>
 
       <div class="clearfix">
         <a href="./index.php?controleur=utilisateur&action=accueil"><button type="button" class="btnAnnuler majuscule">Annuler</button></a>

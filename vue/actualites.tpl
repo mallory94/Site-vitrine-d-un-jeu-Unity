@@ -18,7 +18,7 @@
       <script src="./vue/js/static_menu.js"></script>
     </head>
 
- <header id="menu">
+<header id="menu">
 		<div class="container">
           
           <ul class="links active_links">
@@ -52,6 +52,7 @@
 		</header>
     
 <body>
+<div id="titre">ACTUALITÉS</div>
     <!-- DEBUT DU CODE POUR LE CAROUSEL -->
 
 
