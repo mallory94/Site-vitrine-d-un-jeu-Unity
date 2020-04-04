@@ -1,13 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 @font-face {
   font-family: "police-umsi";
   src: url("../../vue/fonts/FluoGums.ttf") format("truetype");
 }
 
-body {font-family: Arial, Helvetica, sans-serif;}
+
+
+body {font-family: "Montserrat", sans-serif; color : #60c9d7; font-style : none; letter-spacing: 0.05em;}
 * {box-sizing: border-box;}
 
 .majuscule {
   text-transform: uppercase;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #aaa;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aaa;
+}
+
+::placeholder {
+  color: #aaa;
 }
 
 
@@ -18,12 +33,17 @@ input[type=text], input[type=password] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  color : #151515;
+}
+
+p#title{
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
   outline: none;
 }
 
@@ -53,11 +73,21 @@ button:hover {
 .btnAnnuler, .btnInscription {
   float: left;
   width: 50%;
+  font-family : "Montserrat", sans-serif;
+  letter-spacing: 0.1em;
+
 }
 
 /* Add padding to container elements */
 .container {
   padding: 16px;
+  background-color:  #fff;
+}
+
+.container input[type="text"], .container input[type="password"]{
+  background-color : #fff;
+  font-family: "Montserrat", sans-serif;
+  border : 1px solid #aaa;
 }
 
 /* The Modal (background) */
@@ -94,7 +124,7 @@ button:hover {
 
 /* Style the horizontal ruler */
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #60c9d7;
   margin-bottom: 25px;
 }
  

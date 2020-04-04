@@ -35,7 +35,7 @@
     <div class="container">
     
       
-      <p class="centrer">Veuillez remplir ce formulaire pour vous inscrire.</p>
+      <p id="title" class="centrer">Veuillez remplir ce formulaire pour vous inscrire.</p>
       <hr>
         
       <label for="pseudo"><b>Pseudo</b></label>
