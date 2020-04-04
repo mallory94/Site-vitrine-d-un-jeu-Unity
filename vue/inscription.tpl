@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"  />
   <link rel = "stylesheet" type="text/css" href="./vue/css/inscription.css"/>
   <link rel = "stylesheet" type="text/css" href="./vue/css/tunnel.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="./vue/js/inscription.js"></script>
 </head>
 <body>
     
