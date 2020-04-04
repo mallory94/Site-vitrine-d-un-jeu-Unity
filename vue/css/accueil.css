@@ -13,7 +13,7 @@ body {
     background-color: rgba(5,52,124,0.8);
     box-shadow: black;
     width:fit-content;
-    padding : 1em;
+    
 
     margin:0 auto;
     border-radius: 56px 56px 56px 56px;
@@ -156,4 +156,10 @@ footer{
 
 html{
     overflow-x: hidden!important;
+}
+
+
+
+#letter-object {
+    text-shadow: 0 1px 0 #575757, 0 2px 0 #575757, 0 3px 0 #575757, 0 4px 0 #575757, 0 5px 0 #575757, 0 6px 0 #575757, 0 7px 0 #575757, 0 8px 0 #575757, 0 9px 0 #575757, 0 50px 30px rgba(0,0,0,.3)!important;
 }
