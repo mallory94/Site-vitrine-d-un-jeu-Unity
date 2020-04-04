@@ -1,11 +1,18 @@
 
-header{
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+header#menu{
 	position: absolute;
-    top: 0%;
+	top: 0%;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1000;
+    position: fixed;
+    min-width: 100%;
+	width: auto;
+	background-color: #05347c;
 }
 
 .book{
-	margin-top:40px;
+	margin-top:60px;
 }
 
 @media screen and (max-width: 920px) {

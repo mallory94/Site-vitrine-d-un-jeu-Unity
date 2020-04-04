@@ -14,10 +14,8 @@
     <script src="./vue/js/static_menu.js"></script>
 </head>
 
-<header>
-      
-
-      <div class="container">
+<header id="menu">
+		<div class="container">
           
           <ul class="links active_links">
             <li><a href="./index.php">Accueil</a></li>
@@ -47,8 +45,7 @@
             <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
           </ul>
         </div>
-
-</header>
+		</header>
 
 <body>
     <div class="book">
