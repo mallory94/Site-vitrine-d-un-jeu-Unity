@@ -71,7 +71,7 @@
 
   <div id="btnTelechargerJeu" role="" class="pam">
     <!-- <p>TELECHARGER LE JEU</p> -->
-    <div class="anim-object active telechargerJeu" id="letter-object">JOUER AU JEU</div>
+    <div class="anim-object active telechargerJeu" id="letter-object"><a href="./game/umsi.zip">JOUER AU JEU</a></div>
     
   </div>
 

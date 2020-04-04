@@ -10,7 +10,7 @@ body {
     /* font-family: Lustria, serif; */
     text-align: center;
     font-size: 35px;
-    background-color: rgba(5,52,124,0.8);
+    background-color: rgba(5,52,124,1);
     box-shadow: black;
     width:fit-content;
     
@@ -20,12 +20,22 @@ body {
     -moz-border-radius: 56px 56px 56px 56px;
     -webkit-border-radius: 56px 56px 56px 56px;
     border: 0px solid #000000;
-    transition : 0.5s;
+    transition : 0.2s;
     cursor:pointer;
+    box-shadow : 0px 10px 0px rgba(	0, 72, 74,0.8);
 }
 
 #btnTelechargerJeu:hover{
-    background-color: rgba(5,52,124,1);
+    background-color: #0853c6;
+    box-shadow : 0px 10px 0px rgba(	0, 72, 74, 1);
+}
+
+a{
+    text-decoration: none !important;
+}
+
+#btnTelechargerJeu:active{
+    background-color: #005d60;
 }
 
 
@@ -35,7 +45,7 @@ body {
     
 }
 
-#letter-object{ 
+#letter-object a{ 
     font-family: 'Montserrat', sans-serif;
     color: #4afaff;
 }
@@ -161,7 +171,7 @@ html{
 
 
 #letter-object {
-    text-shadow: 0 1px 0 #575757, 0 2px 0 #575757, 0 3px 0 #575757, 0 4px 0 #575757, 0 5px 0 #575757, 0 6px 0 #575757, 0 7px 0 #575757, 0 8px 0 #575757, 0 9px 0 #575757, 0 50px 30px rgba(0,0,0,.3)!important;
+    text-shadow: 0 1px 0 #00484a, 0 2px 0 #00484a, 0 3px 0 #00484a, 0 4px 0 #00484a, 0 5px 0 #00484a, 0 6px 0 #00484a, 0 7px 0 #00484a, 0 8px 0 #00484a, 0 9px 0 #00484a, 0 50px 30px rgba(0,0,0,.3)!important;
 }
 
 #menu{

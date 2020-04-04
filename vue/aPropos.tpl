@@ -98,7 +98,7 @@
 								<img src="./vue/images/Minh-Quan.png" alt="Person 1" />
 							</div>
 							<h3>Minh-Quân BUI</h3>
-							<p> Développeur Unity Game Designer, level Designer</p>
+							<p> Développeur Unity, Game Designer, Level Designer, UI/UX Designer</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
