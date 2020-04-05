@@ -199,19 +199,19 @@ function accueilApresConnexion()
 
 function getlogingame()
 {
-    require("./Modele/login.php");
+    require("./modele/login.php");
     return logingame();
 }
 
 function getListeCategories()
 {
-    require_once("./Modele/scoreBD.php");
+    require_once("./modele/scoreBD.php");
     return getListeCategoriesBD();
 }
 
 function getListeScores(&$listeCategories)
 {
-    require_once("./Modele/scoreBD.php");
+    require_once("./modele/scoreBD.php");
     return getListeScoresBD($listeCategories);
 }
 
