@@ -172,8 +172,4 @@ if($listeScores[$k]['pseudo'] == $_SESSION['pseudo'] ) {
     Vous pensez voir une erreur dans le classement?<br>
     Contactez nous <a href="./index.php?controleur=utilisateur&action=redirectionContact">ici</a>
     </footer>
-
-
-
-
 </html>
