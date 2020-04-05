@@ -1,20 +1,20 @@
-<?php 
+<?php
 
-    /* DEBUT API PRIVEE */
+/* DEBUT API PRIVEE */
 
 
-    function enregistrerNouveauScore(){
-        require_once("./Modele/scoreBD.php");
-       
-        enregistrerNouveauScoreBD($_GET['idJoueur'],
+function enregistrerNouveauScore()
+{
+    require_once("./modele/scoreBD.php");
+
+    enregistrerNouveauScoreBD(
+        $_GET['idJoueur'],
         $_GET['idNiveau'],
         $_GET['dernierScore'],
         $_GET['nbMonstresTues'],
         $_GET['tpsJeu'],
-        $_GET['meilleurScore']);
-    }
+        $_GET['meilleurScore']
+    );
+}
 
-    /* API FIN */
-
-
-?>
+/* API FIN */
