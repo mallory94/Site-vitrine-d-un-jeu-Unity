@@ -15,7 +15,7 @@
         <script src="./vue/js/minitronRush.js"></script>
         <script src="./vue/js/static_menu.js"></script>
 
-        <script language="javascript">
+        <script >
 			function conversion_seconde_heure(time) {
 				var reste=time;
 				var result='';
@@ -46,37 +46,57 @@
          return result;
 			 document.getElementById("tempsdiv").innerHTML= result;
 			}
- 
+
+
+      function init() {
+		document.getElementById("dialog").style.display = "none";
+	}
+	
+	function profil() {
+	    	document.getElementById("dialog").style.display = "block";		
+	}
+
+  function fin() {
+	    	document.getElementById("dialog").style.display = "none";		
+	}
 		</script>
     </head>
-<header id="menu">
+
+ 
+
+<header id="menu" onload="init();">
+
 		<div class="container">
           
           <ul class="links active_links">
-            <li><a href="./index.php">Accueil</a></li>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Classement</a></li>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionScenario">Scénario</a></li>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
+            <li  style=" padding-top: 16px;"><a href="./index.php">Accueil</a></li>
+            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Classement</a></li>
+            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
+            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionScenario">Scénario</a></li>
+            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
+            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
+            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
             <?php 
               if (isset($_SESSION['bConnect'])){
                 if ($_SESSION['bConnect']) {
-                  echo('<li><a href="./index.php?controleur=utilisateur&action=accueilApresDeconnexion">Déconnexion</a></li>');
+                  echo('<li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=accueilApresDeconnexion">Déconnexion</a></li>
+                  
+                        <a href="javascript:void(0)" id="profil" onclick="profil();"><img style="width: 62px; padding: 0px 11px 2px 13px;" src="./vue/images/stagiaire.png" alt="Profil" /><figcaption style="color:#4afaff; text-align:center;">Profil</figcaption></a>
+                       ');
                 }
                 else {
-                  echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                        <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
+                  echo('<li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
+                        <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                       ');
                 }
               }
               else {
-                echo('<li><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                      <li><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
+                echo('<li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
+                      <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                     ');
               }
             ?>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
-            <li><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
+          
             <li id="li-btnMenu"><a id="btnMenu">MENU</a></li>
           </ul>
         </div>
@@ -84,6 +104,7 @@
 		</header>
 
 <body>
+<br>
 <div id="bg-img"> <img src="./vue/images/laboDrawing.png"></div>
 
             <div class="titreEtMinitron">
@@ -119,9 +140,27 @@
                             <script type="text/javascript">
                     document.getElementById("tempsdiv'.$k.'").innerHTML= conversion_seconde_heure(' . $listeScores[$k]['tempsJeu'] .');
                           </script> ');
-                      
+
+ if (isset($_SESSION['bConnect'])){   
+if($listeScores[$k]['pseudo'] == $_SESSION['pseudo'] ) {
+  echo(  '<dialog id="dialog" style="color :#4afaff; background-color:black; ">
+  <form method="dialog" >
+   <p><label><h2 style="text-align : center;">Votre profil ' . $_SESSION['pseudo'] .' </h2>
+   <p> Niveau :'.$listeScores[$k]['niveau'].'</p>
+   <p> Nombre de monstres tués : '.$listeScores[$k]['nbMonstresTues'].'</p>
+   <p> Dernier score : '.$listeScores[$k]['dernierScore'].'</p>
+   <p> Meilleur score : '.$listeScores[$k]['meilleurScore'].'</p>
+   </label></p>
+   <input type="button" onclick="fin();" value="OK" style="color :black; background-color:#4afaff; margin-left: 71px;"></input>
+   </form>
+   </dialog>');
+}
+                          }
                          
                     }
+
+                    
+
                    
             ?>
                 

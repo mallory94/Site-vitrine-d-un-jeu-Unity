@@ -6,7 +6,7 @@
 function inscrire($infos)
 {
     require_once("./modele/utilisateurBD.php");
-    var_dump($infos);
+   
     inscrireBD($infos, "Joueur");
 }
 
@@ -42,7 +42,7 @@ function verifConnexion()
     if (count($_POST['options']) == 0) {
         connecte($_POST['pseudo']);
         accueilApresConnexion();
-        var_dump("vous êtes connecté");
+      
     } else {
         redirectionConnexion();
     }
@@ -126,7 +126,6 @@ function redirectionClassement()
 {
     require("./modele/scoreBD.php");
 
-
     //$listeCategories contient le nom des colonnes du classement
     //$listeCategoriesBD = getListeCategoriesBD();
 
@@ -136,9 +135,6 @@ function redirectionClassement()
     $listeCategories = array();
     array_push($listeCategories, "Pseudo", "Niveau", "Dernier score", "Nombre de monstre tué", "Temps de jeu", "Meilleur score");
     $nbCategories = count($listeCategories);
-
-
-
 
     require("./vue/classement.tpl");
 }
@@ -219,8 +215,6 @@ function getListeScores(&$listeCategories)
     return getListeScoresBD($listeCategories);
 }
 
-
-    
 
 
 ?>
