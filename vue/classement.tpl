@@ -69,30 +69,29 @@
 		<div class="container">
           
           <ul class="links active_links">
-            <li  style=" padding-top: 16px;"><a href="./index.php">Accueil</a></li>
-            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Classement</a></li>
-            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
-            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionScenario">Scénario</a></li>
-            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
-            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
-            <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
+            <li  style=" padding-top: 23px;"><a href="./index.php">Accueil</a></li>
+            <li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionClassement">Classement</a></li>
+            <li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionActualites">Actualités</a></li>
+            <li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionScenario">Scénario</a></li>
+            <li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionEncyclopedie">Encyclopédie</a></li>
+            <li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionAPropos">À propos</a></li>
+            <li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionContact">Contact</a></li>
             <?php 
               if (isset($_SESSION['bConnect'])){
                 if ($_SESSION['bConnect']) {
-                  echo('<li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=accueilApresDeconnexion">Déconnexion</a></li>
-                  
-                        <a href="javascript:void(0)" id="profil" onclick="profil();"><img style="width: 62px; padding: 0px 11px 2px 13px;" src="./vue/images/stagiaire.png" alt="Profil" /><figcaption style="color:#4afaff; text-align:center;">Profil</figcaption></a>
+                  echo('<li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=accueilApresDeconnexion">Déconnexion</a></li>
+                     <li><a href="javascript:void(0)" id="profil" onclick="profil();"><img id="stagiaire" style="width: 62px; padding: 0px 11px 2px 13px;" src="./vue/images/stagiaire.png" alt="Profil" /><figcaption style="color:#4afaff; text-align:center;">Profil</figcaption></a></li>
                        ');
                 }
                 else {
-                  echo('<li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                        <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
+                  echo('<li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
+                        <li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                       ');
                 }
               }
               else {
-                echo('<li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
-                      <li style=" padding-top: 16px;"><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
+                echo('<li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionConnexion">Connexion</a></li>
+                      <li style=" padding-top: 23px;"><a href="./index.php?controleur=utilisateur&action=redirectionInscription">Inscription</a></li>
                     ');
               }
             ?>

@@ -178,4 +178,16 @@ footer{
     html{
         overflow-x: hidden;
     }
+
+    
+
 }
+@media screen and (max-width: 920px) {
+    #stagiaire{
+display : none;
+    }
+
+    #profil {
+        padding:  15px;
+    }
+  }
