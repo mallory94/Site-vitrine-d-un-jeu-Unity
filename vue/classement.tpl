@@ -40,7 +40,7 @@
 				if (nbMinutes>0)
 					result=result+nbMinutes+'min ';
  
-				if (nbSeconds>0)
+				if (nbSeconds>=0)
 					result=result+nbSeconds+'s ';
          
          return result;
