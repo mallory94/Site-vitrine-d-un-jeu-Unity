@@ -182,6 +182,12 @@ footer{
     
 
 }
+
+.container .active_links {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 @media screen and (max-width: 920px) {
     #stagiaire{
 display : none;
@@ -190,4 +196,10 @@ display : none;
     #profil {
         padding:  15px;
     }
+
+    .container .active_links {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    
   }
