@@ -57,7 +57,7 @@ function logingame()
     $retour2 = $resultat;
     print_r($retour[0] . " " . $retour[1] . " ");
     print_r($retour2[0]['IdCompte'] . " " . $retour2[0]['mail'] . " " . $retour2[0]['mdp'] . " " . $retour2[0]['pseudo'] . " " . $retour2[0]['statut'] . " " . $retour2[0]['bConnecte'] . " ");
-    if ($bestscore != null) {
+    if ($bool2) {
         print_r($bestscore[0]['IdJoueur'] . " " . $bestscore[0]['IdNiveau'] . " " . $bestscore[0]['dernierScore'] . " " . $bestscore[0]['nbMonstresTues'] . " " . $bestscore[0]['tpsJeu'] . " " . $bestscore[0]['meilleurScore']);
     } else {
         print_r($retour2[0]['IdCompte'] . " 1 0 0 0 0");
