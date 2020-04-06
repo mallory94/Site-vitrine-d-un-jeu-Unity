@@ -42,7 +42,7 @@ function getListeScoresBD()
 
 	$sql = "SELECT c.pseudo as pseudo, niv.nomNiv as niveau, s.meilleurScore as meilleurScore, s.nbMonstresTues as nbMonstresTues ,
 			s.tpsJeu as tempsJeu, s.dernierScore as dernierScore
-			FROM SCORE as s , JOUEUR as j, NIVEAU as niv, COMPTE as c
+			FROM score as s , joueur as j, niveau as niv, compte as c
 			WHERE 
 				s.IdJoueur = j.IdJoueur AND
 				j.IdJoueur = c.IdCompte AND
