@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./vue/css/aProposAnimationText.css" />
 		<link rel="stylesheet" href="./vue/css/aProposMain.css" />
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+		<script type="text/javascript" src="./vue/js/jquery-1.10.0.min.js"></script>
 		<link rel="stylesheet" href="./vue/css/static_menu.css">
 		<link rel="stylesheet" href="./vue/css/aPropos.css">
 		<script type="text/javascript" src="./vue/js/aProposAnimation.js"></script>

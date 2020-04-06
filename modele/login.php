@@ -33,7 +33,7 @@ function logingame()
         $retour2 = $resultat;
         $bestscore = $commande2->fetchAll(PDO::FETCH_ASSOC);
         if ($bestscore == null) {
-            $sql_newscore = "INSERT INTO score(IdJoueur,IdNiveau,dernierScore,nbMonstresTues,tpsJeu,meilleurScore) VALUES(?,1,0,0,'00:00:00',0)";
+            $sql_newscore = "INSERT INTO score(IdJoueur,IdNiveau,dernierScore,nbMonstresTues,tpsJeu,meilleurScore) VALUES(?,1,0,0,0,0)";
             $commande3 = $pdo->prepare($sql_newscore);
 
             $bool3 = $commande3->execute([$retour2[0]['IdCompte']]);
@@ -60,6 +60,6 @@ function logingame()
     if ($bestscore != null) {
         print_r($bestscore[0]['IdJoueur'] . " " . $bestscore[0]['IdNiveau'] . " " . $bestscore[0]['dernierScore'] . " " . $bestscore[0]['nbMonstresTues'] . " " . $bestscore[0]['tpsJeu'] . " " . $bestscore[0]['meilleurScore']);
     } else {
-        print_r($retour2[0]['IdCompte'] . " 1 0 0 00:00:00 0");
+        print_r($retour2[0]['IdCompte'] . " 1 0 0 0 0");
     }
 }

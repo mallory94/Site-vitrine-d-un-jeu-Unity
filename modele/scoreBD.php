@@ -247,7 +247,7 @@ function creerTopicsBD($idT, $nomT, $texte)
 
 function enregistrerNouveauScoreBD($IdJoueur, $IdNiveau, $dernierScore, $nbMonstresTues, $tpsJeu, $meilleurScore)
 {
-	require("./Modele/connect.php");
+	require("./modele/connect.php");
 	$sql = "INSERT INTO joueur (IdJoueur, derniereUtilisation, nbUtilisation )VALUES (?,CURRENT_DATE,?)";
 	$sql2 = "INSERT INTO score (IdJoueur, IdNiveau, dernierScore, nbMonstresTues, tpsJeu, meilleurScore) VALUES (?,?,?,?,?,?)";
 	try {
