@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 03 avr. 2020 à 00:58
+-- Généré le :  lun. 06 avr. 2020 à 02:45
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -136,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `compte` (
   PRIMARY KEY (`IdCompte`),
   UNIQUE KEY `mail` (`mail`(50)) USING HASH,
   UNIQUE KEY `pseudo` (`pseudo`(50)) USING HASH
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `compte`
@@ -159,7 +159,7 @@ INSERT INTO `compte` (`IdCompte`, `mail`, `mdp`, `pseudo`, `statut`, `bConnecte`
 (14, 'jeancharles@gmail.com', '2ZE3R', 'Kingeek34', 'joueur', 1),
 (15, 'erine@gmail.com', '2ZE3R4T', 'ErineIR345', 'joueur', 0),
 (16, 'sorry@gmail.com', 'HHH87YH', 'Okey', 'joueur', 1),
-(17, 'test@gmail.com', '$2y$10$PXiU1NTg9LLpUmt.O5Bmt.yEcmwrHQLDN3mcdDrBiqRqYFuLXlwOu', 'test', 'Joueur', 0);
+(18, 'ok', '$2y$10$B51TjuewdXVXdCba39NN4.Kvl5XhIznnCMavN1aPs2eaetkLxz6Ra', 'ok', 'joueur', 0);
 
 -- --------------------------------------------------------
 
@@ -170,7 +170,7 @@ INSERT INTO `compte` (`IdCompte`, `mail`, `mdp`, `pseudo`, `statut`, `bConnecte`
 DROP TABLE IF EXISTS `joueur`;
 CREATE TABLE IF NOT EXISTS `joueur` (
   `IdJoueur` int(11) NOT NULL,
-  `derniereUtilisation` date NOT NULL,
+  `derniereUtilisation` date DEFAULT NULL,
   `nbUtilisation` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`IdJoueur`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -189,7 +189,8 @@ INSERT INTO `joueur` (`IdJoueur`, `derniereUtilisation`, `nbUtilisation`) VALUES
 (13, '2020-02-08', 9),
 (14, '2020-02-02', 2),
 (15, '2020-02-04', 7),
-(16, '2020-02-09', 1);
+(16, '2020-02-09', 1),
+(18, '2020-04-07', 4);
 
 -- --------------------------------------------------------
 
@@ -284,15 +285,16 @@ CREATE TABLE IF NOT EXISTS `score` (
 
 INSERT INTO `score` (`IdJoueur`, `IdNiveau`, `dernierScore`, `nbMonstresTues`, `tpsJeu`, `meilleurScore`) VALUES
 (3, 1, 4, 8, 40300, 4),
-(4, 1, 1, 1, 400, 1),
+(4, 1, 1, 1, 78, 1),
 (5, 1, 5, 11, 320000, 6),
 (9, 1, 8, 13, 100000, 8),
 (10, 1, 6, 6, 600, 6),
 (11, 1, 4, 5, 40000, 4),
 (13, 1, 3, 12, 500, 5),
-(14, 1, 7, 7, 400, 7),
+(14, 1, 7, 7, 9, 7),
 (15, 1, 8, 15, 20000, 8),
-(16, 1, 2, 2, 400, 2);
+(16, 1, 2, 2, 89, 2),
+(18, 1, 34, 5, 5678, 7);
 
 -- --------------------------------------------------------
 
