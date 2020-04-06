@@ -7,8 +7,14 @@ function logingame()
     $username = $_GET["uname"];
     $password = $_GET["psw"];
 
+    require_once("./modele/utilisateurBD.php");
 
-
+    if (password_verify($password, recupMdpBD($username))) {
+        $boool = true;
+    } else {
+        $boool = false;
+    }
+    //var_dump($boool);
 
     $sql_login = "SELECT * FROM compte where pseudo=? and mdp=?";
     $sql_score = "SELECT * FROM score s INNER JOIN compte c ON c.IdCompte=s.IdJoueur where pseudo=? and mdp=?";
@@ -19,8 +25,8 @@ function logingame()
         $commande = $pdo->prepare($sql_login);
         $commande2 = $pdo->prepare($sql_score);
 
-        $bool = $commande->execute([$username, $password]);
-        $bool2 = $commande2->execute([$username, $password]);
+        $bool = $commande->execute([$username, recupMdpBD($username)]);
+        $bool2 = $commande2->execute([$username, recupMdpBD($username)]);
 
         if ($bool) {
             $resultat = $commande->fetchAll(PDO::FETCH_ASSOC);
@@ -56,7 +62,7 @@ function logingame()
 
     $retour2 = $resultat;
     print_r($retour[0] . " " . $retour[1] . " ");
-    print_r($retour2[0]['IdCompte'] . " " . $retour2[0]['mail'] . " " . $retour2[0]['mdp'] . " " . $retour2[0]['pseudo'] . " " . $retour2[0]['statut'] . " " . $retour2[0]['bConnecte'] . " ");
+    print_r($retour2[0]['IdCompte'] . " " . $retour2[0]['mail'] . " " . $password . " " . $retour2[0]['pseudo'] . " " . $retour2[0]['statut'] . " " . $retour2[0]['bConnecte'] . " ");
     if ($bool2) {
         print_r($bestscore[0]['IdJoueur'] . " " . $bestscore[0]['IdNiveau'] . " " . $bestscore[0]['dernierScore'] . " " . $bestscore[0]['nbMonstresTues'] . " " . $bestscore[0]['tpsJeu'] . " " . $bestscore[0]['meilleurScore']);
     } else {
