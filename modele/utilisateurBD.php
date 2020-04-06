@@ -17,13 +17,15 @@
 
     function inscrireJoueurBD($pseudo){
         require ("./modele/connect.php");
-        $sql = 'INSERT INTO joueur (IdJoueur , derniereUtilisation, nbUtilisation) VALUES ((SELECT IdCompte FROM COMPTE WHERE pseudo=?), NULL, 0)';
+        $sql = 'INSERT INTO joueur (IdJoueur , derniereUtilisation, nbUtilisation) VALUES ((SELECT IdCompte FROM compte WHERE pseudo=?), NULL, 0)';
         try {
+            echo("rentre");
             $commande = $pdo->prepare($sql);
             $bool = $commande->execute(array($pseudo));
+            var_dump($bool);
         }
         catch (PDOException $e) {
-            return($e);
+            echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
             die();
         }
     }
